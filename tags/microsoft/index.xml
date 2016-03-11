@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft on lou1306</title>
+    <link>http://lou1306.github.io/tags/microsoft/</link>
+    <description>Recent content in Microsoft on lou1306</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it-it</language>
+    <lastBuildDate>Tue, 01 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://lou1306.github.io/tags/microsoft/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Chocolatey: software management per Windows</title>
+      <link>http://lou1306.github.io/post/2016-03-01-chocolatey/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/post/2016-03-01-chocolatey/</guid>
+      <description>
+
+&lt;p&gt;Dai package managers Linux agli Store dei sistemi mobile, quella dei &lt;em&gt;software
+repositories&lt;/em&gt; è una storia di successo che però fatica a prendere piede su
+Windows.
+Ma qualcosa sta cambiando.&lt;/p&gt;
+
+&lt;h2 id=&#34;un-po-di-storia:fbcec80871c2d367fc044854ea9a785b&#34;&gt;Un po&amp;rsquo; di storia&lt;/h2&gt;
+
+&lt;p&gt;L&amp;rsquo;installazione di software certificato da uno o più &lt;em&gt;repository&lt;/em&gt; è da anni un
+caposaldo del mondo Linux.
+I vantaggi sono evidenti: la stabilità del sistema e la correttezza dei
+pacchetti sono garantite da un team di gestione qualificato, e l&amp;rsquo;utente non deve
+fare altro che usare un&amp;rsquo;interfaccia testuale o grafica per cercare e installare
+le applicazioni.&lt;/p&gt;
+
+&lt;p&gt;Sistemi analoghi si sono affermati nell&amp;rsquo;ambito dei linguaggi di programmazione:
+ovviamente in tal caso i pacchetti non contengono programmi, ma librerie
+riusabili che risparmiano al programmatore la fatica di inventare la ruota.
+Ne cito giusto due: il &lt;strong&gt;Python Package Index&lt;/strong&gt; (PyPI) per il linguaggio ideato
+da Guido van Rossum e &lt;strong&gt;NuGet&lt;/strong&gt; per la piattaforma Microsoft .NET.&lt;/p&gt;
+
+&lt;p&gt;Quando si parla di sistemi operativi mobile, infine, è evidente che questo
+pattern di usabilità detiene un dominio quasi incontrastato: ogni utente si
+aspetta di avere un &amp;ldquo;negozio di applicazioni&amp;rdquo; dal quale reperire tutto il
+software che desidera, e il caricamento di eseguibili da altre fonti
+(&lt;em&gt;sideloading&lt;/em&gt;) è molto meno pratico (se non illegale).&lt;/p&gt;
+
+&lt;h2 id=&#34;e-su-windows:fbcec80871c2d367fc044854ea9a785b&#34;&gt;E su Windows?&lt;/h2&gt;
+
+&lt;p&gt;La distribuzione di software su Windows, al contrario, è sempre stato un
+processo decentralizzato: la responsabilità di reperire ed eseguire
+l&amp;rsquo;installer spetta all&amp;rsquo;utente finale.&lt;/p&gt;
+
+&lt;p&gt;Evidentemente è un modello pensato per un&amp;rsquo;altra epoca, in cui l&amp;rsquo;installazione
+via internet era l&amp;rsquo;eccezione e gli aggiornamenti avvenivano sporadicamente.
+Ma al giorno d&amp;rsquo;oggi, oltre a qualche rischio per la sicurezza, è soprattutto una
+fonte di infinite seccature (se la frase &amp;ldquo;Un nuovo aggiornamento di Java è
+disponibile&amp;rdquo; non vi fa sudare freddo, complimenti: avete più fegato di me).&lt;/p&gt;
+
+&lt;h2 id=&#34;chocolatey:fbcec80871c2d367fc044854ea9a785b&#34;&gt;Chocolatey&lt;/h2&gt;
+
+&lt;p&gt;Qualcosa sta cambiando, dicevo.
+Appoggiandosi a OneGet e a PowerShell, il team di
+&lt;a href=&#34;https://chocolatey.org/&#34;&gt;Chocolatey&lt;/a&gt;
+ha realizzato un software manager &lt;em&gt;decentralizzato&lt;/em&gt;: se gli chiediamo di
+installare un&amp;rsquo;applicazione (ad esempio l&amp;rsquo;ottima
+&lt;a href=&#34;https://justgetflux.com/&#34;&gt;f.lux&lt;/a&gt;),
+esso scaricherà uno script PowerShell che a sua volta contiene le istruzioni per
+il download e l&amp;rsquo;esecuzione dell&amp;rsquo;installer.&lt;/p&gt;
+
+&lt;p&gt;La community di Chocolatey verifica che gli script siano &amp;ldquo;benevoli&amp;rdquo;; in futuro
+verrà inoltre resa obbligatoria la verifica del &lt;em&gt;checksum&lt;/em&gt; dei file scaricati,
+come ulteriore misura di sicurezza.&lt;/p&gt;
+
+&lt;h2 id=&#34;comandi-utili:fbcec80871c2d367fc044854ea9a785b&#34;&gt;Comandi utili&lt;/h2&gt;
+
+&lt;p&gt;Le istruzioni per installare choco sono sul sito ;)
+Qui riporto solo i comandi più importanti, la cui sintassi è molto simile a
+quella di altri gestori di pacchetti.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Comando&lt;/th&gt;
+&lt;th&gt;Descrizione&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;choco install f.lux&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Installa il pacchetto&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;choco uninstall f.lux&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Disinstalla il pacchetto&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;choco list --local-only&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Elenca tutti i pacchetti installati&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;choco outdated&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Elenca i pacchetti per cui sono diponibili aggiornamenti&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;choco upgrade f.lux&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Aggiorna il pacchetto&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;choco upgrade all&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Aggiorna tutti i pacchetti obsoleti&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;choco pin f.lux&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Disabilita l&amp;rsquo;aggiornamento del pacchetto&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;bonus-packagemanagement:fbcec80871c2d367fc044854ea9a785b&#34;&gt;Bonus: PackageManagement&lt;/h2&gt;
+
+&lt;p&gt;Gli sviluppatori Microsoft sono andati &lt;em&gt;oltre&lt;/em&gt; e hanno ideato un &amp;ldquo;package
+manager manager&amp;rdquo;, cioè un&amp;rsquo;infrastruttura unificata per l&amp;rsquo;installazione di
+pacchetti da molteplici gestori di pacchetti.
+Ciò significa che un giorno l&amp;rsquo;utente potrà accedere a PyPI, NuGet, RubyGems e
+così via attraverso un&amp;rsquo;interfaccia unificata.&lt;/p&gt;
+
+&lt;p&gt;PackageManager (un tempo noto come OneGet) è incluso in Windows 10: per i
+sistemi precedenti esiste un
+&lt;a href=&#34;https://www.microsoft.com/en-us/download/details.aspx?id=49186&#34;&gt;installer&lt;/a&gt;
+che però non ho avuto modo di testare.
+L&amp;rsquo;obiettivo principale di OneGet è quello di consentire il download di script e
+moduli da
+&lt;a href=&#34;http://powershellgallery.com/&#34;&gt;PowerShellGallery&lt;/a&gt;,
+quindi &lt;strong&gt;non&lt;/strong&gt; è ancora il caso di utilizzarlo in altri ambiti.&lt;/p&gt;
+
+&lt;p&gt;Comunque, se avete il gusto dell&amp;rsquo;avventura, vi riporto velocemente una sequenza
+di comandi che permetteranno di recuperare pacchetti dai server di Chocolatey:
+per eseguirli bisogna aprire una console PowerShell come amministratore.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Set-ExecutionPolicy RemoteSigned -Scope Process
+Get-Command -Module PackageManagement
+Find-Package chocolatey
+Get-PackageProvider -Name Chocolatey
+Find-Package -Name f.lux
+Install-Package -Name f.lux
+Set-PackageSource -Name chocolatey -Trusted
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Consente l&amp;rsquo;esecuzione di script esterni ma dotati di firma digitale.
+Il parametro &lt;code&gt;-Scope Process&lt;/code&gt; limita questa politica alla shell attuale.&lt;/li&gt;
+&lt;li&gt;Elenca i comandi forniti dal modulo &lt;code&gt;PackageManagement&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;In realtà usiamo questo comando solo per provocare l&amp;rsquo;installazione del
+&lt;em&gt;provider&lt;/em&gt; NuGet.&lt;/li&gt;
+&lt;li&gt;Installa il &lt;em&gt;package provider&lt;/em&gt; per il server di Chocolatey.&lt;/li&gt;
+&lt;li&gt;Esempio di ricerca di un pacchetto.&lt;/li&gt;
+&lt;li&gt;Installazione del pacchetto.&lt;/li&gt;
+&lt;li&gt;Imposta chocolatey come fonte affidabile: le future installazioni non
+mostreranno avvisi di pericolo.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Purtroppo l&amp;rsquo;interfaccia è molto scarna e lo sviluppo tende a favorire
+PowerShellGallery: ad esempio manca un comando per aggiornare i pacchetti,
+mentre esistono comandi analoghi per gli script scaricati dal server Microsoft.
+Anche il &lt;a href=&#34;https://github.com/OneGet/oneget&#34;&gt;repository GitHub &lt;/a&gt; sembra poco
+frequentato negli ultimi mesi: speriamo che non sia un brutto segno, perché
+l&amp;rsquo;idea è davvero interessante!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

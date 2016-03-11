@@ -1,0 +1,311 @@
+		<!DOCTYPE html>
+<html lang="it-it">
+<head>
+	<title>Chocolatey: software management per Windows &middot; lou1306</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<meta name="author" content="lou1306">
+	<meta name="description" content="Appunti di informatica e altro">
+	<meta name="generator" content="Hugo 0.15" />
+
+	<!-- CSS -->
+	
+	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="http://lou1306.github.io/favicon.ico" type="image/x-icon">
+
+	<!-- RSS -->
+	
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+</head>
+		<body>
+			<header class="site-header">
+	<div class="branding">
+		<a href="http://lou1306.github.io/">
+		
+			<img class="avatar" src="http://lou1306.github.io/img/avatar.jpg" alt=""/>
+		
+		</a>
+		<h1 class="site-title">
+			<a href="http://lou1306.github.io/">lou1306</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+        <ul>
+	      	
+	        	<li>
+	        	<a href="/cv/">CV</a></li>
+	        	
+	      	
+	        	<li>•
+	        	<a href="/about/">L&#39;autore</a></li>
+	        	
+	      	
+            
+<li>
+	<a href="http://lou1306.github.io/index.xml" title="Seguimi">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/lou1306" title="Github">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="http://linkedin.com/in/lou1306" title="Linkedin">
+		<i class="fa fa-fw fa-linkedin"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/1306lou" title="Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+      	</ul>
+	</nav>
+</header>
+			<div class="content">
+				
+				<article>
+					<header>
+						<h1 class="title">Chocolatey: software management per Windows</h1>
+					</header>
+				
+
+				<section class="post-content">
+					
+
+<p>Dai package managers Linux agli Store dei sistemi mobile, quella dei <em>software
+repositories</em> è una storia di successo che però fatica a prendere piede su
+Windows.
+Ma qualcosa sta cambiando.</p>
+
+<h2 id="un-po-di-storia:fbcec80871c2d367fc044854ea9a785b">Un po&rsquo; di storia</h2>
+
+<p>L&rsquo;installazione di software certificato da uno o più <em>repository</em> è da anni un
+caposaldo del mondo Linux.
+I vantaggi sono evidenti: la stabilità del sistema e la correttezza dei
+pacchetti sono garantite da un team di gestione qualificato, e l&rsquo;utente non deve
+fare altro che usare un&rsquo;interfaccia testuale o grafica per cercare e installare
+le applicazioni.</p>
+
+<p>Sistemi analoghi si sono affermati nell&rsquo;ambito dei linguaggi di programmazione:
+ovviamente in tal caso i pacchetti non contengono programmi, ma librerie
+riusabili che risparmiano al programmatore la fatica di inventare la ruota.
+Ne cito giusto due: il <strong>Python Package Index</strong> (PyPI) per il linguaggio ideato
+da Guido van Rossum e <strong>NuGet</strong> per la piattaforma Microsoft .NET.</p>
+
+<p>Quando si parla di sistemi operativi mobile, infine, è evidente che questo
+pattern di usabilità detiene un dominio quasi incontrastato: ogni utente si
+aspetta di avere un &ldquo;negozio di applicazioni&rdquo; dal quale reperire tutto il
+software che desidera, e il caricamento di eseguibili da altre fonti
+(<em>sideloading</em>) è molto meno pratico (se non illegale).</p>
+
+<h2 id="e-su-windows:fbcec80871c2d367fc044854ea9a785b">E su Windows?</h2>
+
+<p>La distribuzione di software su Windows, al contrario, è sempre stato un
+processo decentralizzato: la responsabilità di reperire ed eseguire
+l&rsquo;installer spetta all&rsquo;utente finale.</p>
+
+<p>Evidentemente è un modello pensato per un&rsquo;altra epoca, in cui l&rsquo;installazione
+via internet era l&rsquo;eccezione e gli aggiornamenti avvenivano sporadicamente.
+Ma al giorno d&rsquo;oggi, oltre a qualche rischio per la sicurezza, è soprattutto una
+fonte di infinite seccature (se la frase &ldquo;Un nuovo aggiornamento di Java è
+disponibile&rdquo; non vi fa sudare freddo, complimenti: avete più fegato di me).</p>
+
+<h2 id="chocolatey:fbcec80871c2d367fc044854ea9a785b">Chocolatey</h2>
+
+<p>Qualcosa sta cambiando, dicevo.
+Appoggiandosi a OneGet e a PowerShell, il team di
+<a href="https://chocolatey.org/">Chocolatey</a>
+ha realizzato un software manager <em>decentralizzato</em>: se gli chiediamo di
+installare un&rsquo;applicazione (ad esempio l&rsquo;ottima
+<a href="https://justgetflux.com/">f.lux</a>),
+esso scaricherà uno script PowerShell che a sua volta contiene le istruzioni per
+il download e l&rsquo;esecuzione dell&rsquo;installer.</p>
+
+<p>La community di Chocolatey verifica che gli script siano &ldquo;benevoli&rdquo;; in futuro
+verrà inoltre resa obbligatoria la verifica del <em>checksum</em> dei file scaricati,
+come ulteriore misura di sicurezza.</p>
+
+<h2 id="comandi-utili:fbcec80871c2d367fc044854ea9a785b">Comandi utili</h2>
+
+<p>Le istruzioni per installare choco sono sul sito ;)
+Qui riporto solo i comandi più importanti, la cui sintassi è molto simile a
+quella di altri gestori di pacchetti.</p>
+
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>choco install f.lux</code></td>
+<td>Installa il pacchetto</td>
+</tr>
+
+<tr>
+<td><code>choco uninstall f.lux</code></td>
+<td>Disinstalla il pacchetto</td>
+</tr>
+
+<tr>
+<td><code>choco list --local-only</code></td>
+<td>Elenca tutti i pacchetti installati</td>
+</tr>
+
+<tr>
+<td><code>choco outdated</code></td>
+<td>Elenca i pacchetti per cui sono diponibili aggiornamenti</td>
+</tr>
+
+<tr>
+<td><code>choco upgrade f.lux</code></td>
+<td>Aggiorna il pacchetto</td>
+</tr>
+
+<tr>
+<td><code>choco upgrade all</code></td>
+<td>Aggiorna tutti i pacchetti obsoleti</td>
+</tr>
+
+<tr>
+<td><code>choco pin f.lux</code></td>
+<td>Disabilita l&rsquo;aggiornamento del pacchetto</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="bonus-packagemanagement:fbcec80871c2d367fc044854ea9a785b">Bonus: PackageManagement</h2>
+
+<p>Gli sviluppatori Microsoft sono andati <em>oltre</em> e hanno ideato un &ldquo;package
+manager manager&rdquo;, cioè un&rsquo;infrastruttura unificata per l&rsquo;installazione di
+pacchetti da molteplici gestori di pacchetti.
+Ciò significa che un giorno l&rsquo;utente potrà accedere a PyPI, NuGet, RubyGems e
+così via attraverso un&rsquo;interfaccia unificata.</p>
+
+<p>PackageManager (un tempo noto come OneGet) è incluso in Windows 10: per i
+sistemi precedenti esiste un
+<a href="https://www.microsoft.com/en-us/download/details.aspx?id=49186">installer</a>
+che però non ho avuto modo di testare.
+L&rsquo;obiettivo principale di OneGet è quello di consentire il download di script e
+moduli da
+<a href="http://powershellgallery.com/">PowerShellGallery</a>,
+quindi <strong>non</strong> è ancora il caso di utilizzarlo in altri ambiti.</p>
+
+<p>Comunque, se avete il gusto dell&rsquo;avventura, vi riporto velocemente una sequenza
+di comandi che permetteranno di recuperare pacchetti dai server di Chocolatey:
+per eseguirli bisogna aprire una console PowerShell come amministratore.</p>
+
+<pre><code>Set-ExecutionPolicy RemoteSigned -Scope Process
+Get-Command -Module PackageManagement
+Find-Package chocolatey
+Get-PackageProvider -Name Chocolatey
+Find-Package -Name f.lux
+Install-Package -Name f.lux
+Set-PackageSource -Name chocolatey -Trusted
+</code></pre>
+
+<ol>
+<li>Consente l&rsquo;esecuzione di script esterni ma dotati di firma digitale.
+Il parametro <code>-Scope Process</code> limita questa politica alla shell attuale.</li>
+<li>Elenca i comandi forniti dal modulo <code>PackageManagement</code>.</li>
+<li>In realtà usiamo questo comando solo per provocare l&rsquo;installazione del
+<em>provider</em> NuGet.</li>
+<li>Installa il <em>package provider</em> per il server di Chocolatey.</li>
+<li>Esempio di ricerca di un pacchetto.</li>
+<li>Installazione del pacchetto.</li>
+<li>Imposta chocolatey come fonte affidabile: le future installazioni non
+mostreranno avvisi di pericolo.</li>
+</ol>
+
+<p>Purtroppo l&rsquo;interfaccia è molto scarna e lo sviluppo tende a favorire
+PowerShellGallery: ad esempio manca un comando per aggiornare i pacchetti,
+mentre esistono comandi analoghi per gli script scaricati dal server Microsoft.
+Anche il <a href="https://github.com/OneGet/oneget">repository GitHub </a> sembra poco
+frequentato negli ultimi mesi: speriamo che non sia un brutto segno, perché
+l&rsquo;idea è davvero interessante!</p>
+
+
+				<hr>
+
+				<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'lou1306';
+    var disqus_identifier = 'http:\/\/lou1306.github.io\/post\/2016-03-01-chocolatey\/';
+    var disqus_title = 'Chocolatey: software management per Windows';
+    var disqus_url = 'http:\/\/lou1306.github.io\/post\/2016-03-01-chocolatey\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+				</section>
+
+			</article>
+			<footer class="site-footer">
+	<p class="text">&copy; 2016 - Released under the MIT license<br>Powered by <a href="//gohugo.io/">Hugo</a> with the <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a></p>
+</footer>
+
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nows on lou1306</title>
+    <link>http://lou1306.github.io/now/</link>
+    <description>Recent content in Nows on lou1306</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it-it</language>
+    <lastBuildDate>Mon, 07 Mar 2016 17:16:40 +0100</lastBuildDate>
+    <atom:link href="http://lou1306.github.io/now/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Adesso</title>
+      <link>http://lou1306.github.io/now/</link>
+      <pubDate>Mon, 07 Mar 2016 17:16:40 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/now/</guid>
+      <description>&lt;p&gt;Sto lavorando alla mia tesi di laura magistrale, che riguarderà
+l&amp;rsquo;implementazione di algoritmi di navigazione autonoma per quadrirotori:
+l&amp;rsquo;obiettivo è non farne schiantare nemmeno uno.&lt;/p&gt;
+
+&lt;p&gt;Collaboro attivamente con la Pattuglia Nazionale Informatica dell&amp;rsquo;Associazione
+Italiana Guide e Scouts d&amp;rsquo;Europa Cattolici.
+L&amp;rsquo;ultimo progetto è una web app realizzata in ASP.NET MVC e destinata alla
+raccolta di iscrizioni per un evento associativo.&lt;/p&gt;
+
+&lt;p&gt;Sto allestendo un blog personale :)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Questa pagina è stata ispirata da (&lt;a href=&#34;http://nownownow.com/&#34;&gt;http://nownownow.com/&lt;/a&gt;).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

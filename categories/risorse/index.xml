@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Risorse on lou1306</title>
+    <link>http://lou1306.github.io/categories/risorse/</link>
+    <description>Recent content in Risorse on lou1306</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it-it</language>
+    <lastBuildDate>Fri, 29 Apr 2016 12:00:36 +0200</lastBuildDate>
+    <atom:link href="http://lou1306.github.io/categories/risorse/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Risorse utili per programmatori</title>
+      <link>http://lou1306.github.io/post/2016-04-29-risorse_programmatori/</link>
+      <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/post/2016-04-29-risorse_programmatori/</guid>
+      <description>
+
+&lt;p&gt;Ecco una carrellata di materiale che mi è tornato utile negli ultimi tempi.
+Anche se è principalmente a mio uso e consumo (non voglio dimenticare i titoli e
+alcune informazioni a contorno, nel caso i link dovessero scomparire in futuro),
+spero possa far comodo anche ad altri programmatori/smanettoni.&lt;/p&gt;
+
+&lt;h2 id=&#34;ebooks:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Ebooks&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://cacr.uwaterloo.ca/hac/&#34;&gt;The Handbook of Applied Cryptography&lt;/a&gt;&lt;/strong&gt;: le
+basi teoriche e oltre 200 algoritmi relativi al mondo della crittografia. Una
+manna se avete un esame e/o dovete implementare qualcosa che abbia a che fare
+con l&amp;rsquo;argomento.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The primary objective of an adversary who wishes to “attack” a public-key
+encryption scheme is to systematically recover plaintext from ciphertext
+intended for some other entity A. If this is achieved, the encryption scheme
+is informally said to have been broken.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://medium.mybridge.co/the-most-useful-free-ebooks-for-web-developers-3854767ee52f#.tks8tbwn0&#34;&gt;The Most Useful Free eBooks for Web Developers&lt;/a&gt;&lt;/strong&gt;:
+collezione di ebook per sviluppatori HTML5/Javascript/CSS3. Ovviamente non li
+ho letti tutti, ma gli autori della pagina sostengono di averli selezionati da
+una lista iniziale di 400; questi 17 sono i più visualizzati/consigliati dalla
+comunità online, quindi tendo a fidarmi della qualità di ciascuno di essi.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Design patterns are reusable solutions to commonly occurring problems in
+software design. They are both exciting and a fascinating topic to explore
+in any programming language.&lt;/p&gt;
+
+&lt;p&gt;(Da &lt;em&gt;Learning Javascript Design Patterns&lt;/em&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.oreilly.com/programming/free/functional-programming-python.csp&#34;&gt;Functional programming in Python&lt;/a&gt;&lt;/strong&gt;
+è un&amp;rsquo;ottima introduzione all&amp;rsquo;uso dei costrutti principali della programmazione
+funzionale. Python di per sé non è un linguaggio funzionale, il che a mio
+parere può aiutare lo sviluppatore &amp;ldquo;OO/strutturato&amp;rdquo; nella transizione. Sempre
+a mio parere, trovo che l&amp;rsquo;applicazione ragionata di queste tecniche rendano
+più leggibile, flessibile e &amp;ldquo;debuggabile&amp;rdquo; il prodotto finale.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A comprehension is an expression that uses the same keywords as loop and
+conditional blocks, but inverts their order to focus on the data rather than
+on the procedure. Simply changing the form of expression can often make a
+surprisingly large difference in how we reason about code and how easy it is
+to understand.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;guide:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Guide&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://matt.sh/howto-c&#34;&gt;How to C (as of 2016)&lt;/a&gt;&lt;/strong&gt;: ok, il K&amp;amp;R è la Bibbia,
+ma scrivere in C nel 2016 significa anche approfittare delle evoluzioni dello
+standard per ottenere codice più leggibile e &amp;ldquo;prevedibile&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Un tale Keith Thompson (da non confondere con Ken, uno dei papà di
+  UNIX) ha successivamente pubblicato
+  &lt;a href=&#34;https://github.com/Keith-S-Thompson/how-to-c-response&#34;&gt;un articolo di risposta&lt;/a&gt;
+  altrettanto interessante.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The first rule of C is don’t write C if you can avoid it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.alexkras.com/19-git-tips-for-everyday-use/&#34;&gt;19 Git tips for everyday use&lt;/a&gt;&lt;/strong&gt;:
+la complessità di &lt;code&gt;git&lt;/code&gt; può incutere timore, e non a torto. Qui ci sono alcuni
+consigli per sfruttarlo al meglio da linea di comando. Dello stesso autore
+anche un ottimo &lt;a href=&#34;http://www.alexkras.com/getting-started-with-git/&#34;&gt;cheat sheet&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I like to create a new branch for every new bug or feature. Among other
+benefits, it helps me to get a great clarity on how a series of commits may
+relate to a particular task. If you ever merged a pull request on github or
+a similar tool, you will in fact be able to nicely see the merged branch
+history in &lt;code&gt;git log --oneline --graph&lt;/code&gt; view.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;strumenti-online:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Strumenti online&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://leaverou.github.io/contrast-ratio/&#34;&gt;Contrast Ratio&lt;/a&gt;&lt;/strong&gt;: tool per
+verificare se il rapporto tra due colori (testo/sfondo) rispetta le linee
+guida sull&amp;rsquo;accessibilità &lt;a href=&#34;https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines#WCAG_2.0&#34;&gt;WCAG 2&lt;/a&gt;.
+Utile per il web design.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://repl.it/languages&#34;&gt;repl.it&lt;/a&gt;&lt;/strong&gt;: &lt;em&gt;Read-Eval-Print Loop&lt;/em&gt; è un sinonimo
+ampolloso per &amp;ldquo;shell interattiva&amp;rdquo;. Questo sito permette di testare piccoli
+programmi scrivendoli direttamente nella shell o nella casella di testo a
+fianco.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://dillinger.io/&#34;&gt;Dillinger&lt;/a&gt;&lt;/strong&gt;: un buon editor MarkDown con anteprima
+in tempo reale, consente anche di esportare il proprio documento in PDF o di
+interagire con diversi servizi cloud.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;dataset-collezioni:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Dataset/collezioni&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://stocksnap.io&#34;&gt;StockSnap&lt;/a&gt;&lt;/strong&gt;: archivio di immagini con licenza
+Creative Commons Zero (CC0). In altre parole potete usarle in qualunque
+progetto, anche commerciale, senza dover nemmeno citare la fonte.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.pcn.minambiente.it/GN/accesso-ai-servizi/servizi-di-visualizzazione-wms&#34;&gt;WMS Geoportale Nazionale&lt;/a&gt;&lt;/strong&gt;:
+il Ministero dell&amp;rsquo;Ambiente mette a disposizione numerosi dataset, che grazie
+a questi endpoint WMS possono essere consultati direttamente da applicazioni
+come Quantum GIS o ArcGIS.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;humour-cultura-generale:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Humour/Cultura generale&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://www.inwap.com/pdp10/hbaker/hakmem/hakmem.html&#34;&gt;HAKMEM&lt;/a&gt;&lt;/strong&gt; è uno
+storico &lt;em&gt;memo&lt;/em&gt; che circolava nel laboratorio AI del MIT. Scritto nel 1972,
+contiene dimostrazioni matematiche, algoritmi, trucchi e veri e propri &lt;em&gt;hack&lt;/em&gt;
+per effettuare operazioni nel minor numero di cicli possibili. Una
+versione PDF &lt;em&gt;searchable&lt;/em&gt;, basata sulle scansioni dell&amp;rsquo;originale, è
+disponibile &lt;a href=&#34;http://w3.pppl.gov/~hammett/work/2009/AIM-239-ocr.pdf&#34;&gt;qui&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Here is some little known data which may be of interest to computer hackers.
+The items and examples are so sketchy that to decipher them may require more
+sincerity and curiosity than a non-hacker can muster. Doubtless, little of
+this is new, but nowadays it&amp;rsquo;s hard to tell.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://web.mit.edu/~simsong/www/ugh.pdf&#34;&gt;The UNIX-Haters Handbook&lt;/a&gt;&lt;/strong&gt;: un
+libro un po&amp;rsquo; datato che raccoglie storie dell&amp;rsquo;orrore, curiosità e critiche
+tutte incentrate su questo storico sistema operativo. Molti passaggi sono
+tuttora validi, ma altrettanti sono reliquie di un tempo lontano, per cui lo
+considero un libro umoristico più che un manuale tecnico. Vale la pena leggere
+una &lt;a href=&#34;http://esr.ibiblio.org/?p=538&#34;&gt;risposta al libro&lt;/a&gt; da parte di Eric S.
+Raymond.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Users care deeply about their files and data. They use computers to
+generate, analyze, and store important information. They trust the computer
+to safeguard their valuable belongings. Without this trust, the relationship
+becomes strained. Unix abuses our trust by steadfastly refusing to protect
+its clients from dangerous commands. In particular, there is &lt;code&gt;rm&lt;/code&gt;, that most
+dangerous of commands, whose &lt;em&gt;raison d’etre&lt;/em&gt; is deleting files.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://codecrap.com/&#34;&gt;CodeCrap&lt;/a&gt;&lt;/strong&gt;: lo slogan, &amp;ldquo;&lt;em&gt;where developers go to laugh
+and cry&lt;/em&gt;&amp;rdquo;, dice tutto.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;pre&gt;&lt;code&gt;try {   
+    return true;
+} finally {
+    return false;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;credits:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;Ho scoperto molti articoli di questa lista grazie alle comunità di
+&lt;a href=&#34;https://news.ycombinator.com/&#34;&gt;Hacker News&lt;/a&gt; e di
+&lt;a href=&#34;http://reddit.com/r/programming&#34;&gt;r/programming&lt;/a&gt;: sono ottimi punti di
+riferimento per tutti gli addetti ai lavori.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

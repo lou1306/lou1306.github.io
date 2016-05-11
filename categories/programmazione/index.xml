@@ -10,7 +10,7 @@
     <atom:link href="http://lou1306.github.io/categories/programmazione/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Personalizzazione di APM:Copter e messaggi MAVLink</title>
+      <title>Personalizzare APM:Copter e inviare messaggi MAVLink</title>
       <link>http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</link>
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       

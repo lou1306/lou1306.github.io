@@ -29,3 +29,6 @@ li {
 li p:first-of-type {
     display: inline;
 }
+article.feature-image h1.title {
+    text-shadow: 2px 2px 8px rgb(2, 2, 2);
+}

@@ -1,0 +1,463 @@
+		<!DOCTYPE html>
+<html lang="it-it">
+<head>
+	<title>Personalizzazione di APM:Copter e messaggi MAVLink &middot; lou1306</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+	<meta name="author" content="lou1306">
+	<meta name="description" content="Appunti di informatica e altro">
+	<meta name="generator" content="Hugo 0.15" />
+
+	<!-- CSS -->
+	
+	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="http://lou1306.github.io/favicon.ico" type="image/x-icon">
+
+	<!-- RSS -->
+	
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+</head>
+		<body>
+			<header class="site-header">
+	<div class="branding">
+		<a href="http://lou1306.github.io/">
+		
+			<img class="avatar" src="http://lou1306.github.io/img/avatar.jpg" alt=""/>
+		
+		</a>
+		<h1 class="site-title">
+			<a href="http://lou1306.github.io/">lou1306</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+        <ul>
+	      	
+	        	<li>
+	        	<a href="/cv/">CV</a></li>
+	        	
+	      	
+	        	<li>•
+	        	<a href="/about/">L&#39;autore</a></li>
+	        	
+	      	
+            
+<li>
+	<a href="http://lou1306.github.io/index.xml" title="Seguimi">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/lou1306" title="Github">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+<li>
+	<a href="http://linkedin.com/in/lou1306" title="Linkedin">
+		<i class="fa fa-fw fa-linkedin"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/1306lou" title="Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+      	</ul>
+	</nav>
+</header>
+			<div class="content">
+				
+				<article class="feature-image">
+					<header style="background-image: url('http://lou1306.github.io/img/post/drone.jpg')">
+						<h1 class="title">Personalizzazione di APM:Copter e messaggi MAVLink</h1>
+					</header>
+				
+
+				<section class="post-content">
+					
+
+<p>Il firmware <a href="http://ardupilot.org/copter/index.html">APM:Copter</a> è una delle
+principali soluzioni open-source per il pilotaggio remoto di droni. Vedremo
+come è possibile eseguire codice personalizzato all&rsquo;interno del sistema (che
+nel mio caso è installato su una board PixHawk v2), ed inviare dati a terra
+mediante il protocollo MAVLink.</p>
+
+<h1 id="il-codice-di-apm-copter-e-i-submodules:e51c7bf6fa1b6d5892878683cf00765f">Il codice di APM:Copter e i submodules</h1>
+
+<p>Per prima cosa bisogna clonare il repository da GitHub
+(<a href="https://github.com/ArduPilot/ardupilot">link</a>).</p>
+
+<p>Purtroppo ho riscontrato dei problemi con i submodules del progetto, che
+facevano riferimento ai vecchi URL <code>git://</code> non più supportati da GitHub.
+Ho risolto in questo modo:</p>
+
+<ol>
+<li>Aprire <code>/ardupilot/.gitmodules</code> e Sostituire tutti i <code>git://</code> con <code>https://</code></li>
+<li>Fare lo stesso in <code>/arcupilot/.git/CONFIG</code></li>
+<li>Eseguire <code>git submodule update --init</code> nella directory <code>/ardupilot</code></li>
+<li>Eseguire i passi 1-3 per ciascun submodule che contenga un file <code>.gitmodules</code></li>
+</ol>
+
+<p>Per compilare/installare il firmware fate riferimento a
+<a href="http://ardupilot.org/dev/docs/building-the-code.html">questa sezione</a>
+della documentazione di ArduPilot.</p>
+
+<h1 id="gli-user-hooks:e51c7bf6fa1b6d5892878683cf00765f">Gli <em>user hooks</em></h1>
+
+<p>APM:Copter è un esempio di sistema <em>real-time</em>: contiene uno <em>scheduler</em> che
+pianifica l&rsquo;esecuzione delle diverse funzionalità del sistema in base alla
+frequenza desiderata dall&rsquo;utente (es. 10 Hz) e al tempo previsto per
+l&rsquo;esecuzione stessa. In questo modo si garantisce che il drone sia sempre
+in equilibrio e reattivo agli input dell&rsquo;utente.</p>
+
+<p>Gli sviluppatori hanno inoltre realizzato un sistema che ci consentirà di
+eseguire il nostro codice senza dover configurare a mano lo scheduler.</p>
+
+<ul>
+<li>Il file <code>UserVariables.h</code> serve a definire e inizializzare le variabili;</li>
+<li><code>UserCode.cpp</code> contiene una funzione <code>userhook_init()</code> che viene eseguita
+solo una volta all&rsquo;avvio del sistema, e cinque &ldquo;loops&rdquo; con frequenze
+decrescenti (100, 50, 25, 10, 1 Hz).</li>
+<li><code>APM_Config.h</code> è un insieme di direttive che permettono la personalizzazione
+del sistema. Andrà modificato per abilitare i loop appena menzionati.</li>
+</ul>
+
+<h1 id="impariamo-a-contare:e51c7bf6fa1b6d5892878683cf00765f">Impariamo a contare</h1>
+
+<p>Realizzeremo una variabile-contatore che incrementa il proprio valore di 1 con
+una frequenza nominale di 10 Hz.</p>
+
+<p>Lo so che quello del contatore è un esempio trito e ritrito, ma almeno è
+chiaro e ci permette di capire un sacco di cose sul sistema. Quindi in marcia.</p>
+
+<h2 id="uservariables-h:e51c7bf6fa1b6d5892878683cf00765f"><code>UserVariables.h</code></h2>
+
+<p>Inseriamo la dichiarazione</p>
+
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">unsigned</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">count</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+</pre></div>
+
+
+<p>all&rsquo;inizio del file.</p>
+
+<h2 id="usercode-cpp:e51c7bf6fa1b6d5892878683cf00765f"><code>UserCode.cpp</code></h2>
+
+<p>Modifichiamo <code>userhook_MediumLoop()</code> come segue:</p>
+
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e">#ifdef USERHOOK_MEDIUMLOOP</span>
+<span style="color: #66d9ef">void</span> <span style="color: #f8f8f2">Copter</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">userhook_MediumLoop()</span>
+<span style="color: #f8f8f2">{</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(ap.initialised)</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #f8f8f2">count</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(</span> <span style="color: #f8f8f2">count</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">1</span> <span style="color: #f8f8f2">)</span> <span style="color: #f92672">%</span> <span style="color: #ae81ff">32000</span><span style="color: #f8f8f2">;</span> <span style="color: #75715e">// Un valore a caso per riazzerare count</span>
+    <span style="color: #f8f8f2">}</span>
+<span style="color: #f8f8f2">}</span>
+<span style="color: #75715e">#endif</span>
+</pre></div>
+
+
+<h2 id="apm-config-h:e51c7bf6fa1b6d5892878683cf00765f"><code>APM_Config.h</code></h2>
+
+<p>Cerchiamo e decommentiamo queste direttive:</p>
+
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e">#define USERHOOK_VARIABLES &quot;UserVariables.h&quot;</span>
+<span style="color: #75715e">#define USERHOOK_MEDIUMLOOP userhook_MediumLoop();</span>
+</pre></div>
+
+
+<h1 id="invio-dei-dati-alla-stazione-di-terra:e51c7bf6fa1b6d5892878683cf00765f">Invio dei dati alla stazione di terra</h1>
+
+<p>Se siete impazienti come me potreste anche ricompilare e reinstallare il
+firmware, ma ovviamente non avrete modo di accedere al fantomatico <code>count</code>.</p>
+
+<p>Vediamo allora come fa il drone a comunicare con la GCS (<em>Ground control
+station</em>), che nel nostro caso è Mission Planner.</p>
+
+<h2 id="mavlink:e51c7bf6fa1b6d5892878683cf00765f">MAVLink</h2>
+
+<p>Il protocollo MAVLink (faccio riferimento alla versione 1.0) si basa su frame
+così composti:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Header</th>
+<th align="center">Payload</th>
+<th align="center">Checksum</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">6</td>
+<td align="center">0-255</td>
+<td align="center">2</td>
+</tr>
+</tbody>
+</table>
+
+<p>L&rsquo;header a sua volta è composto da 6 campi, ciascuno di un byte:</p>
+
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Significato</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Message header</td>
+<td>0xFE (costante)</td>
+</tr>
+
+<tr>
+<td>Message length</td>
+<td>Lunghezza del payload</td>
+</tr>
+
+<tr>
+<td>Sequence number</td>
+<td>Consente di rilevare se un pacchetto è andato perduto</td>
+</tr>
+
+<tr>
+<td>System ID</td>
+<td>ID del sistema (drone) che invia il messaggio: ad esempio per gestire &ldquo;stormi&rdquo; di droni.</td>
+</tr>
+
+<tr>
+<td>Component ID</td>
+<td>ID del sottosistema che invia il messaggio</td>
+</tr>
+
+<tr>
+<td>Message ID</td>
+<td>Tipologia del messaggio.</td>
+</tr>
+</tbody>
+</table>
+
+<p>Il Message ID è fondamentale per consentire al destinatario di decifrare il
+payload.</p>
+
+<h2 id="libraries-gcs-mavlink-gcs-h:e51c7bf6fa1b6d5892878683cf00765f"><code>\libraries\GCS_MAVLink\GCS.h</code></h2>
+
+<p>aggiungiamo un valore <code>MSG_CUSTOM_COUNT</code> al penultimo posto dell&rsquo;enum
+<code>ap_message</code>:</p>
+
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">enum</span> <span style="color: #f8f8f2">ap_message</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #f8f8f2">MSG_HEARTBEAT,</span>
+    <span style="color: #960050; background-color: #1e0010">…</span>
+    <span style="color: #f8f8f2">MSG_POSITION_TARGET_GLOBAL_INT,</span>
+    <span style="color: #f8f8f2">MSG_CUSTOM_COUNT,</span>
+    <span style="color: #f8f8f2">MSG_RETRY_DEFERRED</span> <span style="color: #75715e">// this must be last</span>
+<span style="color: #f8f8f2">};</span>
+</pre></div>
+
+
+<h2 id="copter-h:e51c7bf6fa1b6d5892878683cf00765f"><code>Copter.h</code></h2>
+
+<p>Aggiungiamo la definizione di questo metodo alla classe omonima:</p>
+
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">void</span> <span style="color: #a6e22e">send_count</span><span style="color: #f8f8f2">(mavlink_channel_t</span> <span style="color: #f8f8f2">chan);</span>
+</pre></div>
+
+
+<h2 id="gcs-mavlink-cpp:e51c7bf6fa1b6d5892878683cf00765f"><code>GCS_Mavlink.cpp</code></h2>
+
+<p>Questo file si occupa di gestire la comunicazione con la GCS e quindi qui si
+concentrerà la maggior parte del lavoro.</p>
+
+<p>Implementiamo la funzione appena definita:</p>
+
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">void</span> <span style="color: #f8f8f2">NOINLINE</span> <span style="color: #f8f8f2">Copter</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">send_count(mavlink_channel_t</span> <span style="color: #f8f8f2">chan)</span>
+<span style="color: #f8f8f2">{</span>
+    <span style="color: #f8f8f2">mavlink_msg_named_value_int_send(</span>
+        <span style="color: #f8f8f2">chan,</span>
+        <span style="color: #f8f8f2">AP_HAL</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">millis(),</span>    <span style="color: #75715e">// uptime del sistema in ms (usato come timestamp)</span>
+        <span style="color: #e6db74">&quot;count&quot;</span><span style="color: #f8f8f2">,</span>
+        <span style="color: #f8f8f2">count</span>
+    <span style="color: #f8f8f2">);</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+
+
+<p>Modifichiamo la funzione <code>GCS_MAVLINK::try_send_message()</code>
+aggiungendo una nuova opzione allo <code>switch(id)</code>:</p>
+
+<p><div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">switch</span><span style="color: #f8f8f2">(id)</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #960050; background-color: #1e0010">…</span>
+    <span style="color: #66d9ef">case</span> <span style="color: #f8f8f2">MSG_CUSTOM_COUNT:</span>
+        <span style="color: #f8f8f2">copter.send_count(chan);</span>
+        <span style="color: #66d9ef">break</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #960050; background-color: #1e0010">…</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+</p>
+
+<p>Infine facciamo sì che <code>data_stream_send()</code> invii il messaggio:</p>
+
+<p><div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">void</span> <span style="color: #f8f8f2">GCS_MAVLINK</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">data_stream_send(</span><span style="color: #66d9ef">void</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">{</span>
+    <span style="color: #960050; background-color: #1e0010">…</span>
+    <span style="color: #f8f8f2">send_message(MSG_CUSTOM_COUNT);</span>
+    <span style="color: #960050; background-color: #1e0010">…</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+</p>
+
+<p>È opportuno posizionare questa istruzione <em>dopo</em> l&rsquo;ultima occorrenza del
+controllo</p>
+
+<p><div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(copter.gcs_out_of_time)</span> <span style="color: #66d9ef">return</span><span style="color: #f8f8f2">;</span>
+</pre></div>
+</p>
+
+<p>In questo modo il messaggio sarà tra quelli a minor priorità possibile.</p>
+
+<h1 id="verifica-su-mission-planner:e51c7bf6fa1b6d5892878683cf00765f">Verifica su Mission Planner</h1>
+
+<p>Ora possiamo compilare il firmware e installarlo sulla nostra board.
+Lanciamo Mission Planner. Nella scheda Help deve essere selezionata la casella
+&ldquo;<strong>Mostra la CONSOLE (Riavvio)</strong>&rdquo;. In caso contrario occorre selezionarla e
+riavviare Mission Planner.</p>
+
+<p>A questo punto comparirà una console con alcuni messaggi relativi al
+funzionamento di Mission Planner. Se ora stabiliamo la connessione con il
+dispositivo vedremo anche qualche messaggio di diagnostica MAVLink:</p>
+
+<pre><code>bps 1663 loss 0 left 108 mem 23,40625
+bps 1613 loss 0 left 108 mem 22,7744140625
+bps 1613 loss 0 left 108 mem 22,1181640625
+bps 1757 loss 0 left 307 mem 23,0859375
+</code></pre>
+
+<p>Il tipo di messaggio che abbiamo usato (<code>NAMED_VALUE_INT</code>) non viene
+visualizzato normalmente: dovremo passare alla scheda <strong>Config/Tuning</strong>, sezione
+<strong>Planner</strong> e selezionare la casella &ldquo;<strong>messaggi debug Mavlink</strong>&rdquo; (in basso a
+sinistra).</p>
+
+<p>La console ora stamperà tutti i messaggi ricevuti, tra cui quelli
+personalizzati:</p>
+
+<pre><code>FE 12  0  0 6C  1  1     FC mavlink_named_value_int_t time_boot_ms 98727 value 857 name count  sig  Len 26
+FE 12  0  0 8A  1  1     FC mavlink_named_value_int_t time_boot_ms 99227 value 862 name count  sig  Len 26
+FE 12  0  0 A5  1  1     FC mavlink_named_value_int_t time_boot_ms 99727 value 867 name count  sig  Len 26
+FE 12  0  0 C2  1  1     FC mavlink_named_value_int_t time_boot_ms 100227 value 872 name count  sig  Len 26
+FE 12  0  0 DD  1  1     FC mavlink_named_value_int_t time_boot_ms 100727 value 877 name count  sig  Len 26
+</code></pre>
+
+<p>In altre parole, funziona!</p>
+
+<h1 id="conclusioni:e51c7bf6fa1b6d5892878683cf00765f">Conclusioni</h1>
+
+<p>Abbiamo esposto a grandi linee le modalità con cui è possibile eseguire codice
+personalizzato sulla PixHawk e rendere disponibili dei dati alla stazione di
+terra. Notiamo che:</p>
+
+<ul>
+<li>Se avessimo voluto trasferire un numero a virgola mobile, avremmo dovuto usare
+la funzione <code>mavlink_msg_named_value_float_send()</code> anziché
+<code>mavlink_msg_named_value_int_send()</code>.</li>
+<li>In genere l&rsquo;invio di semplici coppie chiave-valore andrebbe limitato alla fase
+di sviluppo/debug di una nuova funzionalità: per procedere nel modo più
+corretto, si dovrebbe invece definire un tipo di messaggio personalizzato.
+Così facendo si semplifica il contenuto del frame (solo valori) e si consente
+al destinatario di riconoscere facilmente i messaggi da elaborare.</li>
+</ul>
+
+<h1 id="riferimenti:e51c7bf6fa1b6d5892878683cf00765f">Riferimenti</h1>
+
+<p><a href="http://qgroundcontrol.org/mavlink/start">http://qgroundcontrol.org/mavlink/start</a><br />
+<a href="http://mavlink.org/messages/common">http://mavlink.org/messages/common</a></p>
+
+
+				<hr>
+
+				<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'lou1306';
+    var disqus_identifier = 'http:\/\/lou1306.github.io\/post\/2016-05-11-apmcopter-custom-fw\/';
+    var disqus_title = 'Personalizzazione di APM:Copter e messaggi MAVLink';
+    var disqus_url = 'http:\/\/lou1306.github.io\/post\/2016-05-11-apmcopter-custom-fw\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+				</section>
+
+			</article>
+			<footer class="site-footer">
+	<p class="text">&copy; 2016 - Released under the MIT license<br>Powered by <a href="//gohugo.io/">Hugo</a> with the <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a></p>
+</footer>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-23262839-3', 'auto');
+ga('send', 'pageview');
+</script>
+
+		</div>
+	</body>
+</html>

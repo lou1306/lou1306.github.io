@@ -25,3 +25,7 @@ li {
         padding: 8% 2%;
     }
 }
+
+li p:first-of-type {
+    display: inline;
+}

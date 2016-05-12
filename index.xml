@@ -34,7 +34,7 @@ Ho risolto in questo modo:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Aprire &lt;code&gt;/ardupilot/.gitmodules&lt;/code&gt; e Sostituire tutti i &lt;code&gt;git://&lt;/code&gt; con &lt;code&gt;https://&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fare lo stesso in &lt;code&gt;/arcupilot/.git/CONFIG&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fare lo stesso in &lt;code&gt;/ardupilot/.git/CONFIG&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Eseguire &lt;code&gt;git submodule update --init&lt;/code&gt; nella directory &lt;code&gt;/ardupilot&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Eseguire i passi 1-3 per ciascun submodule che contenga un file &lt;code&gt;.gitmodules&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;

@@ -32,3 +32,23 @@ li p:first-of-type {
 article.feature-image h1.title {
     text-shadow: 2px 2px 8px rgb(2, 2, 2);
 }
+
+.MathJax_Display, .MathJax span {
+  color: #222 !important;
+}
+
+
+.noscript {
+    margin: 1em auto;
+    padding: 1em;
+    border: 1px solid rgb(249, 135, 82);
+    border-radius: 0.3em;
+    font-style: italic;
+    font-size: 1.25em;
+}
+
+figure {
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+}

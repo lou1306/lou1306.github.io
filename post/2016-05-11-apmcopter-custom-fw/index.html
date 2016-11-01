@@ -33,9 +33,9 @@
 			<img class="avatar" src="http://lou1306.github.io/img/avatar.jpg" alt=""/>
 		
 		</a>
-		<h1 class="site-title">
-			<a href="http://lou1306.github.io/">lou1306</a>
-		</h1>
+		
+			<a class="site-title" href="http://lou1306.github.io/">lou1306</a>
+		
 	</div>
 	<nav class="site-nav">
         <ul>
@@ -122,6 +122,8 @@
 					</header>
 				
 
+				
+
 				<section class="post-content">
 					
 
@@ -131,7 +133,7 @@ come è possibile eseguire codice personalizzato all&rsquo;interno del sistema (
 nel mio caso è installato su una board PixHawk v2), ed inviare dati a terra
 mediante il protocollo MAVLink.</p>
 
-<h1 id="il-codice-di-apm-copter-e-i-submodules:e51c7bf6fa1b6d5892878683cf00765f">Il codice di APM:Copter e i submodules</h1>
+<h2 id="il-codice-di-apm-copter-e-i-submodules:e51c7bf6fa1b6d5892878683cf00765f">Il codice di APM:Copter e i submodules</h2>
 
 <p>Per prima cosa bisogna clonare il repository da GitHub
 (<a href="https://github.com/ArduPilot/ardupilot">link</a>).</p>
@@ -151,7 +153,7 @@ Ho risolto in questo modo:</p>
 <a href="http://ardupilot.org/dev/docs/building-the-code.html">questa sezione</a>
 della documentazione di ArduPilot.</p>
 
-<h1 id="gli-user-hooks:e51c7bf6fa1b6d5892878683cf00765f">Gli <em>user hooks</em></h1>
+<h2 id="gli-user-hooks:e51c7bf6fa1b6d5892878683cf00765f">Gli <em>user hooks</em></h2>
 
 <p>APM:Copter è un esempio di sistema <em>real-time</em>: contiene uno <em>scheduler</em> che
 pianifica l&rsquo;esecuzione delle diverse funzionalità del sistema in base alla
@@ -171,7 +173,7 @@ decrescenti (100, 50, 25, 10, 1 Hz).</li>
 del sistema. Andrà modificato per abilitare i loop appena menzionati.</li>
 </ul>
 
-<h1 id="impariamo-a-contare:e51c7bf6fa1b6d5892878683cf00765f">Impariamo a contare</h1>
+<h2 id="impariamo-a-contare:e51c7bf6fa1b6d5892878683cf00765f">Impariamo a contare</h2>
 
 <p>Realizzeremo una variabile-contatore che incrementa il proprio valore di 1 con
 una frequenza nominale di 10 Hz.</p>
@@ -179,17 +181,15 @@ una frequenza nominale di 10 Hz.</p>
 <p>Lo so che quello del contatore è un esempio trito e ritrito, ma almeno è
 chiaro e ci permette di capire un sacco di cose sul sistema. Quindi in marcia.</p>
 
-<h2 id="uservariables-h:e51c7bf6fa1b6d5892878683cf00765f"><code>UserVariables.h</code></h2>
+<h3 id="uservariables-h:e51c7bf6fa1b6d5892878683cf00765f"><code>UserVariables.h</code></h3>
 
-<p>Inseriamo la dichiarazione</p>
-
+<p>Inseriamo la dichiarazione<br />
 <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">unsigned</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">count</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
 </pre></div>
 
+all&rsquo;inizio del file.</p>
 
-<p>all&rsquo;inizio del file.</p>
-
-<h2 id="usercode-cpp:e51c7bf6fa1b6d5892878683cf00765f"><code>UserCode.cpp</code></h2>
+<h3 id="usercode-cpp:e51c7bf6fa1b6d5892878683cf00765f"><code>UserCode.cpp</code></h3>
 
 <p>Modifichiamo <code>userhook_MediumLoop()</code> come segue:</p>
 
@@ -205,7 +205,7 @@ chiaro e ci permette di capire un sacco di cose sul sistema. Quindi in marcia.</
 </pre></div>
 
 
-<h2 id="apm-config-h:e51c7bf6fa1b6d5892878683cf00765f"><code>APM_Config.h</code></h2>
+<h3 id="apm-config-h:e51c7bf6fa1b6d5892878683cf00765f"><code>APM_Config.h</code></h3>
 
 <p>Cerchiamo e decommentiamo queste direttive:</p>
 
@@ -214,7 +214,7 @@ chiaro e ci permette di capire un sacco di cose sul sistema. Quindi in marcia.</
 </pre></div>
 
 
-<h1 id="invio-dei-dati-alla-stazione-di-terra:e51c7bf6fa1b6d5892878683cf00765f">Invio dei dati alla stazione di terra</h1>
+<h2 id="invio-dei-dati-alla-stazione-di-terra:e51c7bf6fa1b6d5892878683cf00765f">Invio dei dati alla stazione di terra</h2>
 
 <p>Se siete impazienti come me potreste anche ricompilare e reinstallare il
 firmware, ma ovviamente non avrete modo di accedere al fantomatico <code>count</code>.</p>
@@ -222,7 +222,7 @@ firmware, ma ovviamente non avrete modo di accedere al fantomatico <code>count</
 <p>Vediamo allora come fa il drone a comunicare con la GCS (<em>Ground control
 station</em>), che nel nostro caso è Mission Planner.</p>
 
-<h2 id="mavlink:e51c7bf6fa1b6d5892878683cf00765f">MAVLink</h2>
+<h3 id="mavlink:e51c7bf6fa1b6d5892878683cf00765f">MAVLink</h3>
 
 <p>Il protocollo MAVLink (faccio riferimento alla versione 1.0) si basa su frame
 così composti:</p>
@@ -230,17 +230,17 @@ così composti:</p>
 <table>
 <thead>
 <tr>
-<th align="center">Header</th>
-<th align="center">Payload</th>
-<th align="center">Checksum</th>
+<th>Header</th>
+<th>Payload</th>
+<th>Checksum</th>
 </tr>
 </thead>
 
 <tbody>
 <tr>
-<td align="center">6</td>
-<td align="center">0-255</td>
-<td align="center">2</td>
+<td>6</td>
+<td>0-255</td>
+<td>2</td>
 </tr>
 </tbody>
 </table>
@@ -291,11 +291,10 @@ così composti:</p>
 <p>Il Message ID è fondamentale per consentire al destinatario di decifrare il
 payload.</p>
 
-<h2 id="libraries-gcs-mavlink-gcs-h:e51c7bf6fa1b6d5892878683cf00765f"><code>\libraries\GCS_MAVLink\GCS.h</code></h2>
+<h3 id="libraries-gcs-mavlink-gcs-h:e51c7bf6fa1b6d5892878683cf00765f"><code>\libraries\GCS_MAVLink\GCS.h</code></h3>
 
 <p>aggiungiamo un valore <code>MSG_CUSTOM_COUNT</code> al penultimo posto dell&rsquo;enum
-<code>ap_message</code>:</p>
-
+<code>ap_message</code>:
 <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">enum</span> <span style="color: #f8f8f2">ap_message</span> <span style="color: #f8f8f2">{</span>
     <span style="color: #f8f8f2">MSG_HEARTBEAT,</span>
     <span style="color: #960050; background-color: #1e0010">…</span>
@@ -304,23 +303,21 @@ payload.</p>
     <span style="color: #f8f8f2">MSG_RETRY_DEFERRED</span> <span style="color: #75715e">// this must be last</span>
 <span style="color: #f8f8f2">};</span>
 </pre></div>
+</p>
 
+<h3 id="copter-h:e51c7bf6fa1b6d5892878683cf00765f"><code>Copter.h</code></h3>
 
-<h2 id="copter-h:e51c7bf6fa1b6d5892878683cf00765f"><code>Copter.h</code></h2>
-
-<p>Aggiungiamo la definizione di questo metodo alla classe omonima:</p>
-
+<p>Aggiungiamo la definizione di questo metodo alla classe omonima:
 <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">void</span> <span style="color: #a6e22e">send_count</span><span style="color: #f8f8f2">(mavlink_channel_t</span> <span style="color: #f8f8f2">chan);</span>
 </pre></div>
+</p>
 
-
-<h2 id="gcs-mavlink-cpp:e51c7bf6fa1b6d5892878683cf00765f"><code>GCS_Mavlink.cpp</code></h2>
+<h3 id="gcs-mavlink-cpp:e51c7bf6fa1b6d5892878683cf00765f"><code>GCS_Mavlink.cpp</code></h3>
 
 <p>Questo file si occupa di gestire la comunicazione con la GCS e quindi qui si
 concentrerà la maggior parte del lavoro.</p>
 
-<p>Implementiamo la funzione appena definita:</p>
-
+<p>Implementiamo la funzione appena definita:
 <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">void</span> <span style="color: #f8f8f2">NOINLINE</span> <span style="color: #f8f8f2">Copter</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">send_count(mavlink_channel_t</span> <span style="color: #f8f8f2">chan)</span>
 <span style="color: #f8f8f2">{</span>
     <span style="color: #f8f8f2">mavlink_msg_named_value_int_send(</span>
@@ -331,12 +328,11 @@ concentrerà la maggior parte del lavoro.</p>
     <span style="color: #f8f8f2">);</span>
 <span style="color: #f8f8f2">}</span>
 </pre></div>
-
+</p>
 
 <p>Modifichiamo la funzione <code>GCS_MAVLINK::try_send_message()</code>
-aggiungendo una nuova opzione allo <code>switch(id)</code>:</p>
-
-<p><div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">switch</span><span style="color: #f8f8f2">(id)</span> <span style="color: #f8f8f2">{</span>
+aggiungendo una nuova opzione allo <code>switch(id)</code>:
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">switch</span><span style="color: #f8f8f2">(id)</span> <span style="color: #f8f8f2">{</span>
     <span style="color: #960050; background-color: #1e0010">…</span>
     <span style="color: #66d9ef">case</span> <span style="color: #f8f8f2">MSG_CUSTOM_COUNT:</span>
         <span style="color: #f8f8f2">copter.send_count(chan);</span>
@@ -346,9 +342,8 @@ aggiungendo una nuova opzione allo <code>switch(id)</code>:</p>
 </pre></div>
 </p>
 
-<p>Infine facciamo sì che <code>data_stream_send()</code> invii il messaggio:</p>
-
-<p><div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">void</span> <span style="color: #f8f8f2">GCS_MAVLINK</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">data_stream_send(</span><span style="color: #66d9ef">void</span><span style="color: #f8f8f2">)</span>
+<p>Infine facciamo sì che <code>data_stream_send()</code> invii il messaggio:
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">void</span> <span style="color: #f8f8f2">GCS_MAVLINK</span><span style="color: #f92672">::</span><span style="color: #f8f8f2">data_stream_send(</span><span style="color: #66d9ef">void</span><span style="color: #f8f8f2">)</span>
 <span style="color: #f8f8f2">{</span>
     <span style="color: #960050; background-color: #1e0010">…</span>
     <span style="color: #f8f8f2">send_message(MSG_CUSTOM_COUNT);</span>
@@ -358,15 +353,14 @@ aggiungendo una nuova opzione allo <code>switch(id)</code>:</p>
 </p>
 
 <p>È opportuno posizionare questa istruzione <em>dopo</em> l&rsquo;ultima occorrenza del
-controllo</p>
-
-<p><div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(copter.gcs_out_of_time)</span> <span style="color: #66d9ef">return</span><span style="color: #f8f8f2">;</span>
+controllo
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(copter.gcs_out_of_time)</span> <span style="color: #66d9ef">return</span><span style="color: #f8f8f2">;</span>
 </pre></div>
 </p>
 
 <p>In questo modo il messaggio sarà tra quelli a minor priorità possibile.</p>
 
-<h1 id="verifica-su-mission-planner:e51c7bf6fa1b6d5892878683cf00765f">Verifica su Mission Planner</h1>
+<h2 id="verifica-su-mission-planner:e51c7bf6fa1b6d5892878683cf00765f">Verifica su Mission Planner</h2>
 
 <p>Ora possiamo compilare il firmware e installarlo sulla nostra board.
 Lanciamo Mission Planner. Nella scheda Help deve essere selezionata la casella
@@ -400,7 +394,7 @@ FE 12  0  0 DD  1  1     FC mavlink_named_value_int_t time_boot_ms 100727 value 
 
 <p>In altre parole, funziona!</p>
 
-<h1 id="conclusioni:e51c7bf6fa1b6d5892878683cf00765f">Conclusioni</h1>
+<h2 id="conclusioni:e51c7bf6fa1b6d5892878683cf00765f">Conclusioni</h2>
 
 <p>Abbiamo esposto a grandi linee le modalità con cui è possibile eseguire codice
 personalizzato sulla PixHawk e rendere disponibili dei dati alla stazione di
@@ -417,7 +411,7 @@ Così facendo si semplifica il contenuto del frame (solo valori) e si consente
 al destinatario di riconoscere facilmente i messaggi da elaborare.</li>
 </ul>
 
-<h1 id="riferimenti:e51c7bf6fa1b6d5892878683cf00765f">Riferimenti</h1>
+<h2 id="riferimenti:e51c7bf6fa1b6d5892878683cf00765f">Riferimenti</h2>
 
 <p><a href="http://qgroundcontrol.org/mavlink/start">http://qgroundcontrol.org/mavlink/start</a><br />
 <a href="http://mavlink.org/messages/common">http://mavlink.org/messages/common</a></p>
@@ -457,6 +451,8 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-23262839-3', 'auto');
 ga('send', 'pageview');
 </script>
+
+
 
 		</div>
 	</body>

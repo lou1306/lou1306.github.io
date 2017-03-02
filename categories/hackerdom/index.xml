@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hackerdom on lou1306</title>
-    <link>http://lou1306.github.io/categories/hackerdom/</link>
+    <link>http://lou1306.github.io/categories/hackerdom/index.xml</link>
     <description>Recent content in Hackerdom on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
-    <lastBuildDate>Fri, 04 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <copyright>Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
     <atom:link href="http://lou1306.github.io/categories/hackerdom/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -21,6 +21,8 @@ L&amp;rsquo;ho tradotta tempo fa, basandomi sull&amp;rsquo;edizione contenuta ne
 di mantenerne la forma &amp;ldquo;poetica&amp;rdquo; e le particolarità nella punteggiatura.
 Per informazioni più approfondite rimando a
 &lt;a href=&#34;https://en.wikipedia.org/wiki/The_Story_of_Mel&#34;&gt;Wikipedia&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -273,8 +275,7 @@ il programma del blackjack barava ancora&lt;br /&gt;
 se attivavi il giusto interruttore,&lt;br /&gt;
 e penso che così devono andare le cose.&lt;br /&gt;
 Non mi sentivo a mio agio&lt;br /&gt;
-nell&amp;rsquo;hackerare il codice di un Vero Programmatore.&lt;/p&gt;
-</description>
+nell&amp;rsquo;hackerare il codice di un Vero Programmatore.&lt;/p&gt;</description>
     </item>
     
   </channel>

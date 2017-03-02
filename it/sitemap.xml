@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://lou1306.github.io/post/2016-11-01-risorseaquilani/</loc>
+    <lastmod>2016-11-01T12:29:46+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</loc>
+    <lastmod>2016-05-11T12:30:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/post/2016-04-29-risorse_programmatori/</loc>
+    <lastmod>2016-04-29T12:00:36+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/now/</loc>
+    <lastmod>2016-03-07T17:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/cv/</loc>
+    <lastmod>2016-03-04T11:40:29+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/libri/</loc>
+    <lastmod>2016-03-04T11:40:29+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/about/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/post/2016-03-04-real_programmer/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/post/2016-03-01-chocolatey/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/apmcopter/</loc>
+    <lastmod>2016-05-11T12:30:34+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/ardupilot/</loc>
+    <lastmod>2016-05-11T12:30:34+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/c&#43;&#43;/</loc>
+    <lastmod>2016-05-11T12:30:34+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/chocolatey/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/css3/</loc>
+    <lastmod>2016-04-29T12:00:36+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/cv/</loc>
+    <lastmod>2016-03-04T11:40:29+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/dev/</loc>
+    <lastmod>2016-04-29T12:00:36+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/droni/</loc>
+    <lastmod>2016-05-11T12:30:34+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/gis/</loc>
+    <lastmod>2016-11-01T12:29:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/categories/guide/</loc>
+    <lastmod>2016-04-29T12:00:36+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/hacker/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/categories/hackerdom/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/html5/</loc>
+    <lastmod>2016-04-29T12:00:36+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/categories/humour/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/jargon-file/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/laquila/</loc>
+    <lastmod>2016-11-01T12:29:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/libri/</loc>
+    <lastmod>2016-03-04T11:40:29+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/categories/liste/</loc>
+    <lastmod>2016-04-29T12:00:36+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/mavlink/</loc>
+    <lastmod>2016-05-11T12:30:34+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/mel/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/microsoft/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/nuget/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/pixhawk/</loc>
+    <lastmod>2016-05-11T12:30:34+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/post/</loc>
+    <lastmod>2016-11-01T12:29:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/categories/programmazione/</loc>
+    <lastmod>2016-05-11T12:30:34+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/python/</loc>
+    <lastmod>2016-04-29T12:00:36+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/categories/risorse/</loc>
+    <lastmod>2016-11-01T12:29:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/categories/sistemi-operativi/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/web/</loc>
+    <lastmod>2016-04-29T12:00:36+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/windows/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/</loc>
+    <lastmod>2016-11-01T12:29:46+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

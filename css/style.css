@@ -1,0 +1,64 @@
+/*.cv-header {
+    margin-top: 0
+}*/
+
+article.feature-image h1.title {
+    text-shadow: 2px 2px 8px rgb(2, 2, 2);
+}
+
+article.feature-image #disqus_thread {
+    padding: 0 20%;
+}
+
+.cv-row h3, .cv-row h4 {
+    margin-top: 0
+}
+
+.text-muted {
+    color: #aaa;
+}
+
+.feature-image.color > header{
+    background-color: #F98752
+}
+
+/* compatibilità  con skeleton.css */
+li {
+    margin-bottom: auto !important
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2em;
+    }
+    .feature-image header {
+        padding: 8% 2%;
+    }
+}
+
+li p:first-of-type {
+    display: inline;
+}
+article.feature-image h1.title {
+    text-shadow: 2px 2px 8px rgb(2, 2, 2);
+}
+
+.MathJax_Display, .MathJax span {
+  color: #222 !important;
+}
+
+
+.noscript {
+    margin: 1em auto;
+    padding: 1em;
+    border: 1px solid rgb(249, 135, 82);
+    border-radius: 0.3em;
+    font-style: italic;
+    font-size: 1.25em;
+}
+
+figure {
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+}

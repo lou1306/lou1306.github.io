@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cv on lou1306</title>
+    <link>http://lou1306.github.io/en/tags/cv/index.xml</link>
+    <description>Recent content in Cv on lou1306</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it-it</language>
+    <copyright>Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
+    <atom:link href="http://lou1306.github.io/en/tags/cv/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>http://lou1306.github.io/en/cv/</link>
+      <pubDate>Fri, 04 Mar 2016 11:40:29 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/en/cv/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

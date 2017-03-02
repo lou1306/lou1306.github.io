@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>C on lou1306</title>
-    <link>http://lou1306.github.io/tags/c/</link>
-    <description>Recent content in C on lou1306</description>
+    <title>C&#43;&#43; on lou1306</title>
+    <link>http://lou1306.github.io/tags/c&#43;&#43;/index.xml</link>
+    <description>Recent content in C&#43;&#43; on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
-    <lastBuildDate>Wed, 11 May 2016 12:30:34 +0200</lastBuildDate>
-    <atom:link href="http://lou1306.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
+    <atom:link href="http://lou1306.github.io/tags/c&#43;&#43;/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Personalizzare APM:Copter e inviare messaggi MAVLink</title>
@@ -15,15 +15,15 @@
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       
       <guid>http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</guid>
-      <description>
-
-&lt;p&gt;Il firmware &lt;a href=&#34;http://ardupilot.org/copter/index.html&#34;&gt;APM:Copter&lt;/a&gt; è una delle
+      <description>&lt;p&gt;Il firmware &lt;a href=&#34;http://ardupilot.org/copter/index.html&#34;&gt;APM:Copter&lt;/a&gt; è una delle
 principali soluzioni open-source per il pilotaggio remoto di droni. Vedremo
 come è possibile eseguire codice personalizzato all&amp;rsquo;interno del sistema (che
 nel mio caso è installato su una board PixHawk v2), ed inviare dati a terra
 mediante il protocollo MAVLink.&lt;/p&gt;
 
-&lt;h2 id=&#34;il-codice-di-apm-copter-e-i-submodules:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Il codice di APM:Copter e i submodules&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;il-codice-di-apm-copter-e-i-submodules&#34;&gt;Il codice di APM:Copter e i submodules&lt;/h2&gt;
 
 &lt;p&gt;Per prima cosa bisogna clonare il repository da GitHub
 (&lt;a href=&#34;https://github.com/ArduPilot/ardupilot&#34;&gt;link&lt;/a&gt;).&lt;/p&gt;
@@ -43,7 +43,7 @@ Ho risolto in questo modo:&lt;/p&gt;
 &lt;a href=&#34;http://ardupilot.org/dev/docs/building-the-code.html&#34;&gt;questa sezione&lt;/a&gt;
 della documentazione di ArduPilot.&lt;/p&gt;
 
-&lt;h2 id=&#34;gli-user-hooks:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Gli &lt;em&gt;user hooks&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;gli-user-hooks&#34;&gt;Gli &lt;em&gt;user hooks&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;APM:Copter è un esempio di sistema &lt;em&gt;real-time&lt;/em&gt;: contiene uno &lt;em&gt;scheduler&lt;/em&gt; che
 pianifica l&amp;rsquo;esecuzione delle diverse funzionalità del sistema in base alla
@@ -63,7 +63,7 @@ decrescenti (100, 50, 25, 10, 1 Hz).&lt;/li&gt;
 del sistema. Andrà modificato per abilitare i loop appena menzionati.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;impariamo-a-contare:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Impariamo a contare&lt;/h2&gt;
+&lt;h2 id=&#34;impariamo-a-contare&#34;&gt;Impariamo a contare&lt;/h2&gt;
 
 &lt;p&gt;Realizzeremo una variabile-contatore che incrementa il proprio valore di 1 con
 una frequenza nominale di 10 Hz.&lt;/p&gt;
@@ -71,7 +71,7 @@ una frequenza nominale di 10 Hz.&lt;/p&gt;
 &lt;p&gt;Lo so che quello del contatore è un esempio trito e ritrito, ma almeno è
 chiaro e ci permette di capire un sacco di cose sul sistema. Quindi in marcia.&lt;/p&gt;
 
-&lt;h3 id=&#34;uservariables-h:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;&lt;code&gt;UserVariables.h&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;uservariables-h&#34;&gt;&lt;code&gt;UserVariables.h&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;Inseriamo la dichiarazione&lt;br /&gt;
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;unsigned&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;count&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
@@ -79,7 +79,7 @@ chiaro e ci permette di capire un sacco di cose sul sistema. Quindi in marcia.&l
 
 all&amp;rsquo;inizio del file.&lt;/p&gt;
 
-&lt;h3 id=&#34;usercode-cpp:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;&lt;code&gt;UserCode.cpp&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;usercode-cpp&#34;&gt;&lt;code&gt;UserCode.cpp&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;Modifichiamo &lt;code&gt;userhook_MediumLoop()&lt;/code&gt; come segue:&lt;/p&gt;
 
@@ -95,7 +95,7 @@ all&amp;rsquo;inizio del file.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h3 id=&#34;apm-config-h:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;&lt;code&gt;APM_Config.h&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;apm-config-h&#34;&gt;&lt;code&gt;APM_Config.h&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;Cerchiamo e decommentiamo queste direttive:&lt;/p&gt;
 
@@ -104,7 +104,7 @@ all&amp;rsquo;inizio del file.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id=&#34;invio-dei-dati-alla-stazione-di-terra:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Invio dei dati alla stazione di terra&lt;/h2&gt;
+&lt;h2 id=&#34;invio-dei-dati-alla-stazione-di-terra&#34;&gt;Invio dei dati alla stazione di terra&lt;/h2&gt;
 
 &lt;p&gt;Se siete impazienti come me potreste anche ricompilare e reinstallare il
 firmware, ma ovviamente non avrete modo di accedere al fantomatico &lt;code&gt;count&lt;/code&gt;.&lt;/p&gt;
@@ -112,7 +112,7 @@ firmware, ma ovviamente non avrete modo di accedere al fantomatico &lt;code&gt;c
 &lt;p&gt;Vediamo allora come fa il drone a comunicare con la GCS (&lt;em&gt;Ground control
 station&lt;/em&gt;), che nel nostro caso è Mission Planner.&lt;/p&gt;
 
-&lt;h3 id=&#34;mavlink:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;MAVLink&lt;/h3&gt;
+&lt;h3 id=&#34;mavlink&#34;&gt;MAVLink&lt;/h3&gt;
 
 &lt;p&gt;Il protocollo MAVLink (faccio riferimento alla versione 1.0) si basa su frame
 così composti:&lt;/p&gt;
@@ -181,7 +181,7 @@ così composti:&lt;/p&gt;
 &lt;p&gt;Il Message ID è fondamentale per consentire al destinatario di decifrare il
 payload.&lt;/p&gt;
 
-&lt;h3 id=&#34;libraries-gcs-mavlink-gcs-h:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;&lt;code&gt;\libraries\GCS_MAVLink\GCS.h&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;libraries-gcs-mavlink-gcs-h&#34;&gt;&lt;code&gt;\libraries\GCS_MAVLink\GCS.h&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;aggiungiamo un valore &lt;code&gt;MSG_CUSTOM_COUNT&lt;/code&gt; al penultimo posto dell&amp;rsquo;enum
 &lt;code&gt;ap_message&lt;/code&gt;:
@@ -195,14 +195,14 @@ payload.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&#34;copter-h:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;&lt;code&gt;Copter.h&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;copter-h&#34;&gt;&lt;code&gt;Copter.h&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;Aggiungiamo la definizione di questo metodo alla classe omonima:
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;send_count&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(mavlink_channel_t&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;chan);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&#34;gcs-mavlink-cpp:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;&lt;code&gt;GCS_Mavlink.cpp&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;gcs-mavlink-cpp&#34;&gt;&lt;code&gt;GCS_Mavlink.cpp&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;Questo file si occupa di gestire la comunicazione con la GCS e quindi qui si
 concentrerà la maggior parte del lavoro.&lt;/p&gt;
@@ -250,7 +250,7 @@ controllo
 
 &lt;p&gt;In questo modo il messaggio sarà tra quelli a minor priorità possibile.&lt;/p&gt;
 
-&lt;h2 id=&#34;verifica-su-mission-planner:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Verifica su Mission Planner&lt;/h2&gt;
+&lt;h2 id=&#34;verifica-su-mission-planner&#34;&gt;Verifica su Mission Planner&lt;/h2&gt;
 
 &lt;p&gt;Ora possiamo compilare il firmware e installarlo sulla nostra board.
 Lanciamo Mission Planner. Nella scheda Help deve essere selezionata la casella
@@ -284,7 +284,7 @@ FE 12  0  0 DD  1  1     FC mavlink_named_value_int_t time_boot_ms 100727 value 
 
 &lt;p&gt;In altre parole, funziona!&lt;/p&gt;
 
-&lt;h2 id=&#34;conclusioni:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Conclusioni&lt;/h2&gt;
+&lt;h2 id=&#34;conclusioni&#34;&gt;Conclusioni&lt;/h2&gt;
 
 &lt;p&gt;Abbiamo esposto a grandi linee le modalità con cui è possibile eseguire codice
 personalizzato sulla PixHawk e rendere disponibili dei dati alla stazione di
@@ -301,11 +301,10 @@ Così facendo si semplifica il contenuto del frame (solo valori) e si consente
 al destinatario di riconoscere facilmente i messaggi da elaborare.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;riferimenti:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Riferimenti&lt;/h2&gt;
+&lt;h2 id=&#34;riferimenti&#34;&gt;Riferimenti&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://qgroundcontrol.org/mavlink/start&#34;&gt;http://qgroundcontrol.org/mavlink/start&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://mavlink.org/messages/common&#34;&gt;http://mavlink.org/messages/common&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;a href=&#34;http://mavlink.org/messages/common&#34;&gt;http://mavlink.org/messages/common&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

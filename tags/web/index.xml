@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web on lou1306</title>
-    <link>http://lou1306.github.io/tags/web/</link>
+    <link>http://lou1306.github.io/tags/web/index.xml</link>
     <description>Recent content in Web on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
-    <lastBuildDate>Fri, 29 Apr 2016 12:00:36 +0200</lastBuildDate>
+    <copyright>Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
     <atom:link href="http://lou1306.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,14 +15,14 @@
       <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
       
       <guid>http://lou1306.github.io/post/2016-04-29-risorse_programmatori/</guid>
-      <description>
-
-&lt;p&gt;Ecco una carrellata di materiale che mi è tornato utile negli ultimi tempi.
+      <description>&lt;p&gt;Ecco una carrellata di materiale che mi è tornato utile negli ultimi tempi.
 Anche se è principalmente a mio uso e consumo (non voglio dimenticare i titoli e
 alcune informazioni a contorno, nel caso i link dovessero scomparire in futuro),
 spero possa far comodo anche ad altri programmatori/smanettoni.&lt;/p&gt;
 
-&lt;h2 id=&#34;ebooks:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Ebooks&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;ebooks&#34;&gt;Ebooks&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://cacr.uwaterloo.ca/hac/&#34;&gt;The Handbook of Applied Cryptography&lt;/a&gt;&lt;/strong&gt;: le
@@ -67,7 +67,7 @@ to understand.&lt;/p&gt;
 &lt;/blockquote&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;guide:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Guide&lt;/h2&gt;
+&lt;h2 id=&#34;guide&#34;&gt;Guide&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://matt.sh/howto-c&#34;&gt;How to C (as of 2016)&lt;/a&gt;&lt;/strong&gt;: ok, il K&amp;amp;R è la Bibbia,
@@ -96,7 +96,7 @@ history in &lt;code&gt;git log --oneline --graph&lt;/code&gt; view.&lt;/p&gt;
 &lt;/blockquote&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;strumenti-online:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Strumenti online&lt;/h2&gt;
+&lt;h2 id=&#34;strumenti-online&#34;&gt;Strumenti online&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://leaverou.github.io/contrast-ratio/&#34;&gt;Contrast Ratio&lt;/a&gt;&lt;/strong&gt;: tool per
@@ -112,7 +112,7 @@ in tempo reale, consente anche di esportare il proprio documento in PDF o di
 interagire con diversi servizi cloud.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;dataset-collezioni:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Dataset/collezioni&lt;/h2&gt;
+&lt;h2 id=&#34;dataset-collezioni&#34;&gt;Dataset/collezioni&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://stocksnap.io&#34;&gt;StockSnap&lt;/a&gt;&lt;/strong&gt;: archivio di immagini con licenza
@@ -124,7 +124,7 @@ a questi endpoint WMS possono essere consultati direttamente da applicazioni
 come Quantum GIS o ArcGIS.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;humour-cultura-generale:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Humour/Cultura generale&lt;/h2&gt;
+&lt;h2 id=&#34;humour-cultura-generale&#34;&gt;Humour/Cultura generale&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.inwap.com/pdp10/hbaker/hakmem/hakmem.html&#34;&gt;HAKMEM&lt;/a&gt;&lt;/strong&gt; è uno
@@ -171,13 +171,12 @@ and cry&lt;/em&gt;&amp;rdquo;, dice tutto.&lt;/p&gt;
 &lt;/blockquote&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;credits:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Credits&lt;/h2&gt;
+&lt;h2 id=&#34;credits&#34;&gt;Credits&lt;/h2&gt;
 
 &lt;p&gt;Ho scoperto molti articoli di questa lista grazie alle comunità di
 &lt;a href=&#34;https://news.ycombinator.com/&#34;&gt;Hacker News&lt;/a&gt; e di
 &lt;a href=&#34;http://reddit.com/r/programming&#34;&gt;r/programming&lt;/a&gt;: sono ottimi punti di
-riferimento per tutti gli addetti ai lavori.&lt;/p&gt;
-</description>
+riferimento per tutti gli addetti ai lavori.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on lou1306</title>
-    <link>http://lou1306.github.io/post/</link>
-    <description>Recent content in Posts on lou1306</description>
+    <title>Post on lou1306</title>
+    <link>http://lou1306.github.io/post/index.xml</link>
+    <description>Recent content in Post on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
+    <copyright>Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
     <lastBuildDate>Tue, 01 Nov 2016 12:29:46 +0100</lastBuildDate>
     <atom:link href="http://lou1306.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,14 +16,14 @@
       <pubDate>Tue, 01 Nov 2016 12:29:46 +0100</pubDate>
       
       <guid>http://lou1306.github.io/post/2016-11-01-risorseaquilani/</guid>
-      <description>
-
-&lt;p&gt;Una piccola lista che spero possa tornare utile: cercherò di aggiornarla man
+      <description>&lt;p&gt;Una piccola lista che spero possa tornare utile: cercherò di aggiornarla man
 mano che trovo altro materiale.&lt;/p&gt;
 
-&lt;h1 id=&#34;servizi-ai-cittadini:63ddf95b7d3d8f6df64632f6bfe39dd1&#34;&gt;Servizi ai cittadini&lt;/h1&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;eurp:63ddf95b7d3d8f6df64632f6bfe39dd1&#34;&gt;eURP&lt;/h2&gt;
+&lt;h1 id=&#34;servizi-ai-cittadini&#34;&gt;Servizi ai cittadini&lt;/h1&gt;
+
+&lt;h2 id=&#34;eurp&#34;&gt;eURP&lt;/h2&gt;
 
 &lt;p&gt;URP sta per &amp;ldquo;Ufficio Relazioni con il Pubblico&amp;rdquo;: da qui potete effettuare
 segnalazioni di disservizi (indicandole su una mappa della città) o richieste di
@@ -36,7 +37,7 @@ Mah.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.comune.laquila.gov.it/eurp/&#34;&gt;eURP - Segnalazioni e richieste&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;anagrafe-on-line-sic:63ddf95b7d3d8f6df64632f6bfe39dd1&#34;&gt;Anagrafe on line (sic)&lt;/h2&gt;
+&lt;h2 id=&#34;anagrafe-on-line-sic&#34;&gt;Anagrafe on line (sic)&lt;/h2&gt;
 
 &lt;p&gt;Consente di stampare svariati certificati (residenza, stato di famiglia,
 nascita&amp;hellip;) senza recarsi agli uffici dell&amp;rsquo;anagrafe.
@@ -44,7 +45,7 @@ Yay!&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.comune.laquila.gov.it/pagina736_anagrafe-on-line.html&#34;&gt;Anagrafe on line&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;opac-catalogo-online-delle-biblioteche-aquilane:63ddf95b7d3d8f6df64632f6bfe39dd1&#34;&gt;OPAC: catalogo online delle biblioteche aquilane&lt;/h1&gt;
+&lt;h1 id=&#34;opac-catalogo-online-delle-biblioteche-aquilane&#34;&gt;OPAC: catalogo online delle biblioteche aquilane&lt;/h1&gt;
 
 &lt;p&gt;Questo catalogo online permette di verificare all&amp;rsquo;istante se le biblioteche
 aquilane contengono un libro che vi interessa.
@@ -53,9 +54,9 @@ e al conservatorio, l&amp;rsquo;Archivio di Stato e molte altre.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://opac.almavivaitalia.it/AQ1/&#34;&gt;OPAC SBN - Polo di L&amp;rsquo;Aquila&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;banche-dati-geografiche:63ddf95b7d3d8f6df64632f6bfe39dd1&#34;&gt;Banche dati geografiche&lt;/h1&gt;
+&lt;h1 id=&#34;banche-dati-geografiche&#34;&gt;Banche dati geografiche&lt;/h1&gt;
 
-&lt;h2 id=&#34;geoportale-regionale-e-nazionale:63ddf95b7d3d8f6df64632f6bfe39dd1&#34;&gt;Geoportale regionale (e nazionale)&lt;/h2&gt;
+&lt;h2 id=&#34;geoportale-regionale-e-nazionale&#34;&gt;Geoportale regionale (e nazionale)&lt;/h2&gt;
 
 &lt;p&gt;Il geoportale si occupa della diffusione di dati territoriali e cartografici
 inerenti alla regione.&lt;/p&gt;
@@ -72,7 +73,7 @@ inerenti alla regione.&lt;/p&gt;
 che a sua volta espone parecchi endpoint WMS: potete consultarli
 &lt;a href=&#34;http://www.pcn.minambiente.it/GN/accesso-ai-servizi/servizi-di-visualizzazione-wms&#34;&gt;qui&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;noi-l-aquila:63ddf95b7d3d8f6df64632f6bfe39dd1&#34;&gt;Noi, L&amp;rsquo;Aquila&lt;/h2&gt;
+&lt;h2 id=&#34;noi-l-aquila&#34;&gt;Noi, L&amp;rsquo;Aquila&lt;/h2&gt;
 
 &lt;p&gt;Il &lt;a href=&#34;http://www.noilaquila.com/&#34;&gt;progetto&lt;/a&gt;
 prevede due componenti: una raccolta di foto e testimonianze della
@@ -99,7 +100,7 @@ Con tanto di impalcature.&lt;/p&gt;
 da qualche parte.
 Insomma, come usano dire i giovani, &lt;em&gt;bene ma non benissimo&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;webgis-usra-e-sit:63ddf95b7d3d8f6df64632f6bfe39dd1&#34;&gt;WebGIS USRA e SIT&lt;/h2&gt;
+&lt;h2 id=&#34;webgis-usra-e-sit&#34;&gt;WebGIS USRA e SIT&lt;/h2&gt;
 
 &lt;p&gt;L&amp;rsquo;USRA (Ufficio Speciale per la Ricostruzione dell&amp;rsquo;Aquila) mette a disposizione
 un sistema geografico per monitorare lo stato della ricostruzione.&lt;/p&gt;
@@ -110,8 +111,7 @@ un sistema geografico per monitorare lo stato della ricostruzione.&lt;/p&gt;
 
 &lt;p&gt;Il SIT (Sistema Informativo Territoriale) del Comune fornisce altre informazioni
 tramite un
-&lt;a href=&#34;http://www.geoportal.it/laquila/&#34;&gt;proprio webGIS&lt;/a&gt;.&lt;/p&gt;
-</description>
+&lt;a href=&#34;http://www.geoportal.it/laquila/&#34;&gt;proprio webGIS&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -120,15 +120,15 @@ tramite un
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       
       <guid>http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</guid>
-      <description>
-
-&lt;p&gt;Il firmware &lt;a href=&#34;http://ardupilot.org/copter/index.html&#34;&gt;APM:Copter&lt;/a&gt; è una delle
+      <description>&lt;p&gt;Il firmware &lt;a href=&#34;http://ardupilot.org/copter/index.html&#34;&gt;APM:Copter&lt;/a&gt; è una delle
 principali soluzioni open-source per il pilotaggio remoto di droni. Vedremo
 come è possibile eseguire codice personalizzato all&amp;rsquo;interno del sistema (che
 nel mio caso è installato su una board PixHawk v2), ed inviare dati a terra
 mediante il protocollo MAVLink.&lt;/p&gt;
 
-&lt;h2 id=&#34;il-codice-di-apm-copter-e-i-submodules:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Il codice di APM:Copter e i submodules&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;il-codice-di-apm-copter-e-i-submodules&#34;&gt;Il codice di APM:Copter e i submodules&lt;/h2&gt;
 
 &lt;p&gt;Per prima cosa bisogna clonare il repository da GitHub
 (&lt;a href=&#34;https://github.com/ArduPilot/ardupilot&#34;&gt;link&lt;/a&gt;).&lt;/p&gt;
@@ -148,7 +148,7 @@ Ho risolto in questo modo:&lt;/p&gt;
 &lt;a href=&#34;http://ardupilot.org/dev/docs/building-the-code.html&#34;&gt;questa sezione&lt;/a&gt;
 della documentazione di ArduPilot.&lt;/p&gt;
 
-&lt;h2 id=&#34;gli-user-hooks:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Gli &lt;em&gt;user hooks&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;gli-user-hooks&#34;&gt;Gli &lt;em&gt;user hooks&lt;/em&gt;&lt;/h2&gt;
 
 &lt;p&gt;APM:Copter è un esempio di sistema &lt;em&gt;real-time&lt;/em&gt;: contiene uno &lt;em&gt;scheduler&lt;/em&gt; che
 pianifica l&amp;rsquo;esecuzione delle diverse funzionalità del sistema in base alla
@@ -168,7 +168,7 @@ decrescenti (100, 50, 25, 10, 1 Hz).&lt;/li&gt;
 del sistema. Andrà modificato per abilitare i loop appena menzionati.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;impariamo-a-contare:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Impariamo a contare&lt;/h2&gt;
+&lt;h2 id=&#34;impariamo-a-contare&#34;&gt;Impariamo a contare&lt;/h2&gt;
 
 &lt;p&gt;Realizzeremo una variabile-contatore che incrementa il proprio valore di 1 con
 una frequenza nominale di 10 Hz.&lt;/p&gt;
@@ -176,7 +176,7 @@ una frequenza nominale di 10 Hz.&lt;/p&gt;
 &lt;p&gt;Lo so che quello del contatore è un esempio trito e ritrito, ma almeno è
 chiaro e ci permette di capire un sacco di cose sul sistema. Quindi in marcia.&lt;/p&gt;
 
-&lt;h3 id=&#34;uservariables-h:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;&lt;code&gt;UserVariables.h&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;uservariables-h&#34;&gt;&lt;code&gt;UserVariables.h&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;Inseriamo la dichiarazione&lt;br /&gt;
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;unsigned&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;count&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
@@ -184,7 +184,7 @@ chiaro e ci permette di capire un sacco di cose sul sistema. Quindi in marcia.&l
 
 all&amp;rsquo;inizio del file.&lt;/p&gt;
 
-&lt;h3 id=&#34;usercode-cpp:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;&lt;code&gt;UserCode.cpp&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;usercode-cpp&#34;&gt;&lt;code&gt;UserCode.cpp&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;Modifichiamo &lt;code&gt;userhook_MediumLoop()&lt;/code&gt; come segue:&lt;/p&gt;
 
@@ -200,7 +200,7 @@ all&amp;rsquo;inizio del file.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h3 id=&#34;apm-config-h:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;&lt;code&gt;APM_Config.h&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;apm-config-h&#34;&gt;&lt;code&gt;APM_Config.h&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;Cerchiamo e decommentiamo queste direttive:&lt;/p&gt;
 
@@ -209,7 +209,7 @@ all&amp;rsquo;inizio del file.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h2 id=&#34;invio-dei-dati-alla-stazione-di-terra:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Invio dei dati alla stazione di terra&lt;/h2&gt;
+&lt;h2 id=&#34;invio-dei-dati-alla-stazione-di-terra&#34;&gt;Invio dei dati alla stazione di terra&lt;/h2&gt;
 
 &lt;p&gt;Se siete impazienti come me potreste anche ricompilare e reinstallare il
 firmware, ma ovviamente non avrete modo di accedere al fantomatico &lt;code&gt;count&lt;/code&gt;.&lt;/p&gt;
@@ -217,7 +217,7 @@ firmware, ma ovviamente non avrete modo di accedere al fantomatico &lt;code&gt;c
 &lt;p&gt;Vediamo allora come fa il drone a comunicare con la GCS (&lt;em&gt;Ground control
 station&lt;/em&gt;), che nel nostro caso è Mission Planner.&lt;/p&gt;
 
-&lt;h3 id=&#34;mavlink:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;MAVLink&lt;/h3&gt;
+&lt;h3 id=&#34;mavlink&#34;&gt;MAVLink&lt;/h3&gt;
 
 &lt;p&gt;Il protocollo MAVLink (faccio riferimento alla versione 1.0) si basa su frame
 così composti:&lt;/p&gt;
@@ -286,7 +286,7 @@ così composti:&lt;/p&gt;
 &lt;p&gt;Il Message ID è fondamentale per consentire al destinatario di decifrare il
 payload.&lt;/p&gt;
 
-&lt;h3 id=&#34;libraries-gcs-mavlink-gcs-h:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;&lt;code&gt;\libraries\GCS_MAVLink\GCS.h&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;libraries-gcs-mavlink-gcs-h&#34;&gt;&lt;code&gt;\libraries\GCS_MAVLink\GCS.h&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;aggiungiamo un valore &lt;code&gt;MSG_CUSTOM_COUNT&lt;/code&gt; al penultimo posto dell&amp;rsquo;enum
 &lt;code&gt;ap_message&lt;/code&gt;:
@@ -300,14 +300,14 @@ payload.&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&#34;copter-h:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;&lt;code&gt;Copter.h&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;copter-h&#34;&gt;&lt;code&gt;Copter.h&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;Aggiungiamo la definizione di questo metodo alla classe omonima:
 &lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;send_count&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(mavlink_channel_t&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;chan);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&#34;gcs-mavlink-cpp:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;&lt;code&gt;GCS_Mavlink.cpp&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;gcs-mavlink-cpp&#34;&gt;&lt;code&gt;GCS_Mavlink.cpp&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;Questo file si occupa di gestire la comunicazione con la GCS e quindi qui si
 concentrerà la maggior parte del lavoro.&lt;/p&gt;
@@ -355,7 +355,7 @@ controllo
 
 &lt;p&gt;In questo modo il messaggio sarà tra quelli a minor priorità possibile.&lt;/p&gt;
 
-&lt;h2 id=&#34;verifica-su-mission-planner:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Verifica su Mission Planner&lt;/h2&gt;
+&lt;h2 id=&#34;verifica-su-mission-planner&#34;&gt;Verifica su Mission Planner&lt;/h2&gt;
 
 &lt;p&gt;Ora possiamo compilare il firmware e installarlo sulla nostra board.
 Lanciamo Mission Planner. Nella scheda Help deve essere selezionata la casella
@@ -389,7 +389,7 @@ FE 12  0  0 DD  1  1     FC mavlink_named_value_int_t time_boot_ms 100727 value 
 
 &lt;p&gt;In altre parole, funziona!&lt;/p&gt;
 
-&lt;h2 id=&#34;conclusioni:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Conclusioni&lt;/h2&gt;
+&lt;h2 id=&#34;conclusioni&#34;&gt;Conclusioni&lt;/h2&gt;
 
 &lt;p&gt;Abbiamo esposto a grandi linee le modalità con cui è possibile eseguire codice
 personalizzato sulla PixHawk e rendere disponibili dei dati alla stazione di
@@ -406,11 +406,10 @@ Così facendo si semplifica il contenuto del frame (solo valori) e si consente
 al destinatario di riconoscere facilmente i messaggi da elaborare.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;riferimenti:e51c7bf6fa1b6d5892878683cf00765f&#34;&gt;Riferimenti&lt;/h2&gt;
+&lt;h2 id=&#34;riferimenti&#34;&gt;Riferimenti&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://qgroundcontrol.org/mavlink/start&#34;&gt;http://qgroundcontrol.org/mavlink/start&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://mavlink.org/messages/common&#34;&gt;http://mavlink.org/messages/common&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;a href=&#34;http://mavlink.org/messages/common&#34;&gt;http://mavlink.org/messages/common&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -419,14 +418,14 @@ al destinatario di riconoscere facilmente i messaggi da elaborare.&lt;/li&gt;
       <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
       
       <guid>http://lou1306.github.io/post/2016-04-29-risorse_programmatori/</guid>
-      <description>
-
-&lt;p&gt;Ecco una carrellata di materiale che mi è tornato utile negli ultimi tempi.
+      <description>&lt;p&gt;Ecco una carrellata di materiale che mi è tornato utile negli ultimi tempi.
 Anche se è principalmente a mio uso e consumo (non voglio dimenticare i titoli e
 alcune informazioni a contorno, nel caso i link dovessero scomparire in futuro),
 spero possa far comodo anche ad altri programmatori/smanettoni.&lt;/p&gt;
 
-&lt;h2 id=&#34;ebooks:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Ebooks&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;ebooks&#34;&gt;Ebooks&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://cacr.uwaterloo.ca/hac/&#34;&gt;The Handbook of Applied Cryptography&lt;/a&gt;&lt;/strong&gt;: le
@@ -471,7 +470,7 @@ to understand.&lt;/p&gt;
 &lt;/blockquote&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;guide:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Guide&lt;/h2&gt;
+&lt;h2 id=&#34;guide&#34;&gt;Guide&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://matt.sh/howto-c&#34;&gt;How to C (as of 2016)&lt;/a&gt;&lt;/strong&gt;: ok, il K&amp;amp;R è la Bibbia,
@@ -500,7 +499,7 @@ history in &lt;code&gt;git log --oneline --graph&lt;/code&gt; view.&lt;/p&gt;
 &lt;/blockquote&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;strumenti-online:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Strumenti online&lt;/h2&gt;
+&lt;h2 id=&#34;strumenti-online&#34;&gt;Strumenti online&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href=&#34;http://leaverou.github.io/contrast-ratio/&#34;&gt;Contrast Ratio&lt;/a&gt;&lt;/strong&gt;: tool per
@@ -516,7 +515,7 @@ in tempo reale, consente anche di esportare il proprio documento in PDF o di
 interagire con diversi servizi cloud.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;dataset-collezioni:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Dataset/collezioni&lt;/h2&gt;
+&lt;h2 id=&#34;dataset-collezioni&#34;&gt;Dataset/collezioni&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://stocksnap.io&#34;&gt;StockSnap&lt;/a&gt;&lt;/strong&gt;: archivio di immagini con licenza
@@ -528,7 +527,7 @@ a questi endpoint WMS possono essere consultati direttamente da applicazioni
 come Quantum GIS o ArcGIS.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;humour-cultura-generale:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Humour/Cultura generale&lt;/h2&gt;
+&lt;h2 id=&#34;humour-cultura-generale&#34;&gt;Humour/Cultura generale&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.inwap.com/pdp10/hbaker/hakmem/hakmem.html&#34;&gt;HAKMEM&lt;/a&gt;&lt;/strong&gt; è uno
@@ -575,13 +574,12 @@ and cry&lt;/em&gt;&amp;rdquo;, dice tutto.&lt;/p&gt;
 &lt;/blockquote&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;credits:0e71993fe6fa650dd0d548626271dd3e&#34;&gt;Credits&lt;/h2&gt;
+&lt;h2 id=&#34;credits&#34;&gt;Credits&lt;/h2&gt;
 
 &lt;p&gt;Ho scoperto molti articoli di questa lista grazie alle comunità di
 &lt;a href=&#34;https://news.ycombinator.com/&#34;&gt;Hacker News&lt;/a&gt; e di
 &lt;a href=&#34;http://reddit.com/r/programming&#34;&gt;r/programming&lt;/a&gt;: sono ottimi punti di
-riferimento per tutti gli addetti ai lavori.&lt;/p&gt;
-</description>
+riferimento per tutti gli addetti ai lavori.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -596,6 +594,8 @@ L&amp;rsquo;ho tradotta tempo fa, basandomi sull&amp;rsquo;edizione contenuta ne
 di mantenerne la forma &amp;ldquo;poetica&amp;rdquo; e le particolarità nella punteggiatura.
 Per informazioni più approfondite rimando a
 &lt;a href=&#34;https://en.wikipedia.org/wiki/The_Story_of_Mel&#34;&gt;Wikipedia&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -848,8 +848,7 @@ il programma del blackjack barava ancora&lt;br /&gt;
 se attivavi il giusto interruttore,&lt;br /&gt;
 e penso che così devono andare le cose.&lt;br /&gt;
 Non mi sentivo a mio agio&lt;br /&gt;
-nell&amp;rsquo;hackerare il codice di un Vero Programmatore.&lt;/p&gt;
-</description>
+nell&amp;rsquo;hackerare il codice di un Vero Programmatore.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -858,14 +857,13 @@ nell&amp;rsquo;hackerare il codice di un Vero Programmatore.&lt;/p&gt;
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>http://lou1306.github.io/post/2016-03-01-chocolatey/</guid>
-      <description>
-
-&lt;p&gt;Dai package managers Linux agli Store dei sistemi mobile, quella dei &lt;em&gt;software
+      <description>&lt;p&gt;Dai package managers Linux agli Store dei sistemi mobile, quella dei &lt;em&gt;software
 repositories&lt;/em&gt; è una storia di successo che però fatica a prendere piede su
 Windows.
-Ma qualcosa sta cambiando.&lt;/p&gt;
+Ma qualcosa sta cambiando.
+&lt;/p&gt;
 
-&lt;h2 id=&#34;un-po-di-storia:fbcec80871c2d367fc044854ea9a785b&#34;&gt;Un po&amp;rsquo; di storia&lt;/h2&gt;
+&lt;h2 id=&#34;un-po-di-storia&#34;&gt;Un po&amp;rsquo; di storia&lt;/h2&gt;
 
 &lt;p&gt;L&amp;rsquo;installazione di software certificato da uno o più &lt;em&gt;repository&lt;/em&gt; è da anni un
 caposaldo del mondo Linux.
@@ -886,7 +884,7 @@ aspetta di avere un &amp;ldquo;negozio di applicazioni&amp;rdquo; dal quale repe
 software che desidera, e il caricamento di eseguibili da altre fonti
 (&lt;em&gt;sideloading&lt;/em&gt;) è molto meno pratico (se non illegale).&lt;/p&gt;
 
-&lt;h2 id=&#34;e-su-windows:fbcec80871c2d367fc044854ea9a785b&#34;&gt;E su Windows?&lt;/h2&gt;
+&lt;h2 id=&#34;e-su-windows&#34;&gt;E su Windows?&lt;/h2&gt;
 
 &lt;p&gt;La distribuzione di software su Windows, al contrario, è sempre stato un
 processo decentralizzato: la responsabilità di reperire ed eseguire
@@ -898,7 +896,7 @@ Ma al giorno d&amp;rsquo;oggi, oltre a qualche rischio per la sicurezza, è sopr
 fonte di infinite seccature (se la frase &amp;ldquo;Un nuovo aggiornamento di Java è
 disponibile&amp;rdquo; non vi fa sudare freddo, complimenti: avete più fegato di me).&lt;/p&gt;
 
-&lt;h2 id=&#34;chocolatey:fbcec80871c2d367fc044854ea9a785b&#34;&gt;Chocolatey&lt;/h2&gt;
+&lt;h2 id=&#34;chocolatey&#34;&gt;Chocolatey&lt;/h2&gt;
 
 &lt;p&gt;Qualcosa sta cambiando, dicevo.
 Appoggiandosi a OneGet e a PowerShell, il team di
@@ -913,7 +911,7 @@ il download e l&amp;rsquo;esecuzione dell&amp;rsquo;installer.&lt;/p&gt;
 verrà inoltre resa obbligatoria la verifica del &lt;em&gt;checksum&lt;/em&gt; dei file scaricati,
 come ulteriore misura di sicurezza.&lt;/p&gt;
 
-&lt;h2 id=&#34;comandi-utili:fbcec80871c2d367fc044854ea9a785b&#34;&gt;Comandi utili&lt;/h2&gt;
+&lt;h2 id=&#34;comandi-utili&#34;&gt;Comandi utili&lt;/h2&gt;
 
 &lt;p&gt;Le istruzioni per installare choco sono sul sito ;)
 Qui riporto solo i comandi più importanti, la cui sintassi è molto simile a
@@ -965,7 +963,7 @@ quella di altri gestori di pacchetti.&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&#34;bonus-packagemanagement:fbcec80871c2d367fc044854ea9a785b&#34;&gt;Bonus: PackageManagement&lt;/h2&gt;
+&lt;h2 id=&#34;bonus-packagemanagement&#34;&gt;Bonus: PackageManagement&lt;/h2&gt;
 
 &lt;p&gt;Gli sviluppatori Microsoft sono andati &lt;em&gt;oltre&lt;/em&gt; e hanno ideato un &amp;ldquo;package
 manager manager&amp;rdquo;, cioè un&amp;rsquo;infrastruttura unificata per l&amp;rsquo;installazione di
@@ -1013,8 +1011,7 @@ PowerShellGallery: ad esempio manca un comando per aggiornare i pacchetti,
 mentre esistono comandi analoghi per gli script scaricati dal server Microsoft.
 Anche il &lt;a href=&#34;https://github.com/OneGet/oneget&#34;&gt;repository GitHub &lt;/a&gt; sembra poco
 frequentato negli ultimi mesi: speriamo che non sia un brutto segno, perché
-l&amp;rsquo;idea è davvero interessante!&lt;/p&gt;
-</description>
+l&amp;rsquo;idea è davvero interessante!&lt;/p&gt;</description>
     </item>
     
   </channel>

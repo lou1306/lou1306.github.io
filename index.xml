@@ -7,8 +7,74 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
     <copyright>Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
-    <lastBuildDate>Tue, 01 Nov 2016 12:29:46 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 02 Mar 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://lou1306.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>L&#39;autore</title>
+      <link>http://lou1306.github.io/about/</link>
+      <pubDate>Thu, 02 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/about/</guid>
+      <description>
+
+&lt;p&gt;&lt;center&gt; &lt;a href=&#34;http://lou1306.github.io/now&#34;&gt;Cosa sto facendo adesso&lt;/a&gt; • &lt;a href=&#34;http://lou1306.github.io/cv&#34;&gt;Curriculum&lt;/a&gt; &lt;/center&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Sono uno studente nel corso di PhD in
+&lt;a href=&#34;http://cs.gssi.infn.it/&#34;&gt;Computer Science&lt;/a&gt;
+presso il Gran Sasso Science Institute (GSSI).&lt;/p&gt;
+
+&lt;p&gt;Ho conseguito la laurea magistrale in Ingegneria Informatica e Automatica presso
+l&amp;rsquo;&lt;a href=&#34;http://www.univaq.it&#34;&gt;Università degli studi dell&amp;rsquo;Aquila&lt;/a&gt;.
+Non sono nato nel 1306, a dispetto dello username.&lt;/p&gt;
+
+&lt;h3 id=&#34;interessi&#34;&gt;Interessi&lt;/h3&gt;
+
+&lt;p&gt;Adoro &lt;a href=&#34;http://lou1306.github.io/libri&#34;&gt;leggere&lt;/a&gt;, guardare film e ascoltare musica.&lt;/p&gt;
+
+&lt;p&gt;Sono un chitarrista in erba.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.fse.it&#34;&gt;Once a Scout, Always a Scout&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;- Luca&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adesso</title>
+      <link>http://lou1306.github.io/now/</link>
+      <pubDate>Wed, 01 Mar 2017 17:16:40 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/now/</guid>
+      <description>&lt;p&gt;Sto seguendo diversi corsi al GSSI.
+C&amp;rsquo;è parecchio lavoro da fare 😅&lt;/p&gt;
+
+&lt;p&gt;Ho provato a dare un&amp;rsquo;occhiata ai sorgenti di CPython, che è recentemente
+&lt;a href=&#34;https://github.com/python/cpython&#34;&gt;sbarcato su GitHub&lt;/a&gt;.
+Sarebbe bello fare una pull request!&lt;/p&gt;
+
+&lt;!-- Ho appena conseguito la laurea magistrale in Ingegneria Informatica e
+Automatica.
+La mia tesi
+([pdf](https://1drv.ms/b/s!Ajst2E0t5tcpjsZcMAoCp4ik3dziJA),
+[presentazione](https://1drv.ms/b/s!Ajst2E0t5tcpke0d5maDFldLmSPgwA)) riguarda
+la navigazione autonoma di droni.
+
+Collaboro attivamente con la Pattuglia Nazionale Informatica dell&#39;Associazione
+Italiana Guide e Scouts d&#39;Europa Cattolici.
+L&#39;ultimo progetto è una web app realizzata in ASP.NET MVC e destinata alla
+raccolta di iscrizioni per un evento associativo.
+
+Sto allestendo un blog personale :)
+ --&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Questa pagina è stata ispirata da (&lt;a href=&#34;http://nownownow.com/&#34;&gt;http://nownownow.com/&lt;/a&gt;).&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Risorse online per gli aquilani (di nascita o di adozione)</title>
@@ -583,40 +649,6 @@ riferimento per tutti gli addetti ai lavori.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Adesso</title>
-      <link>http://lou1306.github.io/now/</link>
-      <pubDate>Mon, 07 Mar 2016 17:16:40 +0100</pubDate>
-      
-      <guid>http://lou1306.github.io/now/</guid>
-      <description>&lt;p&gt;Sto seguendo diversi corsi al GSSI.
-C&amp;rsquo;è parecchio lavoro da fare 😅&lt;/p&gt;
-
-&lt;p&gt;Ho provato a dare un&amp;rsquo;occhiata ai sorgenti di CPython, che è recentemente
-&lt;a href=&#34;https://github.com/python/cpython&#34;&gt;sbarcato su GitHub&lt;/a&gt;.
-Sarebbe bello fare una pull request!&lt;/p&gt;
-
-&lt;!-- Ho appena conseguito la laurea magistrale in Ingegneria Informatica e
-Automatica.
-La mia tesi
-([pdf](https://1drv.ms/b/s!Ajst2E0t5tcpjsZcMAoCp4ik3dziJA),
-[presentazione](https://1drv.ms/b/s!Ajst2E0t5tcpke0d5maDFldLmSPgwA)) riguarda
-la navigazione autonoma di droni.
-
-Collaboro attivamente con la Pattuglia Nazionale Informatica dell&#39;Associazione
-Italiana Guide e Scouts d&#39;Europa Cattolici.
-L&#39;ultimo progetto è una web app realizzata in ASP.NET MVC e destinata alla
-raccolta di iscrizioni per un evento associativo.
-
-Sto allestendo un blog personale :)
- --&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Questa pagina è stata ispirata da (&lt;a href=&#34;http://nownownow.com/&#34;&gt;http://nownownow.com/&lt;/a&gt;).&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Curriculum Vitae</title>
       <link>http://lou1306.github.io/cv/</link>
       <pubDate>Fri, 04 Mar 2016 11:40:29 +0100</pubDate>
@@ -632,37 +664,6 @@ Sto allestendo un blog personale :)
       
       <guid>http://lou1306.github.io/libri/</guid>
       <description>&lt;p&gt;Qui tengo traccia dei libri che leggo :)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>L&#39;autore</title>
-      <link>http://lou1306.github.io/about/</link>
-      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://lou1306.github.io/about/</guid>
-      <description>
-
-&lt;p&gt;&lt;center&gt; &lt;a href=&#34;http://lou1306.github.io/now&#34;&gt;Cosa sto facendo adesso&lt;/a&gt; • &lt;a href=&#34;http://lou1306.github.io/cv&#34;&gt;Curriculum&lt;/a&gt; &lt;/center&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Sono un dottorando nel corso di &lt;a href=&#34;http://cs.gssi.infn.it/&#34;&gt;Computer Science&lt;/a&gt;
-presso il Gran Sasso Science Institute (GSSI).&lt;/p&gt;
-
-&lt;p&gt;Ho conseguito la laurea magistrale in Ingegneria Informatica e Automatica presso
-l&amp;rsquo;&lt;a href=&#34;http://www.univaq.it&#34;&gt;Università degli studi dell&amp;rsquo;Aquila&lt;/a&gt;.
-Non sono nato nel 1306, a dispetto dello username.&lt;/p&gt;
-
-&lt;h3 id=&#34;interessi&#34;&gt;Interessi&lt;/h3&gt;
-
-&lt;p&gt;Adoro &lt;a href=&#34;http://lou1306.github.io/libri&#34;&gt;leggere&lt;/a&gt;, guardare film e ascoltare musica.&lt;/p&gt;
-
-&lt;p&gt;Sono un chitarrista in erba.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.fse.it&#34;&gt;Once a Scout, Always a Scout&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;- Luca&lt;/p&gt;
 </description>
     </item>
     

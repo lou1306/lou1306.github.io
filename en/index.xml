@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
     <copyright>Released under the MIT license&lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
-    <lastBuildDate>Mon, 07 Mar 2016 17:16:40 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 02 Mar 2017 11:40:29 +0100</lastBuildDate>
     <atom:link href="http://lou1306.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>http://lou1306.github.io/en/cv/</link>
+      <pubDate>Thu, 02 Mar 2017 11:40:29 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/en/cv/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>What I&#39;m doing now</title>
       <link>http://lou1306.github.io/en/now/</link>
-      <pubDate>Mon, 07 Mar 2016 17:16:40 +0100</pubDate>
+      <pubDate>Wed, 01 Mar 2017 17:16:40 +0100</pubDate>
       
       <guid>http://lou1306.github.io/en/now/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m following a lot of classes at GSSI.
@@ -22,8 +31,6 @@ Plenty of work 😅&lt;/p&gt;
 &lt;p&gt;Trying to have a look at the source code for CPython, since it has recently been
 &lt;a href=&#34;https://github.com/python/cpython&#34;&gt;migrated on GitHub&lt;/a&gt;.
 Looking forward to some pull requests!&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;(Updated March 1, 2017)&lt;/em&gt;&lt;/p&gt;
 
 &lt;!-- Ho appena conseguito la laurea magistrale in Ingegneria Informatica e
 Automatica.
@@ -44,15 +51,6 @@ Sto allestendo un blog personale :)
 
 &lt;p&gt;This page was inspired by (&lt;a href=&#34;http://nownownow.com/&#34;&gt;http://nownownow.com/&lt;/a&gt;).&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Curriculum Vitae</title>
-      <link>http://lou1306.github.io/en/cv/</link>
-      <pubDate>Fri, 04 Mar 2016 11:40:29 +0100</pubDate>
-      
-      <guid>http://lou1306.github.io/en/cv/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -78,7 +76,7 @@ at Gran Sasso Science Institute (GSSI).&lt;/p&gt;
 
 &lt;h3 id=&#34;hobbies&#34;&gt;Hobbies&lt;/h3&gt;
 
-&lt;p&gt;I enjoy &lt;a href=&#34;http://lou1306.github.io/libri&#34;&gt;reading&lt;/a&gt;, watching movies and listening to music.&lt;/p&gt;
+&lt;p&gt;I enjoy reading, watching movies and listening to music.&lt;/p&gt;
 
 &lt;p&gt;I somehow manage to play guitar. Sometimes.&lt;/p&gt;
 

@@ -6,6 +6,14 @@ article.feature-image h1.title {
     text-shadow: 2px 2px 8px rgb(2, 2, 2);
 }
 
+.post-content header {
+    padding-top: 0;
+}
+
+.post-content .meta {
+    color: #383838 !important;
+}
+
 article.feature-image #disqus_thread {
     padding: 0 20%;
 }

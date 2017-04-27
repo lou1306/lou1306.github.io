@@ -17,6 +17,11 @@
   </url>
   
   <url>
+    <loc>http://lou1306.github.io/en/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://lou1306.github.io/en/tags/cv/</loc>
     <lastmod>2017-03-02T11:40:29+01:00</lastmod>
     <priority>0</priority>
@@ -24,6 +29,7 @@
   
   <url>
     <loc>http://lou1306.github.io/en/tags/</loc>
+    <lastmod>2017-03-02T11:40:29+01:00</lastmod>
     <priority>0</priority>
   </url>
   

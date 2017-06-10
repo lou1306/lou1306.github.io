@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>http://lou1306.github.io/about/</loc>
     <lastmod>2017-03-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/about/"
+                />
   </url>
   
   <url>
     <loc>http://lou1306.github.io/now/</loc>
     <lastmod>2017-03-01T17:16:40+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/now/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/now/"
+                />
   </url>
   
   <url>
@@ -29,6 +50,16 @@
   <url>
     <loc>http://lou1306.github.io/cv/</loc>
     <lastmod>2016-03-04T11:40:29+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/cv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/cv/"
+                />
   </url>
   
   <url>
@@ -67,6 +98,16 @@
   <url>
     <loc>http://lou1306.github.io/categories/</loc>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/categories/"
+                />
   </url>
   
   <url>
@@ -85,6 +126,16 @@
     <loc>http://lou1306.github.io/tags/cv/</loc>
     <lastmod>2016-03-04T11:40:29+01:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/tags/cv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/tags/cv/"
+                />
   </url>
   
   <url>
@@ -223,6 +274,16 @@
     <loc>http://lou1306.github.io/tags/</loc>
     <lastmod>2016-05-11T12:30:34+02:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/tags/"
+                />
   </url>
   
   <url>
@@ -241,6 +302,16 @@
     <loc>http://lou1306.github.io/</loc>
     <lastmod>2017-03-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/"
+                />
   </url>
   
 </urlset>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on lou1306</title>
+    <link>http://lou1306.github.io/tags/markdown/</link>
+    <description>Recent content in Markdown on lou1306</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it-it</language>
+    <copyright>[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc/4.0/)
+    &lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
+    <lastBuildDate>Sat, 10 Jun 2017 14:59:09 +0200</lastBuildDate>
+    <atom:link href="http://lou1306.github.io/tags/markdown/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Il mio workflow di scrittura</title>
+      <link>http://lou1306.github.io/post/2017-06-10-workflow/</link>
+      <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/post/2017-06-10-workflow/</guid>
+      <description>&lt;p&gt;Quando scrivere documenti diventa un&amp;rsquo;attività quotidiana, un po&amp;rsquo; di automazione
+può veramente salvarti la vita.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt; &lt;a href=&#39;http://lou1306.github.io/post/2017-06-10-workflow/&#39; }}&gt;&lt;em&gt;Continua su lou1306.github.io&lt;/em&gt;&lt;/a&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

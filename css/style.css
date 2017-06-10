@@ -42,6 +42,10 @@ li {
     .feature-image header {
         padding: 8% 2%;
     }
+
+    .call-out {
+        font-size: 1em;
+    }
 }
 
 li p:first-of-type {

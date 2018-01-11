@@ -74,3 +74,15 @@ figure {
     font-size: 0.9em;
     font-style: italic;
 }
+
+h4.langs {
+    font-weight: normal;
+    display: inline;
+}
+ul.langs {
+    display: inline;
+    list-style: none;
+}
+ul.langs li {
+    display: inline;
+}

@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lou1306.github.io/post/2018-01-11-packing/</loc>
+    <lastmod>2018-01-11T11:56:11+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/post/2018-01-11-packing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/post/2018-01-11-packing/"
+                />
+  </url>
+  
+  <url>
     <loc>http://lou1306.github.io/post/2017-06-10-workflow/</loc>
     <lastmod>2017-06-10T14:59:09+02:00</lastmod>
   </url>
@@ -92,6 +107,22 @@
     <loc>http://lou1306.github.io/tags/ardupilot/</loc>
     <lastmod>2016-05-11T12:30:34+02:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/tags/c/</loc>
+    <lastmod>2018-01-11T11:56:11+01:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/tags/c/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/tags/c/"
+                />
   </url>
   
   <url>
@@ -271,14 +302,34 @@
   
   <url>
     <loc>http://lou1306.github.io/post/</loc>
-    <lastmod>2017-06-10T14:59:09+02:00</lastmod>
+    <lastmod>2018-01-11T11:56:11+01:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/post/"
+                />
   </url>
   
   <url>
     <loc>http://lou1306.github.io/categories/programmazione/</loc>
-    <lastmod>2016-05-11T12:30:34+02:00</lastmod>
+    <lastmod>2018-01-11T11:56:11+01:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/categories/programmazione/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/categories/programmazione/"
+                />
   </url>
   
   <url>
@@ -335,7 +386,7 @@
   
   <url>
     <loc>http://lou1306.github.io/</loc>
-    <lastmod>2017-06-10T14:59:09+02:00</lastmod>
+    <lastmod>2018-01-11T11:56:11+01:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"

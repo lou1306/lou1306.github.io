@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<title>C: Packing di due interi in un&#39;unica variabile &middot; lou1306</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="lou1306">
+	<meta name="description" content="Appunti di informatica e altro">
+	
+	<meta name="generator" content="Hugo 0.32.3" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
+	<link rel="stylesheet" href="http://lou1306.github.io/css/style.css">
+	
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="http://lou1306.github.io/favicon.ico" type="image/x-icon">
+
+	<!-- RSS -->
+	
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+
+	
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+    <header class="site-header">
+	<div class="branding">
+		<a href="http://lou1306.github.io/">
+		<img class="avatar" src="http://lou1306.github.io/img/avatar.jpg" alt=""/>
+		</a>
+		<h1 class="site-title">
+			<a href="http://lou1306.github.io/">lou1306</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+	      	<li><a href="/cv/"> CV </a>•</li><li><a href="/about/"> L&#39;autore </a>•</li>
+
+	      	
+
+<li>
+	<a href="http://lou1306.github.io/index.xml" title="Seguimi">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/lou1306" title="Github">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+<li>
+	<a href="https://www.linkedin.com/in/lou1306" title="Linkedin">
+		<i class="fa fa-fw fa-linkedin"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/1306lou" title="Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+	    </ul>
+	</nav>
+</header>
+
+
+    <div class="content">
+    <article>
+		<header>
+			<h1 class="title">C: Packing di due interi in un&#39;unica variabile</h1>
+			<p class="meta">
+    January 11, 2018 &middot; 1 minuti
+
+    
+        &middot; Tags:
+            <a href="http://lou1306.github.io/tags/c">C</a>
+</p>
+
+            
+<h4 class="langs">This page also available in: </h4>
+    <ul class="langs">
+    
+    <li>
+        <a href="http://lou1306.github.io/en/post/2018-01-11-packing/">English</a>
+    </li>
+    
+</ul>
+
+		</header>
+
+	<section class="post-content">
+	
+		<p>Di recente avevamo bisogno di usare un&rsquo;unica variabile <code>int</code> per contenere
+due interi di piccole dimensioni.
+(Lasciamo perdere i dettagli e facciamo finta che <code>int</code> sia una variabile a
+32 bit, ok?)
+Nulla di complicato, ma comunque ci sono voluti un paio di tentativi prima che
+tutto filasse liscio.
+Quindi, se a qualcuno servisse, ecco il codice:</p>
+
+<script src="//gist.github.com/lou1306/72cf7473b5df4bf182d4c43d53c7aeb4.js"></script>
+
+<p>Il <code>main()</code> proverà tutte le possibili coppie, terminando con un errore se
+l&rsquo;unpacking di una tupla porta a risultati inattesi.</p>
+
+<p>Un ottimo riferimento per questo genere di cose è la classica pagina
+<a href="https://graphics.stanford.edu/~seander/bithacks.html">Bit Twiddling Hacks</a>,
+che contiene un sacco di allgoritmi efficienti per operazioni sui bit!</p>
+
+	
+	</section>
+		
+			<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lou1306" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+    </div>
+
+    <footer class="site-footer">
+	<p class="text">&copy; 2018 - lou1306 <br/> <a href="http://creativecommons.org/licenses/by-nc/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="License: CC BY-NC 4.0" /></a>
+    <br>Powered by <a href="//gohugo.io/">Hugo</a> with the <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a></p>
+</footer>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-23262839-3', 'auto');
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>

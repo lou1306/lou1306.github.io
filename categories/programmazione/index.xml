@@ -8,8 +8,18 @@
     <language>it-it</language>
     <copyright>[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc/4.0/)
     &lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
-    <lastBuildDate>Wed, 11 May 2016 12:30:34 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jan 2018 11:56:11 +0100</lastBuildDate>
     <atom:link href="http://lou1306.github.io/categories/programmazione/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>C: Packing di due interi in un&#39;unica variabile</title>
+      <link>http://lou1306.github.io/post/2018-01-11-packing/</link>
+      <pubDate>Thu, 11 Jan 2018 11:56:11 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/post/2018-01-11-packing/</guid>
+      <description>Di recente avevamo bisogno di usare un&amp;rsquo;unica variabile int per contenere due interi di piccole dimensioni. (Lasciamo perdere i dettagli e facciamo finta che int sia una variabile a 32 bit, ok?) Nulla di complicato, ma comunque ci sono voluti un paio di tentativi prima che tutto filasse liscio. Quindi, se a qualcuno servisse, ecco il codice:
+ Il main() proverà tutte le possibili coppie, terminando con un errore se l&amp;rsquo;unpacking di una tupla porta a risultati inattesi. &lt;a href=&#39;http://lou1306.github.io/post/2018-01-11-packing/&#39; }}&gt;&lt;em&gt;Continua su lou1306.github.io&lt;/em&gt;&lt;/a&gt;</description>
+    </item>
     
     <item>
       <title>Personalizzare APM:Copter e inviare messaggi MAVLink</title>

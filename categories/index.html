@@ -36,7 +36,7 @@
 </head>
 
 <body>
-    <header class="site-header">
+	<header class="site-header">
 	<div class="branding">
 		<a href="http://lou1306.github.io/">
 		<img class="avatar" src="http://lou1306.github.io/img/avatar.jpg" alt=""/>
@@ -51,7 +51,7 @@
 
 	      	
 
-<li>
+<li class="icon">
 	<a href="http://lou1306.github.io/index.xml" title="Seguimi">
 		<i class="fa fa-fw fa-rss"></i>
 	</a>
@@ -69,7 +69,7 @@
 
 
 
-<li>
+<li class="icon">
 	<a href="https://github.com/lou1306" title="Github">
 		<i class="fa fa-fw fa-github"></i>
 	</a>
@@ -79,7 +79,7 @@
 
 
 
-<li>
+<li class="icon">
 	<a href="https://www.linkedin.com/in/lou1306" title="Linkedin">
 		<i class="fa fa-fw fa-linkedin"></i>
 	</a>
@@ -97,7 +97,7 @@
 
 
 
-<li>
+<li class="icon">
 	<a href="https://twitter.com/1306lou" title="Twitter">
 		<i class="fa fa-fw fa-twitter"></i>
 	</a>
@@ -116,19 +116,223 @@
 </header>
 
 
-    <div class="content">
-    <div class="posts">
+	<div class="content">
+	<div class="posts">
 	
-	
+	<div class="post-teaser">
+		<header>
+			<h1>
+			<a class="post-link" href="http://lou1306.github.io/post/2018-01-11-packing/">
+				C: Packing di due interi in un&#39;unica variabile
+			</a>
+			</h1>
+			<p class="meta">
+    January 11, 2018 &middot; 1 minuti
+
+    
+        &middot; Tags:
+            <a href="http://lou1306.github.io/tags/c">C</a>
+</p>
+
+		</header>
+
+		<div class="excerpt">
+			Di recente avevamo bisogno di usare un&rsquo;unica variabile int per contenere due interi di piccole dimensioni. (Lasciamo perdere i dettagli e facciamo finta che int sia una variabile a 32 bit, ok?) Nulla di complicato, ma comunque ci sono voluti un paio di tentativi prima che tutto filasse liscio. Quindi, se a qualcuno servisse, ecco il codice:
+ Il main() proverà tutte le possibili coppie, terminando con un errore se l&rsquo;unpacking di una tupla porta a risultati inattesi.
+
+			<br>
+			<a class="button" href="http://lou1306.github.io/post/2018-01-11-packing/">
+				Continua »
+			</a>
+		</div>
+	</div><div class="post-teaser">
+		<header>
+			<h1>
+			<a class="post-link" href="http://lou1306.github.io/post/2017-06-10-workflow/">
+				Il mio workflow di scrittura
+			</a>
+			</h1>
+			<p class="meta">
+    June 10, 2017 &middot; 4 minuti
+
+    
+        &middot; Tags:
+            <a href="http://lou1306.github.io/tags/hugo">hugo</a>, <a href="http://lou1306.github.io/tags/latex">latex</a>, <a href="http://lou1306.github.io/tags/markdown">markdown</a>, <a href="http://lou1306.github.io/tags/pandoc">pandoc</a>
+</p>
+
+		</header>
+
+		<div class="excerpt">
+			<p>Quando scrivere documenti diventa un&rsquo;attività quotidiana, un po&rsquo; di automazione
+può veramente salvarti la vita.</p>
+
+<p></p>
+
+			<br>
+			<a class="button" href="http://lou1306.github.io/post/2017-06-10-workflow/">
+				Continua »
+			</a>
+		</div>
+	</div><div class="post-teaser">
+		<header>
+			<h1>
+			<a class="post-link" href="http://lou1306.github.io/post/2016-11-01-risorseaquilani/">
+				Risorse online per gli aquilani (di nascita o di adozione)
+			</a>
+			</h1>
+			<p class="meta">
+    November 1, 2016 &middot; 3 minuti
+
+    
+        &middot; Tags:
+            <a href="http://lou1306.github.io/tags/gis">GIS</a>, <a href="http://lou1306.github.io/tags/laquila">L&#39;Aquila</a>
+</p>
+
+		</header>
+
+		<div class="excerpt">
+			<p>Una piccola lista che spero possa tornare utile: cercherò di aggiornarla man
+mano che trovo altro materiale.</p>
+
+<p></p>
+
+			<br>
+			<a class="button" href="http://lou1306.github.io/post/2016-11-01-risorseaquilani/">
+				Continua »
+			</a>
+		</div>
+	</div><div class="post-teaser">
+		<header>
+			<h1>
+			<a class="post-link" href="http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/">
+				Personalizzare APM:Copter e inviare messaggi MAVLink
+			</a>
+			</h1>
+			<p class="meta">
+    May 11, 2016 &middot; 5 minuti
+
+    
+        &middot; Tags:
+            <a href="http://lou1306.github.io/tags/apmcopter">APM:Copter</a>, <a href="http://lou1306.github.io/tags/ardupilot">ArduPilot</a>, <a href="http://lou1306.github.io/tags/c&#43;&#43;">C&#43;&#43;</a>, <a href="http://lou1306.github.io/tags/droni">Droni</a>, <a href="http://lou1306.github.io/tags/mavlink">MAVLink</a>, <a href="http://lou1306.github.io/tags/pixhawk">PixHawk</a>
+</p>
+
+		</header>
+
+		<div class="excerpt">
+			<p>Il firmware <a href="http://ardupilot.org/copter/index.html">APM:Copter</a> è una delle
+principali soluzioni open-source per il pilotaggio remoto di droni. Vedremo
+come è possibile eseguire codice personalizzato all&rsquo;interno del sistema (che
+nel mio caso è installato su una board PixHawk v2), ed inviare dati a terra
+mediante il protocollo MAVLink.</p>
+
+<p></p>
+
+			<br>
+			<a class="button" href="http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/">
+				Continua »
+			</a>
+		</div>
+	</div><div class="post-teaser">
+		<header>
+			<h1>
+			<a class="post-link" href="http://lou1306.github.io/post/2016-04-29-risorse_programmatori/">
+				Risorse utili per programmatori
+			</a>
+			</h1>
+			<p class="meta">
+    April 29, 2016 &middot; 5 minuti
+
+    
+        &middot; Tags:
+            <a href="http://lou1306.github.io/tags/css3">CSS3</a>, <a href="http://lou1306.github.io/tags/dev">Dev</a>, <a href="http://lou1306.github.io/tags/html5">HTML5</a>, <a href="http://lou1306.github.io/tags/python">Python</a>, <a href="http://lou1306.github.io/tags/web">Web</a>
+</p>
+
+		</header>
+
+		<div class="excerpt">
+			<p>Ecco una carrellata di materiale che mi è tornato utile negli ultimi tempi.
+Anche se è principalmente a mio uso e consumo (non voglio dimenticare i titoli e
+alcune informazioni a contorno, nel caso i link dovessero scomparire in futuro),
+spero possa far comodo anche ad altri programmatori/smanettoni.</p>
+
+<p></p>
+
+			<br>
+			<a class="button" href="http://lou1306.github.io/post/2016-04-29-risorse_programmatori/">
+				Continua »
+			</a>
+		</div>
+	</div><div class="post-teaser">
+		<header>
+			<h1>
+			<a class="post-link" href="http://lou1306.github.io/post/2016-03-04-real_programmer/">
+				La storia di Mel, un Vero Programmatore
+			</a>
+			</h1>
+			<p class="meta">
+    March 4, 2016 &middot; 7 minuti
+
+    
+        &middot; Tags:
+            <a href="http://lou1306.github.io/tags/hacker">Hacker</a>, <a href="http://lou1306.github.io/tags/jargon-file">Jargon File</a>, <a href="http://lou1306.github.io/tags/mel">Mel</a>
+</p>
+
+		</header>
+
+		<div class="excerpt">
+			<p><em>Questo gioiellino della cultura hacker circola in rete dal 1982.
+L&rsquo;ho tradotta tempo fa, basandomi sull&rsquo;edizione contenuta nel
+<a href="http://www.catb.org/jargon/html/story-of-mel.html">Jargon File</a> e cencando
+di mantenerne la forma &ldquo;poetica&rdquo; e le particolarità nella punteggiatura.
+Per informazioni più approfondite rimando a
+<a href="https://en.wikipedia.org/wiki/The_Story_of_Mel">Wikipedia</a></em>.</p>
+
+<p></p>
+
+			<br>
+			<a class="button" href="http://lou1306.github.io/post/2016-03-04-real_programmer/">
+				Continua »
+			</a>
+		</div>
+	</div><div class="post-teaser">
+		<header>
+			<h1>
+			<a class="post-link" href="http://lou1306.github.io/post/2016-03-01-chocolatey/">
+				Chocolatey: software management per Windows
+			</a>
+			</h1>
+			<p class="meta">
+    March 1, 2016 &middot; 4 minuti
+
+    
+        &middot; Tags:
+            <a href="http://lou1306.github.io/tags/chocolatey">Chocolatey</a>, <a href="http://lou1306.github.io/tags/microsoft">Microsoft</a>, <a href="http://lou1306.github.io/tags/nuget">NuGet</a>, <a href="http://lou1306.github.io/tags/windows">Windows</a>
+</p>
+
+		</header>
+
+		<div class="excerpt">
+			<p>Dai package managers Linux agli Store dei sistemi mobile, quella dei <em>software
+repositories</em> è una storia di successo che però fatica a prendere piede su
+Windows.
+Ma qualcosa sta cambiando.
+</p>
+
+			<br>
+			<a class="button" href="http://lou1306.github.io/post/2016-03-01-chocolatey/">
+				Continua »
+			</a>
+		</div>
+	</div>
 </div>
 
 	<div class="pagination">
 	
 </div>
 
-    </div>
+	</div>
 
-    <footer class="site-footer">
+	<footer class="site-footer">
 	<p class="text">&copy; 2018 - lou1306 <br/> <a href="http://creativecommons.org/licenses/by-nc/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="License: CC BY-NC 4.0" /></a>
     <br>Powered by <a href="//gohugo.io/">Hugo</a> with the <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a></p>
 </footer>

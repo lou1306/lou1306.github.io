@@ -7,15 +7,15 @@
     
       {
         "id": "http://lou1306.github.io/microblog/20180218/helloworld/",
-        "content_html": "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/The_Day_the_Earth_Smiled_-_PIA17172.jpg/1024px-The_Day_the_Earth_Smiled_-_PIA17172.jpg' />"
-        "date_published": 2018-218-22T14:43:22+01:00 ,
+        "content_html": "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/The_Day_the_Earth_Smiled_-_PIA17172.jpg/1024px-The_Day_the_Earth_Smiled_-_PIA17172.jpg' />",
+        "date_published": "2018-02-18T14:43:22+01:00" ,
         "url": "http://lou1306.github.io/microblog/20180218/helloworld/"
     }
     
      , {
         "id": "http://lou1306.github.io/microblog/20180218/imgtest/",
-        "content_html": "Hello world! 😎"
-        "date_published": 2018-218-122T12:50:43+01:00 ,
+        "content_html": "Hello world! 😎",
+        "date_published": "2018-02-18T12:50:43+01:00" ,
         "url": "http://lou1306.github.io/microblog/20180218/imgtest/"
     }
     

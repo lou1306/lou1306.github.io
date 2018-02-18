@@ -6,9 +6,81 @@
     <description>Recent content in Categories on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
-    <copyright>[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc/4.0/)
-    &lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
-    <atom:link href="http://lou1306.github.io/categories/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://lou1306.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Guide</title>
+      <link>http://lou1306.github.io/categories/guide/</link>
+      <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/categories/guide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hackerdom</title>
+      <link>http://lou1306.github.io/categories/hackerdom/</link>
+      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/categories/hackerdom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Humour</title>
+      <link>http://lou1306.github.io/categories/humour/</link>
+      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/categories/humour/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Liste</title>
+      <link>http://lou1306.github.io/categories/liste/</link>
+      <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/categories/liste/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programmazione</title>
+      <link>http://lou1306.github.io/categories/programmazione/</link>
+      <pubDate>Thu, 11 Jan 2018 11:56:11 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/categories/programmazione/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Risorse</title>
+      <link>http://lou1306.github.io/categories/risorse/</link>
+      <pubDate>Tue, 01 Nov 2016 12:29:46 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/categories/risorse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sistemi Operativi</title>
+      <link>http://lou1306.github.io/categories/sistemi-operativi/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/categories/sistemi-operativi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Writing</title>
+      <link>http://lou1306.github.io/categories/writing/</link>
+      <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/categories/writing/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

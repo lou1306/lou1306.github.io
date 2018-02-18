@@ -6,10 +6,10 @@
     <description>Recent content in Apmcopter on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
-    <copyright>[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc/4.0/)
-    &lt;br&gt;Powered by [Hugo](//gohugo.io/) with the [Type Theme](//github.com/digitalcraftsman/hugo-type-theme)</copyright>
     <lastBuildDate>Wed, 11 May 2016 12:30:34 +0200</lastBuildDate>
-    <atom:link href="http://lou1306.github.io/tags/apmcopter/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://lou1306.github.io/tags/apmcopter/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Personalizzare APM:Copter e inviare messaggi MAVLink</title>
@@ -23,7 +23,7 @@ come è possibile eseguire codice personalizzato all&amp;rsquo;interno del siste
 nel mio caso è installato su una board PixHawk v2), ed inviare dati a terra
 mediante il protocollo MAVLink.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt; &lt;a href=&#39;http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/&#39; }}&gt;&lt;em&gt;Continua su lou1306.github.io&lt;/em&gt;&lt;/a&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

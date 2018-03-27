@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lou1306.github.io/microblog/20180327/eternal-sunshine/</loc>
+    <lastmod>2018-03-27T18:42:25+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://lou1306.github.io/microblog/20180219/halt-and-catch-fire/</loc>
     <lastmod>2018-02-19T18:44:04+01:00</lastmod>
   </url>
@@ -119,7 +124,7 @@
   
   <url>
     <loc>http://lou1306.github.io/tags/</loc>
-    <lastmod>2018-02-19T18:44:04+01:00</lastmod>
+    <lastmod>2018-03-27T18:42:25+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -378,7 +383,7 @@
   
   <url>
     <loc>http://lou1306.github.io/tags/</loc>
-    <lastmod>2018-02-19T18:44:04+01:00</lastmod>
+    <lastmod>2018-03-27T18:42:25+02:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -412,7 +417,7 @@
   
   <url>
     <loc>http://lou1306.github.io/</loc>
-    <lastmod>2018-02-19T18:44:04+01:00</lastmod>
+    <lastmod>2018-03-27T18:42:25+02:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"

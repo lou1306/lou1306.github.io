@@ -8,7 +8,7 @@
 	<meta name="author" content="lou1306">
 	<meta name="description" content="Appunti di informatica e altro">
 	
-	<meta name="generator" content="Hugo 0.37.1" />
+	<meta name="generator" content="Hugo 0.44" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -310,10 +310,7 @@ payload.</p>
 <h3 id="copter-h"><code>Copter.h</code></h3>
 
 <p>Aggiungiamo la definizione di questo metodo alla classe omonima:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> 
-<span style="color:#a6e22e">send_count</span>(mavlink_channel_t chan)
-
-;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">send_count</span>(mavlink_channel_t chan);
 </code></pre></div></p>
 
 <h3 id="gcs-mavlink-cpp"><code>GCS_Mavlink.cpp</code></h3>
@@ -327,7 +324,7 @@ concentrerà la maggior parte del lavoro.</p>
     mavlink_msg_named_value_int_send(
         chan,
         AP_HAL<span style="color:#f92672">::</span>millis(),    <span style="color:#75715e">// uptime del sistema in ms (usato come timestamp)
-</span><span style="color:#75715e"></span>        <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;count&#34;</span>,
+</span><span style="color:#75715e"></span>        <span style="color:#e6db74">&#34;count&#34;</span>,
         count
     );
 }
@@ -447,13 +444,14 @@ al destinatario di riconoscere facilmente i messaggi da elaborare.</li>
 </footer>
 
 
+
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
 ga('create', 'UA-23262839-3', 'auto');
+ga('set', 'anonymizeIp', true);
 ga('send', 'pageview');
 </script>
 

@@ -31,9 +31,7 @@
 principali soluzioni open-source per il pilotaggio remoto di droni. Vedremo
 come è possibile eseguire codice personalizzato all&amp;rsquo;interno del sistema (che
 nel mio caso è installato su una board PixHawk v2), ed inviare dati a terra
-mediante il protocollo MAVLink.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+mediante il protocollo MAVLink.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -45,9 +43,7 @@ mediante il protocollo MAVLink.&lt;/p&gt;
       <description>&lt;p&gt;Ecco una carrellata di materiale che mi è tornato utile negli ultimi tempi.
 Anche se è principalmente a mio uso e consumo (non voglio dimenticare i titoli e
 alcune informazioni a contorno, nel caso i link dovessero scomparire in futuro),
-spero possa far comodo anche ad altri programmatori/smanettoni.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+spero possa far comodo anche ad altri programmatori/smanettoni.&lt;/p&gt;</description>
     </item>
     
   </channel>

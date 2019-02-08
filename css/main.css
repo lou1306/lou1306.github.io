@@ -4,3 +4,5 @@
 
 /* see #6 */
 .highlighttable td,th{padding:0;border:0;}td.code{width:95%;}
+
+.site-header .site-title { font-family: monospace; font-size: 1.4em; }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Schools on lou1306</title>
+    <link>http://lou1306.github.io/tags/schools/</link>
+    <description>Recent content in Schools on lou1306</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>it-it</language>
+    <lastBuildDate>Sun, 17 Feb 2019 16:54:29 +0100</lastBuildDate>
+    
+	<atom:link href="http://lou1306.github.io/tags/schools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Schools and other CS events</title>
+      <link>http://lou1306.github.io/schools/</link>
+      <pubDate>Sun, 17 Feb 2019 16:54:29 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/schools/</guid>
+      <description>Questa pagina contiene informazioni su scuole e altri eventi che potrebbero interessare a studenti e giovani ricercatori in Computer Science.</description>
+    </item>
+    
+  </channel>
+</rss>

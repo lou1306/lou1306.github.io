@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Digital signing your physical stuff &middot; lou1306</title>
+	<meta charset="utf-8">
+	<link href="https://micro.blog/lou1306" rel="me" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Luca Di Stefano">
+	<meta name="description" content="Notes on CompSci et cetera">
+	
+	<meta name="generator" content="Hugo 0.54.0" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
+	<link rel="stylesheet" href="http://lou1306.github.io/css/style.css">
+	
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="http://lou1306.github.io/favicon.ico" type="image/x-icon">
+
+	<!-- RSS -->
+	
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+
+	
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+	<header class="site-header">
+	<div class="branding">
+		<a href="http://lou1306.github.io/">
+		<img class="avatar" src="https://www.gravatar.com/avatar/b1549ac9d27e6458d79ec9d340887b0b?s=100&d=identicon" alt=""/>
+		</a>
+		<h1 class="site-title">
+			<a href="http://lou1306.github.io/">lou1306</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+	      	<li><a href="/en/about/"> About </a>•</li><li><a href="/en/cv/"> CV </a>•</li><li><a href="/en/schools/"> Schools </a>•</li>
+
+	      	
+
+<li class="icon">
+	<a href="http://lou1306.github.io/index.xml" title="Seguimi">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="icon">
+	<a href="https://github.com/lou1306" title="Github">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+<li class="icon">
+	<a href="https://www.linkedin.com/in/lou1306" title="Linkedin">
+		<i class="fa fa-fw fa-linkedin"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="icon">
+	<a href="https://twitter.com/1306lou" title="Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+	    </ul>
+	</nav>
+</header>
+
+
+	<div class="content">
+	<article>
+		<header>
+			<h1 class="title">Digital signing your physical stuff</h1>
+			<p class="meta">
+    January 2, 2019 &middot; 3 minuti
+
+    
+        &middot; Tags:
+            <a href="http://lou1306.github.io/tags/keybase">keybase</a>, <a href="http://lou1306.github.io/tags/pgp">pgp</a>
+</p>
+
+            
+		</header>
+
+	<section class="post-content">
+	
+		
+
+<p>With the new year comes a new daily notebook!
+Since I always carry it around, I typically put a lot of personal data in the
+first pages of the notebook in the hope that, should I lose it somewhere, it
+will be found and returned.
+This time, as I was filling in the info page, I started thinking&hellip; Wouldn&rsquo;t it
+be nice if I had some other way to prove that this thing is mine, without
+having to provide so much information?
+Some time ago I created an account on <a href="https://keybase.io">KeyBase</a> and I used
+it to prove my identity over <a href="https://keybase.io/lou1306/">several websites</a>.
+It is really a nice tool to experiment with PGP, so I recommend giving it a try.</p>
+
+<p>This will be one such experiment. The gist is simple:</p>
+
+<ol>
+<li>Create a signed PGP message</li>
+<li>Put it inside the notebook</li>
+<li>Attach instructions so the reader can verify the message</li>
+<li>???</li>
+<li>Profit!</li>
+</ol>
+
+<p>Of course you <em>could</em> do the same with other PGP-based tools, but then you would
+need to provide the reader with a way to download your public key, and so on and
+so forth.
+The main strength of Keybase is that it hides away these sources of complexity.
+The interested reader could probably start by
+<a href="https://hn.algolia.com/?query=keybase&amp;sort=byPopularity&amp;prefix&amp;page=0&amp;dateRange=all&amp;type=story">looking up Keybase threads on Hacker News</a> to make up her mind about
+its other (dis)advantages.
+My two cents: just don&rsquo;t push your private key to the Keybase server and you
+will probably be fine.</p>
+
+<h2 id="crafting-the-message">Crafting the message</h2>
+
+<p>This tutorial makes use of the <code>keybase</code> app and command-line utility.
+We will also use <code>qrencode</code> to generate a QR code of our message.</p>
+
+<p>If you&rsquo;re on a Mac with Homebrew, you can get it all with:</p>
+
+<pre><code class="language-bash">brew install qrencode
+brew cask install keybase
+</code></pre>
+
+<p>Then, carefully follow the instructions in the Keybase app to create your PGP
+key pair.
+Setting up a Keybase account is still a bit of a tedious process, but at least
+I found it to be  quite well-explained.</p>
+
+<p>Now, think of a whimsical short message.
+Then, use the following command to:</p>
+
+<ol>
+<li>Sign your message with your private key;</li>
+<li>Strip away some unnecessary lines (the two <code>sed</code> commands);</li>
+<li>Generate a QR code with your signed message and save it to <code>out.png</code>.</li>
+</ol>
+
+<pre><code class="language-bash">keybase pgp sign -m &quot;&lt;YOUR MESSAGE&gt;&quot; | sed '/^Version.*/d' | sed '/^Comment.*/d' |  qrencode -o out.png
+</code></pre>
+
+<p>Step 2 is not really needed, but it makes the resulting QR code a bit less
+&ldquo;dense&rdquo; and thus easier to decode.</p>
+
+<h2 id="in-the-real-world">In the real world</h2>
+
+<p>Now, you should print the QR code, along with some instruction for the reader.
+Slap it into your notebook/diary/whatevs and you&rsquo;re good to go!</p>
+
+<figure>
+    <img src="/img/post/20190102-template.png"
+         alt="Template for a PGP signed message" width="40%"/> <figcaption>
+            <p>Something like this.</p>
+        </figcaption>
+</figure>
+
+
+<p>I find that writing the message by hand (rather than printing it along with the
+QR) is further (informal) proof that you are the owner of both the item
+<em>and</em> the private key you signed the message with (i.e. you didn&rsquo;t just paste
+it on somebody else&rsquo;s possession).</p>
+
+	
+	</section>
+		
+			<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lou1306" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</div>
+
+	<footer class="site-footer">
+	<p class="text">&copy; 2019 - Luca Di Stefano <br/> <a href="http://creativecommons.org/licenses/by-nc/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="License: CC BY-NC 4.0" /></a>
+    <br/><a href="//gohugo.io/">Hugo</a> • <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a> • <a href="//getskeleton.com/">Skeleton</a></p>
+</footer>
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-23262839-3', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>

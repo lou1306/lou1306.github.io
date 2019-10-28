@@ -6,35 +6,17 @@
     <description>Recent content in Tags on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
-    <lastBuildDate>Tue, 27 Mar 2018 18:42:25 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 17 Feb 2019 16:54:29 +0100</lastBuildDate>
     
 	<atom:link href="http://lou1306.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>http://lou1306.github.io/tags/</link>
-      <pubDate>Tue, 27 Mar 2018 18:42:25 +0200</pubDate>
+      <title>schools</title>
+      <link>http://lou1306.github.io/tags/schools/</link>
+      <pubDate>Sun, 17 Feb 2019 16:54:29 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Apmcopter</title>
-      <link>http://lou1306.github.io/tags/apmcopter/</link>
-      <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/apmcopter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ardupilot</title>
-      <link>http://lou1306.github.io/tags/ardupilot/</link>
-      <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/ardupilot/</guid>
+      <guid>http://lou1306.github.io/tags/schools/</guid>
       <description></description>
     </item>
     
@@ -48,47 +30,83 @@
     </item>
     
     <item>
+      <title>hugo</title>
+      <link>http://lou1306.github.io/tags/hugo/</link>
+      <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>latex</title>
+      <link>http://lou1306.github.io/tags/latex/</link>
+      <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>http://lou1306.github.io/tags/markdown/</link>
+      <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pandoc</title>
+      <link>http://lou1306.github.io/tags/pandoc/</link>
+      <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/pandoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GIS</title>
+      <link>http://lou1306.github.io/tags/gis/</link>
+      <pubDate>Tue, 01 Nov 2016 12:29:46 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/gis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>L&#39;Aquila</title>
+      <link>http://lou1306.github.io/tags/laquila/</link>
+      <pubDate>Tue, 01 Nov 2016 12:29:46 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/laquila/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>APM:Copter</title>
+      <link>http://lou1306.github.io/tags/apmcopter/</link>
+      <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/apmcopter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ArduPilot</title>
+      <link>http://lou1306.github.io/tags/ardupilot/</link>
+      <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/ardupilot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>C&#43;&#43;</title>
       <link>http://lou1306.github.io/tags/c&#43;&#43;/</link>
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       
       <guid>http://lou1306.github.io/tags/c&#43;&#43;/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Chocolatey</title>
-      <link>http://lou1306.github.io/tags/chocolatey/</link>
-      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/chocolatey/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Css3</title>
-      <link>http://lou1306.github.io/tags/css3/</link>
-      <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/css3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cv</title>
-      <link>http://lou1306.github.io/tags/cv/</link>
-      <pubDate>Fri, 04 Mar 2016 11:40:29 +0100</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/cv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dev</title>
-      <link>http://lou1306.github.io/tags/dev/</link>
-      <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/dev/</guid>
       <description></description>
     </item>
     
@@ -102,88 +120,7 @@
     </item>
     
     <item>
-      <title>Gis</title>
-      <link>http://lou1306.github.io/tags/gis/</link>
-      <pubDate>Tue, 01 Nov 2016 12:29:46 +0100</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/gis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hacker</title>
-      <link>http://lou1306.github.io/tags/hacker/</link>
-      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/hacker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Html5</title>
-      <link>http://lou1306.github.io/tags/html5/</link>
-      <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/html5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>http://lou1306.github.io/tags/hugo/</link>
-      <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jargon File</title>
-      <link>http://lou1306.github.io/tags/jargon-file/</link>
-      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/jargon-file/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Laquila</title>
-      <link>http://lou1306.github.io/tags/laquila/</link>
-      <pubDate>Tue, 01 Nov 2016 12:29:46 +0100</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/laquila/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Latex</title>
-      <link>http://lou1306.github.io/tags/latex/</link>
-      <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/latex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Libri</title>
-      <link>http://lou1306.github.io/tags/libri/</link>
-      <pubDate>Fri, 04 Mar 2016 11:40:29 +0100</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/libri/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>http://lou1306.github.io/tags/markdown/</link>
-      <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mavlink</title>
+      <title>MAVLink</title>
       <link>http://lou1306.github.io/tags/mavlink/</link>
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       
@@ -192,47 +129,38 @@
     </item>
     
     <item>
-      <title>Mel</title>
-      <link>http://lou1306.github.io/tags/mel/</link>
-      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/mel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Microsoft</title>
-      <link>http://lou1306.github.io/tags/microsoft/</link>
-      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/microsoft/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nuget</title>
-      <link>http://lou1306.github.io/tags/nuget/</link>
-      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/nuget/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pandoc</title>
-      <link>http://lou1306.github.io/tags/pandoc/</link>
-      <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/pandoc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pixhawk</title>
+      <title>PixHawk</title>
       <link>http://lou1306.github.io/tags/pixhawk/</link>
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       
       <guid>http://lou1306.github.io/tags/pixhawk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSS3</title>
+      <link>http://lou1306.github.io/tags/css3/</link>
+      <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/css3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dev</title>
+      <link>http://lou1306.github.io/tags/dev/</link>
+      <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTML5</title>
+      <link>http://lou1306.github.io/tags/html5/</link>
+      <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/html5/</guid>
       <description></description>
     </item>
     
@@ -246,20 +174,83 @@
     </item>
     
     <item>
-      <title>Schools</title>
-      <link>http://lou1306.github.io/tags/schools/</link>
-      <pubDate>Sun, 17 Feb 2019 16:54:29 +0100</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/schools/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Web</title>
       <link>http://lou1306.github.io/tags/web/</link>
       <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
       
       <guid>http://lou1306.github.io/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cv</title>
+      <link>http://lou1306.github.io/tags/cv/</link>
+      <pubDate>Fri, 04 Mar 2016 11:40:29 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/cv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>libri</title>
+      <link>http://lou1306.github.io/tags/libri/</link>
+      <pubDate>Fri, 04 Mar 2016 11:40:29 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/libri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hacker</title>
+      <link>http://lou1306.github.io/tags/hacker/</link>
+      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/hacker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jargon File</title>
+      <link>http://lou1306.github.io/tags/jargon-file/</link>
+      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/jargon-file/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mel</title>
+      <link>http://lou1306.github.io/tags/mel/</link>
+      <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/mel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chocolatey</title>
+      <link>http://lou1306.github.io/tags/chocolatey/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/chocolatey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft</title>
+      <link>http://lou1306.github.io/tags/microsoft/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NuGet</title>
+      <link>http://lou1306.github.io/tags/nuget/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/nuget/</guid>
       <description></description>
     </item>
     

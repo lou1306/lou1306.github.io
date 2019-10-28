@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lou1306.github.io/en/</loc>
+    <lastmod>2019-02-17T16:54:29+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/en/tags/schools/</loc>
+    <lastmod>2019-02-17T16:54:29+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/tags/schools/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/tags/schools/"
+                />
+  </url>
+  
+  <url>
     <loc>http://lou1306.github.io/en/schools/</loc>
     <lastmod>2019-02-17T16:54:29+01:00</lastmod>
     <xhtml:link
@@ -18,8 +48,83 @@
   </url>
   
   <url>
+    <loc>http://lou1306.github.io/en/tags/</loc>
+    <lastmod>2019-02-17T16:54:29+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/en/categories/</loc>
+    <lastmod>2019-01-02T18:02:11+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/en/categories/crittografia/</loc>
+    <lastmod>2019-01-02T18:02:11+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://lou1306.github.io/en/post/2019-01-02-signing/</loc>
     <lastmod>2019-01-02T18:02:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/en/tags/keybase/</loc>
+    <lastmod>2019-01-02T18:02:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/en/tags/pgp/</loc>
+    <lastmod>2019-01-02T18:02:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/en/post/</loc>
+    <lastmod>2019-01-02T18:02:11+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/en/tags/c/</loc>
+    <lastmod>2018-01-11T11:56:11+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/tags/c/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/tags/c/"
+                />
   </url>
   
   <url>
@@ -34,6 +139,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://lou1306.github.io/en/post/2018-01-11-packing/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/en/categories/programmazione/</loc>
+    <lastmod>2018-01-11T11:56:11+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/categories/programmazione/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/categories/programmazione/"
                 />
   </url>
   
@@ -53,61 +173,8 @@
   </url>
   
   <url>
-    <loc>http://lou1306.github.io/en/about/</loc>
-    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/about/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/en/tags/c/</loc>
-    <lastmod>2018-01-11T11:56:11+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/tags/c/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/tags/c/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/en/categories/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/en/categories/crittografia/</loc>
-    <lastmod>2019-01-02T18:02:11+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://lou1306.github.io/en/tags/cv/</loc>
     <lastmod>2017-03-02T11:40:29+01:00</lastmod>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -121,94 +188,17 @@
   </url>
   
   <url>
-    <loc>http://lou1306.github.io/en/tags/keybase/</loc>
-    <lastmod>2019-01-02T18:02:11+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/en/tags/pgp/</loc>
-    <lastmod>2019-01-02T18:02:11+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/en/post/</loc>
-    <lastmod>2019-01-02T18:02:11+01:00</lastmod>
-    <priority>0</priority>
+    <loc>http://lou1306.github.io/en/about/</loc>
+    <lastmod>2016-03-04T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://lou1306.github.io/post/"
+                href="http://lou1306.github.io/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://lou1306.github.io/en/post/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/en/categories/programmazione/</loc>
-    <lastmod>2018-01-11T11:56:11+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/categories/programmazione/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/categories/programmazione/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/en/tags/schools/</loc>
-    <lastmod>2019-02-17T16:54:29+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/tags/schools/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/tags/schools/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/en/tags/</loc>
-    <lastmod>2018-01-11T11:56:11+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/en/</loc>
-    <lastmod>2019-02-17T16:54:29+01:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/"
+                href="http://lou1306.github.io/en/about/"
                 />
   </url>
   

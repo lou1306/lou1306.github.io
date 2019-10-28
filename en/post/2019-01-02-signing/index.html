@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Notes on CompSci et cetera">
 	
-	<meta name="generator" content="Hugo 0.54.0" />
+	<meta name="generator" content="Hugo 0.58.3" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -45,9 +45,9 @@
 			<small>
 		
 			
+			
 				
-				<a href="/"> (it)</a>
-			</small>
+				<a href="/"> (it)</a></small>
 		</h1>
 	</div>
 	<nav class="site-nav">
@@ -199,11 +199,12 @@ Then, use the following command to:</p>
 <ol>
 <li>Sign your message with your private key;</li>
 <li>Strip away some unnecessary lines (the two <code>sed</code> commands);</li>
-<li>Generate a QR code with your signed message and save it to <code>out.png</code>.</li>
-</ol>
+
+<li><p>Generate a QR code with your signed message and save it to <code>out.png</code>.</p>
 
 <pre><code class="language-bash">keybase pgp sign -m &quot;&lt;YOUR MESSAGE&gt;&quot; | sed '/^Version.*/d' | sed '/^Comment.*/d' |  qrencode -o out.png
-</code></pre>
+</code></pre></li>
+</ol>
 
 <p>Step 2 is not really needed, but it makes the resulting QR code a bit less
 &ldquo;dense&rdquo; and thus easier to decode.</p>

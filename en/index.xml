@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lou1306</title>
@@ -10,22 +9,12 @@
     <atom:link href="http://lou1306.github.io/en/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Digital signing your physical stuff</title>
-      <link>http://lou1306.github.io/en/post/2019-01-02-signing/</link>
+      <title>Post</title>
+      <link>http://lou1306.github.io/en/post/</link>
       <pubDate>Wed, 02 Jan 2019 18:02:11 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/en/post/2019-01-02-signing/</guid>
-      <description>With the new year comes a new daily notebook! Since I always carry it around, I typically put a lot of personal data in the first pages of the notebook in the hope that, should I lose it somewhere, it will be found and returned. This time, as I was filling in the info page, I started thinking&amp;hellip; Wouldn&amp;rsquo;t it be nice if I had some other way to prove that this thing is mine, without having to provide so much information? &lt;a href=&#39;http://lou1306.github.io/en/post/2019-01-02-signing/&#39; }}&gt;&lt;em&gt;Continua su lou1306.github.io&lt;/em&gt;&lt;/a&gt;</description>
-    </item>
-    
-    <item>
-      <title>C: Packing two integers in a single variable</title>
-      <link>http://lou1306.github.io/en/post/2018-01-11-packing/</link>
-      <pubDate>Thu, 11 Jan 2018 11:56:11 +0100</pubDate>
-      
-      <guid>http://lou1306.github.io/en/post/2018-01-11-packing/</guid>
-      <description>Lately we needed to put a pair of small integers into a single int variable. (Let us gloss over the intricacies of what an int actually is and just assume it is 32-bit, shall we?) Nothing crazy hard but still, it took some trial and error before we got it right. So, if anybody needs it or is just curious, here&amp;rsquo;s the code:
- The code will test all possible tuples and quit if some unpacking gives an unexpected result. &lt;a href=&#39;http://lou1306.github.io/en/post/2018-01-11-packing/&#39; }}&gt;&lt;em&gt;Continua su lou1306.github.io&lt;/em&gt;&lt;/a&gt;</description>
+      <guid>http://lou1306.github.io/en/post/</guid>
+      <description> &lt;a href=&#39;http://lou1306.github.io/en/post/&#39; }}&gt;&lt;em&gt;Continua su lou1306.github.io&lt;/em&gt;&lt;/a&gt;</description>
     </item>
     
   </channel>

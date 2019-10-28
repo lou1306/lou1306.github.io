@@ -6,10 +6,37 @@
     <description>Recent content in Tags on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
-    <lastBuildDate>Thu, 11 Jan 2018 11:56:11 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 17 Feb 2019 16:54:29 +0100</lastBuildDate>
     
 	<atom:link href="http://lou1306.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>schools</title>
+      <link>http://lou1306.github.io/en/tags/schools/</link>
+      <pubDate>Sun, 17 Feb 2019 16:54:29 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/en/tags/schools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keybase</title>
+      <link>http://lou1306.github.io/en/tags/keybase/</link>
+      <pubDate>Wed, 02 Jan 2019 18:02:11 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/en/tags/keybase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pgp</title>
+      <link>http://lou1306.github.io/en/tags/pgp/</link>
+      <pubDate>Wed, 02 Jan 2019 18:02:11 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/en/tags/pgp/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>C</title>
@@ -21,38 +48,11 @@
     </item>
     
     <item>
-      <title>Cv</title>
+      <title>cv</title>
       <link>http://lou1306.github.io/en/tags/cv/</link>
       <pubDate>Thu, 02 Mar 2017 11:40:29 +0100</pubDate>
       
       <guid>http://lou1306.github.io/en/tags/cv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Keybase</title>
-      <link>http://lou1306.github.io/en/tags/keybase/</link>
-      <pubDate>Wed, 02 Jan 2019 18:02:11 +0100</pubDate>
-      
-      <guid>http://lou1306.github.io/en/tags/keybase/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pgp</title>
-      <link>http://lou1306.github.io/en/tags/pgp/</link>
-      <pubDate>Wed, 02 Jan 2019 18:02:11 +0100</pubDate>
-      
-      <guid>http://lou1306.github.io/en/tags/pgp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Schools</title>
-      <link>http://lou1306.github.io/en/tags/schools/</link>
-      <pubDate>Sun, 17 Feb 2019 16:54:29 +0100</pubDate>
-      
-      <guid>http://lou1306.github.io/en/tags/schools/</guid>
       <description></description>
     </item>
     

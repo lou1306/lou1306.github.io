@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Appunti di informatica e altro">
 	
-	<meta name="generator" content="Hugo 0.58.3" />
+	<meta name="generator" content="Hugo 0.62.2" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -144,67 +144,52 @@
 </p>
 </header>
 	
-		<p>Quando scrivere documenti diventa un&rsquo;attività quotidiana, un po&rsquo; di automazione
+		<p>Quando scrivere documenti diventa un'attività quotidiana, un po&rsquo; di automazione
 può veramente salvarti la vita.</p>
-
 <h2 id="report-e-presentazioni">Report e presentazioni</h2>
-
 <p><a href="http://pandoc.org/">Pandoc</a> è un convertitore universale di documenti.
 Supporta moltissimi formati, sia in ingresso che in uscita, ma io uso
 soprattutto file <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a>
 che converto in PDF.</p>
-
 <p>In realtà Pandoc effettua una conversione intermedia in LaTeX, quindi è
 necessario installare una distribuzione come TeXLive o MiKTeX.
 Il vantaggio è che posso scrivere i miei documenti in Markdown e usare i comandi
 LaTeX solo quando necessario: quindi ottengo file più leggeri e leggibili.</p>
-
-<p>Inoltre ho un unico workflow per documenti e presentazioni: Pandoc ha un&rsquo;ottima
+<p>Inoltre ho un unico workflow per documenti e presentazioni: Pandoc ha un'ottima
 interfaccia per realizzare slide mediante
 <a href="https://www.ctan.org/pkg/beamer"><code>beamer</code></a>.</p>
-
 <h3 id="citazioni-e-mendeley">Citazioni e Mendeley</h3>
-
 <p>Pandoc supporta i file di bibliografia BibTeX.
 Anziché crearli a mano, come ho fatto ai tempi della tesi triennale, vale la
 pena imparare a usare <a href="https://www.mendeley.com/">Mendeley</a> o
 <a href="https://www.zotero.org/">Zotero</a>, che sono in grado di recuperare
 automaticamente i metadati di un PDF e generare file BibTeX.</p>
-
 <h3 id="panzer">Panzer</h3>
-
-<p>Pandoc supporta l&rsquo;aggiunta di metadati sotto forma di un &ldquo;frontespizio&rdquo; in
-formato YAML all&rsquo;inizio del file.
-Ciò permette anche di personalizzare, entro certi limiti, l&rsquo;aspetto del PDF
+<p>Pandoc supporta l'aggiunta di metadati sotto forma di un &ldquo;frontespizio&rdquo; in
+formato YAML all'inizio del file.
+Ciò permette anche di personalizzare, entro certi limiti, l'aspetto del PDF
 finale; molte altre preferenze, tuttavia, sono accessibili solo attraverso
 parametri dalla linea di comando.
 Purtroppo alcuni parametri sono necessari solo in alcune circostanze e vanno
 evitati in altre, quindi le prime soluzioni che ho provato (shell scripts e
 alias) non erano abbastanza flessibili.</p>
-
-<p>Fortunatamente qualcuno ha avuto il mio stesso problema e l&rsquo;ha risolto creando
+<p>Fortunatamente qualcuno ha avuto il mio stesso problema e l'ha risolto creando
 <a href="https://github.com/msprev/panzer">Panzer</a>, una specie di <em>wrapper</em> attorno a
 Pandoc che aggiunge il concetto di &ldquo;stili&rdquo;.</p>
-
 <p>Grazie a Panzer, è possibile impostare tra i metadati del documento uno o più
 <em>stili</em>, che definiscono nel dettaglio come il documento deve essere processato
 da Pandoc:</p>
-
 <ul>
 <li>template</li>
 <li>opzioni da linea di comando</li>
 <li>Filtri prima e dopo la conversione</li>
 </ul>
-
 <p>Gli stili riducono notevolmente la quantità di metadati che devo inserire
 in ciascun documento e danno una maggiore uniformità ai miei PDF.</p>
-
-<h3 id="sublime-skim-sumatra">Sublime + Skim/Sumatra</h3>
-
+<h3 id="sublime--skimsumatra">Sublime + Skim/Sumatra</h3>
 <p><a href="https://www.sublimetext.com/">Sublime Text</a> è il mio editor di riferimento,
 anche se non supporta nativamente la sintassi Markdown: basta installare il
 plugin <em>Markdown Extended</em>.</p>
-
 <figure>
     <img src="/img/post/20170610-sublime.png"
          alt="Io mentre scrivo questo post su Sublime."/> <figcaption>
@@ -212,53 +197,40 @@ plugin <em>Markdown Extended</em>.</p>
         </figcaption>
 </figure>
 
-
 <p>Uno dei pregi di Sublime è la possibilità di definire un <em>build system</em>: un
-comando personalizzato che viene eseguito direttamente dall&rsquo;editor quando
-l&rsquo;utente schiaccia un tasto (F7, di default).</p>
-
+comando personalizzato che viene eseguito direttamente dall'editor quando
+l'utente schiaccia un tasto (F7, di default).</p>
 <p>Nel mio caso ho creato un build system che converte il mio file Markdown con
 Panzer per poi aprire il PDF appena generato.</p>
-
 <p>Uso <a href="http://skim-app.sourceforge.net/">Skim</a> su Mac e
 <a href="https://www.sumatrapdfreader.org/free-pdf-reader.html">SumatraPDF</a> su Windows:
 entrambi hanno il vantaggio di non &ldquo;bloccare&rdquo; il PDF, il che mi permette di
 correggere i miei errori e rigenerare il PDF (che verrà automaticamente
 visualizzato nella sua nuova versione).</p>
-
 <h3 id="esempi">Esempi</h3>
-
 <p>Sto allestendo un <a href="https://github.com/lou1306/gssi">repository GitHub</a>
 dove pubblicare report e slide che sto producendo mentre studio per il mio
 dottorato.
 Al momento non ho caricato molti file, e temo di non poter garantire che
-saranno compilabili su qualsiasi PC, ma dovrebbero rendere più o meno l&rsquo;idea!</p>
-
+saranno compilabili su qualsiasi PC, ma dovrebbero rendere più o meno l'idea!</p>
 <h2 id="questo-sito">Questo sito</h2>
-
 <p>Il sito (che dovrei aggiornare più spesso 😅) esiste grazie a
 <a href="http://gohugo.io/">Hugo</a>, uno <em>static site generator</em> scritto in Go.</p>
-
 <p>Come tutti i software del suo tipo, Hugo genera pagine HTML a partire da un
 insieme di file Markdown.</p>
-
 <p>Per alcune pagine &ldquo;procedurali&rdquo;, come quella del CV, non ho nemmeno un documento
 Markdown: tutte le informazioni sono contenute in diversi file YAML, e ho
 scritto dei template per visualizzarle nelle rispettive pagine del sito.
 Il procedimento è descritto <a href="https://gohugo.io/extras/datafiles/">qui</a>.</p>
-
 <p>Per i commenti mi appoggio a <a href="https://disqus.com/">Disqus</a>: molti temi di Hugo
 permettono di integrarlo inserendo solo il proprio <em>shortname</em> nel file di
 configurazione del sito.</p>
-
-<p>Uso <em>GitHub Pages</em> per l&rsquo;hosting: ho creato un repsitory privato per l&rsquo;intera
+<p>Uso <em>GitHub Pages</em> per l'hosting: ho creato un repsitory privato per l'intera
 cartella Hugo (quindi anche bozze, temi e altro materiale che non appare sul
 sito), mentre la cartella <code>public</code> è un <em>submodule</em> pubblico.
 In questo modo, se il risultato mi soddisfa, posso aggiornare tutto con un
 singolo <code>git push</code>.</p>
-
 <h2 id="conclusioni">Conclusioni</h2>
-
 <p>Al momento credo che continuerò a scrivere LaTeX &ldquo;manualmente&rdquo; solo se il lavoro
 finale deve essere pubblicato o sottoposto a peer-review.
 Per il resto, sono veramente convinto che lavorare in Markdown mi permetta di
@@ -293,8 +265,8 @@ limitare al massimo le distrazioni e di concentrarmi su ciò che sto scrivendo.<
 	</div>
 
 	<footer class="site-footer">
-	<p class="text">&copy; 2019 - Luca Di Stefano <br/> <a href="http://creativecommons.org/licenses/by-nc/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="License: CC BY-NC 4.0" /></a>
-    <br/><a href="//gohugo.io/">Hugo</a> • <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a> • <a href="//getskeleton.com/">Skeleton</a></p>
+	<p class="text">&copy; 2020 - Luca Di Stefano <br/> <a href="http://creativecommons.org/licenses/by-nc/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="License: CC BY-NC 4.0"></a>
+<!-- raw HTML omitted --><a href="//gohugo.io/">Hugo</a> • <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a> • <a href="//getskeleton.com/">Skeleton</a></p>
 </footer>
 
 

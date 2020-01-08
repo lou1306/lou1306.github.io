@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Appunti di informatica e altro">
 	
-	<meta name="generator" content="Hugo 0.58.3" />
+	<meta name="generator" content="Hugo 0.62.2" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -146,264 +146,236 @@
 	<section class="post-content">
 	
 		<p><em>Questo gioiellino della cultura hacker circola in rete dal 1982.
-L&rsquo;ho tradotta tempo fa, basandomi sull&rsquo;edizione contenuta nel
+L'ho tradotta tempo fa, basandomi sull'edizione contenuta nel
 <a href="http://www.catb.org/jargon/html/story-of-mel.html">Jargon File</a> e cencando
 di mantenerne la forma &ldquo;poetica&rdquo; e le particolarità nella punteggiatura.
 Per informazioni più approfondite rimando a
 <a href="https://en.wikipedia.org/wiki/The_Story_of_Mel">Wikipedia</a></em>.</p>
-
-<hr />
-
-<p><em>Pubblicato su Usenet dall&rsquo;autore, Ed Nather (<a href="mailto:nather@astro.as.utexas.edu">nather@astro.as.utexas.edu</a>), il
+<hr>
+<p><em>Pubblicato su Usenet dall'autore, Ed Nather (<a href="mailto:nather@astro.as.utexas.edu">nather@astro.as.utexas.edu</a>), il
 21 Maggio 1983.</em></p>
-
-<p>Un recente articolo riguardo al &ldquo;machismo&rdquo; della programmazione<br />
+<p>Un recente articolo riguardo al &ldquo;machismo&rdquo; della programmazione<br>
 conteneva la secca, austera affermazione:</p>
-
 <blockquote>
 <p>I Veri Programmatori scrivono in FORTRAN.</p>
 </blockquote>
-
-<p>Forse lo fanno oggi,<br />
-in quest&rsquo;evo decadente di<br />
-birra light, calcolatrici tascabili e programmi &ldquo;user-friendly&rdquo;<br />
-ma nei Bei Tempi Andati,<br />
-quando dire &ldquo;software&rdquo; sembrava buffo<br />
-e i Veri Computer erano valvole e memorie a tamburo<br />
-i Veri Programmatori scrivevano in linguaggio macchina.<br />
-Non in FORTRAN. Né in RATFOR. Neppure in assemblativo.<br />
-Linguaggio Macchina.<br />
-Rozzi, disadorni, imperscrutabili numeri esadecimali.<br />
+<p>Forse lo fanno oggi,<br>
+in quest'evo decadente di<br>
+birra light, calcolatrici tascabili e programmi &ldquo;user-friendly&rdquo;<br>
+ma nei Bei Tempi Andati,<br>
+quando dire &ldquo;software&rdquo; sembrava buffo<br>
+e i Veri Computer erano valvole e memorie a tamburo<br>
+i Veri Programmatori scrivevano in linguaggio macchina.<br>
+Non in FORTRAN. Né in RATFOR. Neppure in assemblativo.<br>
+Linguaggio Macchina.<br>
+Rozzi, disadorni, imperscrutabili numeri esadecimali.<br>
 Direttamente.</p>
-
-<p>Poiché temo che un&rsquo;intera generazione di nuovi programmatori<br />
-cresca ignorando un passato così glorioso,<br />
-mi sento in dovere di descrivere,<br />
-nel modo migliore che il salto generazionale mi consenta,<br />
-come scriveva codice un Vero Programmatore.<br />
-Lo chiamerò Mel,<br />
+<p>Poiché temo che un'intera generazione di nuovi programmatori<br>
+cresca ignorando un passato così glorioso,<br>
+mi sento in dovere di descrivere,<br>
+nel modo migliore che il salto generazionale mi consenta,<br>
+come scriveva codice un Vero Programmatore.<br>
+Lo chiamerò Mel,<br>
 ché quello era il suo nome.</p>
-
-<p>Incontrai Mel quando lavoravo per la Royal McBee Computer Corp.,<br />
-una succursale ormai defunta della società di macchine da scrivere.<br />
-La ditta produceva l&rsquo;LGP-30,<br />
-un piccolo, economico (per gli standard del tempo)<br />
-computer con memoria a tamburo,<br />
-ed aveva iniziato a produrre<br />
-l&rsquo;RCP-4000, un computer migliorato,<br />
-più grande e più veloce &mdash; sempre con memoria a tamburo.<br />
-I nuclei magnetici costavano troppo<br />
-e non sembravano destinati a durare.<br />
-(Ecco perché non avete mai sentito parlare della ditta,<br />
+<p>Incontrai Mel quando lavoravo per la Royal McBee Computer Corp.,<br>
+una succursale ormai defunta della società di macchine da scrivere.<br>
+La ditta produceva l'LGP-30,<br>
+un piccolo, economico (per gli standard del tempo)<br>
+computer con memoria a tamburo,<br>
+ed aveva iniziato a produrre<br>
+l'RCP-4000, un computer migliorato,<br>
+più grande e più veloce &mdash; sempre con memoria a tamburo.<br>
+I nuclei magnetici costavano troppo<br>
+e non sembravano destinati a durare.<br>
+(Ecco perché non avete mai sentito parlare della ditta,<br>
 né del computer).</p>
-
-<p>Ero stato assunto per scrivere un compilatore FORTRAN<br />
-per questo nuovo prodigio, e Mel era la mia guida tra le sue meraviglie.<br />
+<p>Ero stato assunto per scrivere un compilatore FORTRAN<br>
+per questo nuovo prodigio, e Mel era la mia guida tra le sue meraviglie.<br>
 Mel non accettava i compilatori.</p>
-
-<p>&ldquo;Se un programma non può riscrivere il suo stesso codice&rdquo;,<br />
+<p>&ldquo;Se un programma non può riscrivere il suo stesso codice&rdquo;,<br>
 chiedeva, &ldquo;a cosa serve?&rdquo;</p>
-
-<p>Mel aveva scritto,<br />
-in esadecimale,<br />
-il più famoso programma di proprietà della compagnia.<br />
-Girava sull&rsquo;LGP-30<br />
-e giocava a blackjack con potenziali clienti<br />
-alle fiere dell&rsquo;informatica.<br />
-Aveva sempre un effetto spettacolare.<br />
-Lo stand dell&rsquo;LGP-30 era pieno ad ogni show,<br />
-e i rappresentanti dell&rsquo;IBM se ne stavano lì attorno<br />
-a parlare tra loro.<br />
-Se poi ciò aiutasse a vendere computer<br />
+<p>Mel aveva scritto,<br>
+in esadecimale,<br>
+il più famoso programma di proprietà della compagnia.<br>
+Girava sull'LGP-30<br>
+e giocava a blackjack con potenziali clienti<br>
+alle fiere dell'informatica.<br>
+Aveva sempre un effetto spettacolare.<br>
+Lo stand dell'LGP-30 era pieno ad ogni show,<br>
+e i rappresentanti dell'IBM se ne stavano lì attorno<br>
+a parlare tra loro.<br>
+Se poi ciò aiutasse a vendere computer<br>
 era una faccenda di cui non parlavamo mai.</p>
-
-<p>Il lavoro di Mel era riscrivere<br />
-il programma del blackjack per l&rsquo;RCP-4000.<br />
-(Port? Cos&rsquo;è un port?)<br />
-Il nuovo computer aveva un metodo di indirizzamento<br />
-&ldquo;one-plus-one&rdquo;,<br />
-in cui ogni istruzione,<br />
-oltre al codice dell&rsquo;operazione<br />
-e all&rsquo;indirizzo dell&rsquo;operando richiesto,<br />
-aveva un secondo indirizzo che indicava dove, sul tamburo rotante,<br />
-si trovasse l&rsquo;istruzione successiva.</p>
-
-<p>Nel gergo moderno,<br />
-ogni singola istruzione era seguita da un GO TO!<br />
+<p>Il lavoro di Mel era riscrivere<br>
+il programma del blackjack per l'RCP-4000.<br>
+(Port? Cos'è un port?)<br>
+Il nuovo computer aveva un metodo di indirizzamento<br>
+&ldquo;one-plus-one&rdquo;,<br>
+in cui ogni istruzione,<br>
+oltre al codice dell'operazione<br>
+e all'indirizzo dell'operando richiesto,<br>
+aveva un secondo indirizzo che indicava dove, sul tamburo rotante,<br>
+si trovasse l'istruzione successiva.</p>
+<p>Nel gergo moderno,<br>
+ogni singola istruzione era seguita da un GO TO!<br>
 Pascal, prendi <em>questo</em> e porta a casa.</p>
-
-<p>Mel amava l&rsquo;RCP-4000<br />
-perché era in grado di ottimizzare il suo codice:<br />
-cioè, posizionare le istruzioni sul tamburo<br />
-cosicché, appena una finisse il proprio compito,<br />
-la successiva si trovasse proprio presso la testina<br />
-e pronta per l&rsquo;esecuzione immediata.<br />
-C&rsquo;era un programma che lo faceva,<br />
-un &ldquo;assembler ottimizzante&rdquo;,<br />
+<p>Mel amava l'RCP-4000<br>
+perché era in grado di ottimizzare il suo codice:<br>
+cioè, posizionare le istruzioni sul tamburo<br>
+cosicché, appena una finisse il proprio compito,<br>
+la successiva si trovasse proprio presso la testina<br>
+e pronta per l'esecuzione immediata.<br>
+C'era un programma che lo faceva,<br>
+un &ldquo;assembler ottimizzante&rdquo;,<br>
 ma Mel si rifiutava di usarlo.</p>
-
-<p>&ldquo;Non sai mai dove metterà le cose&rdquo;,<br />
+<p>&ldquo;Non sai mai dove metterà le cose&rdquo;,<br>
 spiegava, &ldquo;quindi bisogna usare costanti separate&rdquo;.</p>
-
-<p>Passò parecchio prima che capissi quell&rsquo;osservazione.<br />
-Poiché Mel sapeva il valore numerico<br />
-del codice di ogni operazione,<br />
-e si assegnava da solo gli indirizzi sul tamburo,<br />
-ogni istruzione che scriveva poteva essere allo stesso tempo<br />
-una costante numerica.<br />
-Poteva prendere, ad esempio, un&rsquo;&ldquo;add&rdquo; scritto in precedenza<br />
-e moltiplicarlo per un altro numero,<br />
-se aveva il giusto valore aritmetico.<br />
+<p>Passò parecchio prima che capissi quell'osservazione.<br>
+Poiché Mel sapeva il valore numerico<br>
+del codice di ogni operazione,<br>
+e si assegnava da solo gli indirizzi sul tamburo,<br>
+ogni istruzione che scriveva poteva essere allo stesso tempo<br>
+una costante numerica.<br>
+Poteva prendere, ad esempio, un&rsquo;&ldquo;add&rdquo; scritto in precedenza<br>
+e moltiplicarlo per un altro numero,<br>
+se aveva il giusto valore aritmetico.<br>
 Il suo codice non era facile da modificare, per gli altri.</p>
-
-<p>Comparavo i programmi ottimizzati a mano da Mel<br />
-con lo stesso codice rimaneggiato dall&rsquo;assembler ottimizzante<br />
-e quelli di Mel erano sempre i più veloci.<br />
-Questo perché la programmazione &ldquo;top-down&rdquo;<br />
-non era stata ancora inventata,<br />
-e Mel non l&rsquo;avrebbe comunque seguita.<br />
-Scriveva per prime le parti più interne dei suoi loop,<br />
-così avrebbero avuto la scelta migliore<br />
-per gli indirizzi ottimali sul tamburo.<br />
-L&rsquo;assembler non era abbastanza furbo per farlo.</p>
-
-<p>Mel non scriveva neppure loop ritardanti,<br />
-anche se la recalcitrante Flexowriter<br />
-aveva bisogno di una pausa tra i caratteri di output per non incepparsi.<br />
-Semplicemente, posizionava le istruzioni sul tamburo<br />
-in modo che la successiva fosse proprio <em>oltre</em> la testina<br />
-quando doveva essere eseguita;<br />
-il tamburo doveva effettuare un giro completo<br />
-per trovare la prossima istruzione.<br />
-Ideò un termine indimenticabile per questo sistema.<br />
-Anche se &ldquo;ottimo&rdquo; è un assoluto,<br />
-come &ldquo;unico&rdquo;, divenne prassi comune<br />
-usarlo in modo relativo:<br />
-&ldquo;non proprio ottimo&rdquo; o &ldquo;meno ottimo&rdquo;<br />
-o &ldquo;non molto ottimo&rdquo;.<br />
-Mel chiamava le posizioni col massimo ritardo<br />
+<p>Comparavo i programmi ottimizzati a mano da Mel<br>
+con lo stesso codice rimaneggiato dall'assembler ottimizzante<br>
+e quelli di Mel erano sempre i più veloci.<br>
+Questo perché la programmazione &ldquo;top-down&rdquo;<br>
+non era stata ancora inventata,<br>
+e Mel non l'avrebbe comunque seguita.<br>
+Scriveva per prime le parti più interne dei suoi loop,<br>
+così avrebbero avuto la scelta migliore<br>
+per gli indirizzi ottimali sul tamburo.<br>
+L'assembler non era abbastanza furbo per farlo.</p>
+<p>Mel non scriveva neppure loop ritardanti,<br>
+anche se la recalcitrante Flexowriter<br>
+aveva bisogno di una pausa tra i caratteri di output per non incepparsi.<br>
+Semplicemente, posizionava le istruzioni sul tamburo<br>
+in modo che la successiva fosse proprio <em>oltre</em> la testina<br>
+quando doveva essere eseguita;<br>
+il tamburo doveva effettuare un giro completo<br>
+per trovare la prossima istruzione.<br>
+Ideò un termine indimenticabile per questo sistema.<br>
+Anche se &ldquo;ottimo&rdquo; è un assoluto,<br>
+come &ldquo;unico&rdquo;, divenne prassi comune<br>
+usarlo in modo relativo:<br>
+&ldquo;non proprio ottimo&rdquo; o &ldquo;meno ottimo&rdquo;<br>
+o &ldquo;non molto ottimo&rdquo;.<br>
+Mel chiamava le posizioni col massimo ritardo<br>
 &ldquo;le più pessime&rdquo;.</p>
-
-<p>Dopo aver finito il programma del blackjack<br />
-ed averlo fatto girare<br />
-(&ldquo;Anche l&rsquo;inizializzatore è ottimizzato&rdquo;,<br />
-diceva orgoglioso)<br />
-ricevette una Richiesta di Modifica dal reparto vendite.<br />
-Il programma usava un elegante (ed ottimizzato)<br />
-generatore di numeri casuali<br />
-per mischiare le &ldquo;carte&rdquo; e pescare dal &ldquo;mazzo&rdquo;,<br />
-e per alcuni rappresentanti era troppo imparziale<br />
-visto che a volte i clienti perdevano.<br />
-Volevano che Mel modificasse il programma<br />
-cosicché, schiacciando un interruttore sulla console,<br />
+<p>Dopo aver finito il programma del blackjack<br>
+ed averlo fatto girare<br>
+(&ldquo;Anche l'inizializzatore è ottimizzato&rdquo;,<br>
+diceva orgoglioso)<br>
+ricevette una Richiesta di Modifica dal reparto vendite.<br>
+Il programma usava un elegante (ed ottimizzato)<br>
+generatore di numeri casuali<br>
+per mischiare le &ldquo;carte&rdquo; e pescare dal &ldquo;mazzo&rdquo;,<br>
+e per alcuni rappresentanti era troppo imparziale<br>
+visto che a volte i clienti perdevano.<br>
+Volevano che Mel modificasse il programma<br>
+cosicché, schiacciando un interruttore sulla console,<br>
 potessero cambiare le probabilità e far vincere il cliente.</p>
-
-<p>Mel era riluttante.<br />
-Pensava fosse una cosa disonesta,<br />
-e lo era,<br />
-e che macchiasse la sua personale integrità di programmatore,<br />
-e la macchiava,<br />
-quindi si rifiutò.<br />
-Il Capo del reparto vendite parlò con Mel,<br />
-e così fece il Boss e, sotto la pressione del Boss,<br />
-Mel finalmente si arrese e scrisse quel codice,<br />
-ma scrisse il test al contrario,<br />
-e quando l&rsquo;interruttore veniva attivato,<br />
-il programma barava e vinceva ogni volta.<br />
-Mel era estasiato:<br />
-affermava che il suo subconscio era etico oltre ogni controllo,<br />
+<p>Mel era riluttante.<br>
+Pensava fosse una cosa disonesta,<br>
+e lo era,<br>
+e che macchiasse la sua personale integrità di programmatore,<br>
+e la macchiava,<br>
+quindi si rifiutò.<br>
+Il Capo del reparto vendite parlò con Mel,<br>
+e così fece il Boss e, sotto la pressione del Boss,<br>
+Mel finalmente si arrese e scrisse quel codice,<br>
+ma scrisse il test al contrario,<br>
+e quando l'interruttore veniva attivato,<br>
+il programma barava e vinceva ogni volta.<br>
+Mel era estasiato:<br>
+affermava che il suo subconscio era etico oltre ogni controllo,<br>
 e si rifiutò inflessibilmente di correggere.</p>
-
-<p>Dopo che Mel abbandonò la ditta per pa$coli più verdi,<br />
-il Boss mi chiese di studiare il codice<br />
-e provare a trovare il test e a capovolgerlo.<br />
-Un po&rsquo; controvoglia acconsentii a dare un&rsquo;occhiata.<br />
+<p>Dopo che Mel abbandonò la ditta per pa$coli più verdi,<br>
+il Boss mi chiese di studiare il codice<br>
+e provare a trovare il test e a capovolgerlo.<br>
+Un po&rsquo; controvoglia acconsentii a dare un'occhiata.<br>
 Seguire il codice di Mel fu una vera avventura.</p>
-
-<p>Spesso ho pensato che la programmazione fosse una forma d&rsquo;arte,<br />
-il cui valore effettivo possa essere misurato<br />
-solo da un altro edotto nella medesima arte arcana;<br />
-esistono amabili gemme e gesta brillanti<br />
-nascoste all&rsquo;occhio e al plauso degli uomini, a volte per sempre,<br />
-per la natura stessa del procedimento.<br />
-Si può capire molto di una persona<br />
-solo leggendo il suo codice,<br />
-anche in esadecimale.<br />
+<p>Spesso ho pensato che la programmazione fosse una forma d'arte,<br>
+il cui valore effettivo possa essere misurato<br>
+solo da un altro edotto nella medesima arte arcana;<br>
+esistono amabili gemme e gesta brillanti<br>
+nascoste all'occhio e al plauso degli uomini, a volte per sempre,<br>
+per la natura stessa del procedimento.<br>
+Si può capire molto di una persona<br>
+solo leggendo il suo codice,<br>
+anche in esadecimale.<br>
 Mel, credo, fu un genio mai acclamato.</p>
-
-<p>Forse lo shock più grande lo subii<br />
-quando trovai un semplice ciclo privo di condizione.<br />
-Nessun test. <em>Nulla</em>.<br />
-Il buonsenso suggeriva che doveva essere un ciclo chiuso<br />
-nel quale il programma avrebbe girato per sempre, senza fine.<br />
-Eppure il programma ci passava attraverso<br />
-e usciva senza problemi dall&rsquo;altra parte.<br />
+<p>Forse lo shock più grande lo subii<br>
+quando trovai un semplice ciclo privo di condizione.<br>
+Nessun test. <em>Nulla</em>.<br>
+Il buonsenso suggeriva che doveva essere un ciclo chiuso<br>
+nel quale il programma avrebbe girato per sempre, senza fine.<br>
+Eppure il programma ci passava attraverso<br>
+e usciva senza problemi dall'altra parte.<br>
 Ci misi due settimane a capirlo.</p>
-
-<p>L&rsquo;RPC-4000 aveva una funzione molto moderna,<br />
-un registro indice.<br />
-Permetteva al programmatore di scrivere un loop<br />
-con all&rsquo;interno un&rsquo;istruzione indirizzata;<br />
-ogni volta,<br />
-il numero del registro indice<br />
-veniva addizionato all&rsquo;indirizzo dell&rsquo;istruzione<br />
-così da far riferimento<br />
-al dato successivo di una serie.<br />
-Bastava incrementare il registro indice<br />
-ogni volta.<br />
+<p>L'RPC-4000 aveva una funzione molto moderna,<br>
+un registro indice.<br>
+Permetteva al programmatore di scrivere un loop<br>
+con all'interno un'istruzione indirizzata;<br>
+ogni volta,<br>
+il numero del registro indice<br>
+veniva addizionato all'indirizzo dell'istruzione<br>
+così da far riferimento<br>
+al dato successivo di una serie.<br>
+Bastava incrementare il registro indice<br>
+ogni volta.<br>
 Mel non lo usava mai.</p>
-
-<p>Inviava invece l&rsquo;istruzione ad un registro della macchina,<br />
-aggiungeva uno<br />
-e lo memorizzava di nuovo.<br />
-Poi eseguiva l&rsquo;istruzione modificata<br />
-direttamente dal registro.<br />
-Il ciclo era scritto in modo che questo tempo d&rsquo;esecuzione aggiuntivo
-venisse preso in considerazione &mdash;<br />
-appena questa istruzione finiva,<br />
-la prossima era già sotto la testina del tamburo,<br />
-pronta a partire.<br />
+<p>Inviava invece l'istruzione ad un registro della macchina,<br>
+aggiungeva uno<br>
+e lo memorizzava di nuovo.<br>
+Poi eseguiva l'istruzione modificata<br>
+direttamente dal registro.<br>
+Il ciclo era scritto in modo che questo tempo d'esecuzione aggiuntivo
+venisse preso in considerazione &mdash;<br>
+appena questa istruzione finiva,<br>
+la prossima era già sotto la testina del tamburo,<br>
+pronta a partire.<br>
 Ma il ciclo non aveva condizioni.</p>
-
-<p>L&rsquo;indizio fondamentale arrivò quando notai<br />
-che il bit del registro indice,<br />
-il bit che giace tra l&rsquo;indirizzo<br />
-ed il codice dell&rsquo;operazione della parola dell&rsquo;istruzione,<br />
-era attivo &mdash;<br />
-ma Mel non usava mai il registro indice,<br />
-lasciando quel bit a zero ogni volta.<br />
+<p>L'indizio fondamentale arrivò quando notai<br>
+che il bit del registro indice,<br>
+il bit che giace tra l'indirizzo<br>
+ed il codice dell'operazione della parola dell'istruzione,<br>
+era attivo &mdash;<br>
+ma Mel non usava mai il registro indice,<br>
+lasciando quel bit a zero ogni volta.<br>
 Quando la luce si accese, quasi mi accecò.</p>
-
-<p>Aveva messo i dati su cui lavorava<br />
-quasi in cima alla memoria &mdash;<br />
-le locazioni più grandi che indirizzabili dalle istruzioni &mdash;<br />
-cosicché, dopo aver gestito l&rsquo;ultimo dato,<br />
-incrementare l&rsquo;indirizzo dell&rsquo;istruzione<br />
-lo mandava in overflow.<br />
-Il resto aggiungeva uno al codice<br />
-dell&rsquo;operazione, trasformandola nella successiva istruzione del set:<br />
-un salto.<br />
-Ovviamente, l&rsquo;istruzione seguente era<br />
-nell&rsquo;indirizzo zero,<br />
+<p>Aveva messo i dati su cui lavorava<br>
+quasi in cima alla memoria &mdash;<br>
+le locazioni più grandi che indirizzabili dalle istruzioni &mdash;<br>
+cosicché, dopo aver gestito l'ultimo dato,<br>
+incrementare l'indirizzo dell'istruzione<br>
+lo mandava in overflow.<br>
+Il resto aggiungeva uno al codice<br>
+dell'operazione, trasformandola nella successiva istruzione del set:<br>
+un salto.<br>
+Ovviamente, l'istruzione seguente era<br>
+nell'indirizzo zero,<br>
 e il programma continuava a girare spensierato.</p>
-
-<p>Non ho più sentito Mel,<br />
-quindi non so se si è arreso al diluvio di<br />
-cambiamenti che ha spazzato via le tecniche di programmazione<br />
-dopo quei giorni ormai passati.<br />
-Mi piace pensare che non l&rsquo;abbia fatto.<br />
-Ad ogni modo,<br />
-ero così impressionato che smisi di cercare<br />
-il test trasgressore,<br />
-dicendo al Boss che non riuscivo a trovarlo.<br />
+<p>Non ho più sentito Mel,<br>
+quindi non so se si è arreso al diluvio di<br>
+cambiamenti che ha spazzato via le tecniche di programmazione<br>
+dopo quei giorni ormai passati.<br>
+Mi piace pensare che non l'abbia fatto.<br>
+Ad ogni modo,<br>
+ero così impressionato che smisi di cercare<br>
+il test trasgressore,<br>
+dicendo al Boss che non riuscivo a trovarlo.<br>
 Non mi sembrò sorpreso.</p>
-
-<p>Quando lasciai la ditta,<br />
-il programma del blackjack barava ancora<br />
-se attivavi il giusto interruttore,<br />
-e penso che così devono andare le cose.<br />
-Non mi sentivo a mio agio<br />
-nell&rsquo;hackerare il codice di un Vero Programmatore.</p>
+<p>Quando lasciai la ditta,<br>
+il programma del blackjack barava ancora<br>
+se attivavi il giusto interruttore,<br>
+e penso che così devono andare le cose.<br>
+Non mi sentivo a mio agio<br>
+nell'hackerare il codice di un Vero Programmatore.</p>
 	
 	</section>
 		
@@ -431,8 +403,8 @@ nell&rsquo;hackerare il codice di un Vero Programmatore.</p>
 	</div>
 
 	<footer class="site-footer">
-	<p class="text">&copy; 2019 - Luca Di Stefano <br/> <a href="http://creativecommons.org/licenses/by-nc/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="License: CC BY-NC 4.0" /></a>
-    <br/><a href="//gohugo.io/">Hugo</a> • <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a> • <a href="//getskeleton.com/">Skeleton</a></p>
+	<p class="text">&copy; 2020 - Luca Di Stefano <br/> <a href="http://creativecommons.org/licenses/by-nc/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="License: CC BY-NC 4.0"></a>
+<!-- raw HTML omitted --><a href="//gohugo.io/">Hugo</a> • <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a> • <a href="//getskeleton.com/">Skeleton</a></p>
 </footer>
 
 

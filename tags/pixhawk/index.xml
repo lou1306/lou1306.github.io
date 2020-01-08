@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PixHawk on lou1306</title>
@@ -19,7 +19,7 @@
       <guid>http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</guid>
       <description>&lt;p&gt;Il firmware &lt;a href=&#34;http://ardupilot.org/copter/index.html&#34;&gt;APM:Copter&lt;/a&gt; è una delle
 principali soluzioni open-source per il pilotaggio remoto di droni. Vedremo
-come è possibile eseguire codice personalizzato all&amp;rsquo;interno del sistema (che
+come è possibile eseguire codice personalizzato all&#39;interno del sistema (che
 nel mio caso è installato su una board PixHawk v2), ed inviare dati a terra
 mediante il protocollo MAVLink.&lt;/p&gt;</description>
     </item>

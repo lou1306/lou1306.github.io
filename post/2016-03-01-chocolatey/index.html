@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Appunti di informatica e altro">
 	
-	<meta name="generator" content="Hugo 0.62.2" />
+	<meta name="generator" content="Hugo 0.63.1" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -150,13 +150,13 @@ repositories</em> è una storia di successo che però fatica a prendere piede su
 Windows.
 Ma qualcosa sta cambiando.</p>
 <h2 id="un-po-di-storia">Un po&rsquo; di storia</h2>
-<p>L'installazione di software certificato da uno o più <em>repository</em> è da anni un
+<p>L&rsquo;installazione di software certificato da uno o più <em>repository</em> è da anni un
 caposaldo del mondo Linux.
 I vantaggi sono evidenti: la stabilità del sistema e la correttezza dei
-pacchetti sono garantite da un team di gestione qualificato, e l'utente non deve
-fare altro che usare un'interfaccia testuale o grafica per cercare e installare
+pacchetti sono garantite da un team di gestione qualificato, e l&rsquo;utente non deve
+fare altro che usare un&rsquo;interfaccia testuale o grafica per cercare e installare
 le applicazioni.</p>
-<p>Sistemi analoghi si sono affermati nell'ambito dei linguaggi di programmazione:
+<p>Sistemi analoghi si sono affermati nell&rsquo;ambito dei linguaggi di programmazione:
 ovviamente in tal caso i pacchetti non contengono programmi, ma librerie
 riusabili che risparmiano al programmatore la fatica di inventare la ruota.
 Ne cito giusto due: il <strong>Python Package Index</strong> (PyPI) per il linguaggio ideato
@@ -169,10 +169,10 @@ software che desidera, e il caricamento di eseguibili da altre fonti
 <h2 id="e-su-windows">E su Windows?</h2>
 <p>La distribuzione di software su Windows, al contrario, è sempre stato un
 processo decentralizzato: la responsabilità di reperire ed eseguire
-l'installer spetta all'utente finale.</p>
-<p>Evidentemente è un modello pensato per un'altra epoca, in cui l'installazione
-via internet era l'eccezione e gli aggiornamenti avvenivano sporadicamente.
-Ma al giorno d'oggi, oltre a qualche rischio per la sicurezza, è soprattutto una
+l&rsquo;installer spetta all&rsquo;utente finale.</p>
+<p>Evidentemente è un modello pensato per un&rsquo;altra epoca, in cui l&rsquo;installazione
+via internet era l&rsquo;eccezione e gli aggiornamenti avvenivano sporadicamente.
+Ma al giorno d&rsquo;oggi, oltre a qualche rischio per la sicurezza, è soprattutto una
 fonte di infinite seccature (se la frase &ldquo;Un nuovo aggiornamento di Java è
 disponibile&rdquo; non vi fa sudare freddo, complimenti: avete più fegato di me).</p>
 <h2 id="chocolatey">Chocolatey</h2>
@@ -180,10 +180,10 @@ disponibile&rdquo; non vi fa sudare freddo, complimenti: avete più fegato di me
 Appoggiandosi a OneGet e a PowerShell, il team di
 <a href="https://chocolatey.org/">Chocolatey</a>
 ha realizzato un software manager <em>decentralizzato</em>: se gli chiediamo di
-installare un'applicazione (ad esempio l'ottima
+installare un&rsquo;applicazione (ad esempio l&rsquo;ottima
 <a href="https://justgetflux.com/">f.lux</a>),
 esso scaricherà uno script PowerShell che a sua volta contiene le istruzioni per
-il download e l'esecuzione dell'installer.</p>
+il download e l&rsquo;esecuzione dell&rsquo;installer.</p>
 <p>La community di Chocolatey verifica che gli script siano &ldquo;benevoli&rdquo;; in futuro
 verrà inoltre resa obbligatoria la verifica del <em>checksum</em> dei file scaricati,
 come ulteriore misura di sicurezza.</p>
@@ -225,25 +225,25 @@ quella di altri gestori di pacchetti.</p>
 </tr>
 <tr>
 <td><code>choco pin f.lux</code></td>
-<td>Disabilita l'aggiornamento del pacchetto</td>
+<td>Disabilita l&rsquo;aggiornamento del pacchetto</td>
 </tr>
 </tbody>
 </table>
 <h2 id="bonus-packagemanagement">Bonus: PackageManagement</h2>
 <p>Gli sviluppatori Microsoft sono andati <em>oltre</em> e hanno ideato un &ldquo;package
-manager manager&rdquo;, cioè un'infrastruttura unificata per l'installazione di
+manager manager&rdquo;, cioè un&rsquo;infrastruttura unificata per l&rsquo;installazione di
 pacchetti da molteplici gestori di pacchetti.
-Ciò significa che un giorno l'utente potrà accedere a PyPI, NuGet, RubyGems e
-così via attraverso un'interfaccia unificata.</p>
+Ciò significa che un giorno l&rsquo;utente potrà accedere a PyPI, NuGet, RubyGems e
+così via attraverso un&rsquo;interfaccia unificata.</p>
 <p>PackageManager (un tempo noto come OneGet) è incluso in Windows 10: per i
 sistemi precedenti esiste un
 <a href="https://www.microsoft.com/en-us/download/details.aspx?id=49186">installer</a>
 che però non ho avuto modo di testare.
-L'obiettivo principale di OneGet è quello di consentire il download di script e
+L&rsquo;obiettivo principale di OneGet è quello di consentire il download di script e
 moduli da
 <a href="http://powershellgallery.com/">PowerShellGallery</a>,
 quindi <strong>non</strong> è ancora il caso di utilizzarlo in altri ambiti.</p>
-<p>Comunque, se avete il gusto dell'avventura, vi riporto velocemente una sequenza
+<p>Comunque, se avete il gusto dell&rsquo;avventura, vi riporto velocemente una sequenza
 di comandi che permetteranno di recuperare pacchetti dai server di Chocolatey:
 per eseguirli bisogna aprire una console PowerShell come amministratore.</p>
 <pre><code>Set-ExecutionPolicy RemoteSigned -Scope Process
@@ -255,10 +255,10 @@ Install-Package -Name f.lux
 Set-PackageSource -Name chocolatey -Trusted
 </code></pre>
 <ol>
-<li>Consente l'esecuzione di script esterni ma dotati di firma digitale.
+<li>Consente l&rsquo;esecuzione di script esterni ma dotati di firma digitale.
 Il parametro <code>-Scope Process</code> limita questa politica alla shell attuale.</li>
 <li>Elenca i comandi forniti dal modulo <code>PackageManagement</code>.</li>
-<li>In realtà usiamo questo comando solo per provocare l'installazione del
+<li>In realtà usiamo questo comando solo per provocare l&rsquo;installazione del
 <em>provider</em> NuGet.</li>
 <li>Installa il <em>package provider</em> per il server di Chocolatey.</li>
 <li>Esempio di ricerca di un pacchetto.</li>
@@ -266,12 +266,12 @@ Il parametro <code>-Scope Process</code> limita questa politica alla shell attua
 <li>Imposta chocolatey come fonte affidabile: le future installazioni non
 mostreranno avvisi di pericolo.</li>
 </ol>
-<p>Purtroppo l'interfaccia è molto scarna e lo sviluppo tende a favorire
+<p>Purtroppo l&rsquo;interfaccia è molto scarna e lo sviluppo tende a favorire
 PowerShellGallery: ad esempio manca un comando per aggiornare i pacchetti,
 mentre esistono comandi analoghi per gli script scaricati dal server Microsoft.
 Anche il <a href="https://github.com/OneGet/oneget">repository GitHub </a> sembra poco
 frequentato negli ultimi mesi: speriamo che non sia un brutto segno, perché
-l'idea è davvero interessante!</p>
+l&rsquo;idea è davvero interessante!</p>
 	
 	</section>
 		

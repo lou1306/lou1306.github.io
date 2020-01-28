@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Appunti di informatica e altro">
 	
-	<meta name="generator" content="Hugo 0.62.2" />
+	<meta name="generator" content="Hugo 0.63.1" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -146,7 +146,7 @@
 	
 		<p>Il firmware <a href="http://ardupilot.org/copter/index.html">APM:Copter</a> è una delle
 principali soluzioni open-source per il pilotaggio remoto di droni. Vedremo
-come è possibile eseguire codice personalizzato all'interno del sistema (che
+come è possibile eseguire codice personalizzato all&rsquo;interno del sistema (che
 nel mio caso è installato su una board PixHawk v2), ed inviare dati a terra
 mediante il protocollo MAVLink.</p>
 <h2 id="il-codice-di-apmcopter-e-i-submodules">Il codice di APM:Copter e i submodules</h2>
@@ -166,16 +166,16 @@ Ho risolto in questo modo:</p>
 della documentazione di ArduPilot.</p>
 <h2 id="gli-user-hooks">Gli <em>user hooks</em></h2>
 <p>APM:Copter è un esempio di sistema <em>real-time</em>: contiene uno <em>scheduler</em> che
-pianifica l'esecuzione delle diverse funzionalità del sistema in base alla
-frequenza desiderata dall'utente (es. 10 Hz) e al tempo previsto per
-l'esecuzione stessa. In questo modo si garantisce che il drone sia sempre
-in equilibrio e reattivo agli input dell'utente.</p>
+pianifica l&rsquo;esecuzione delle diverse funzionalità del sistema in base alla
+frequenza desiderata dall&rsquo;utente (es. 10 Hz) e al tempo previsto per
+l&rsquo;esecuzione stessa. In questo modo si garantisce che il drone sia sempre
+in equilibrio e reattivo agli input dell&rsquo;utente.</p>
 <p>Gli sviluppatori hanno inoltre realizzato un sistema che ci consentirà di
 eseguire il nostro codice senza dover configurare a mano lo scheduler.</p>
 <ul>
 <li>Il file <code>UserVariables.h</code> serve a definire e inizializzare le variabili;</li>
 <li><code>UserCode.cpp</code> contiene una funzione <code>userhook_init()</code> che viene eseguita
-solo una volta all'avvio del sistema, e cinque &ldquo;loops&rdquo; con frequenze
+solo una volta all&rsquo;avvio del sistema, e cinque &ldquo;loops&rdquo; con frequenze
 decrescenti (100, 50, 25, 10, 1 Hz).</li>
 <li><code>APM_Config.h</code> è un insieme di direttive che permettono la personalizzazione
 del sistema. Andrà modificato per abilitare i loop appena menzionati.</li>
@@ -189,7 +189,7 @@ chiaro e ci permette di capire un sacco di cose sul sistema. Quindi in marcia.</
 <p>Inseriamo la dichiarazione<br>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">int</span> count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
 </code></pre></div>
-all'inizio del file.</p>
+all&rsquo;inizio del file.</p>
 <h3 id="usercodecpp"><code>UserCode.cpp</code></h3>
 <p>Modifichiamo <code>userhook_MediumLoop()</code> come segue:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#</span><span style="color:#75715e">ifdef USERHOOK_MEDIUMLOOP</span><span style="color:#75715e">
@@ -231,7 +231,7 @@ così composti:</p>
 </tr>
 </tbody>
 </table>
-<p>L'header a sua volta è composto da 6 campi, ciascuno di un byte:</p>
+<p>L&rsquo;header a sua volta è composto da 6 campi, ciascuno di un byte:</p>
 <table>
 <thead>
 <tr>
@@ -269,7 +269,7 @@ così composti:</p>
 <p>Il Message ID è fondamentale per consentire al destinatario di decifrare il
 payload.</p>
 <h3 id="librariesgcs_mavlinkgcsh"><code>\libraries\GCS_MAVLink\GCS.h</code></h3>
-<p>aggiungiamo un valore <code>MSG_CUSTOM_COUNT</code> al penultimo posto dell'enum
+<p>aggiungiamo un valore <code>MSG_CUSTOM_COUNT</code> al penultimo posto dell&rsquo;enum
 <code>ap_message</code>:
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">enum</span> <span style="color:#a6e22e">ap_message</span> {
     MSG_HEARTBEAT,
@@ -315,7 +315,7 @@ aggiungendo una nuova opzione allo <code>switch(id)</code>:
     <span style="color:#960050;background-color:#1e0010">…</span>
 }
 </code></pre></div></p>
-<p>È opportuno posizionare questa istruzione <em>dopo</em> l'ultima occorrenza del
+<p>È opportuno posizionare questa istruzione <em>dopo</em> l&rsquo;ultima occorrenza del
 controllo
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">if</span> (copter.gcs_out_of_time) <span style="color:#66d9ef">return</span>;
 </code></pre></div></p>
@@ -354,7 +354,7 @@ terra. Notiamo che:</p>
 <li>Se avessimo voluto trasferire un numero a virgola mobile, avremmo dovuto usare
 la funzione <code>mavlink_msg_named_value_float_send()</code> anziché
 <code>mavlink_msg_named_value_int_send()</code>.</li>
-<li>In genere l'invio di semplici coppie chiave-valore andrebbe limitato alla fase
+<li>In genere l&rsquo;invio di semplici coppie chiave-valore andrebbe limitato alla fase
 di sviluppo/debug di una nuova funzionalità: per procedere nel modo più
 corretto, si dovrebbe invece definire un tipo di messaggio personalizzato.
 Così facendo si semplifica il contenuto del frame (solo valori) e si consente

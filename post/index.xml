@@ -17,8 +17,8 @@
       <pubDate>Thu, 11 Jan 2018 11:56:11 +0100</pubDate>
       
       <guid>http://lou1306.github.io/post/2018-01-11-packing/</guid>
-      <description>Di recente avevamo bisogno di usare un&#39;unica variabile int per contenere due interi di piccole dimensioni. (Lasciamo perdere i dettagli e facciamo finta che int sia una variabile a 32 bit, ok?) Nulla di complicato, ma comunque ci sono voluti un paio di tentativi prima che tutto filasse liscio. Quindi, se a qualcuno servisse, ecco il codice:
- Il main() proverà tutte le possibili coppie, terminando con un errore se l&#39;unpacking di una tupla porta a risultati inattesi.</description>
+      <description>Di recente avevamo bisogno di usare un&amp;rsquo;unica variabile int per contenere due interi di piccole dimensioni. (Lasciamo perdere i dettagli e facciamo finta che int sia una variabile a 32 bit, ok?) Nulla di complicato, ma comunque ci sono voluti un paio di tentativi prima che tutto filasse liscio. Quindi, se a qualcuno servisse, ecco il codice:
+ Il main() proverà tutte le possibili coppie, terminando con un errore se l&amp;rsquo;unpacking di una tupla porta a risultati inattesi.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
       
       <guid>http://lou1306.github.io/post/2017-06-10-workflow/</guid>
-      <description>&lt;p&gt;Quando scrivere documenti diventa un&#39;attività quotidiana, un po&amp;rsquo; di automazione
+      <description>&lt;p&gt;Quando scrivere documenti diventa un&amp;rsquo;attività quotidiana, un po&amp;rsquo; di automazione
 può veramente salvarti la vita.&lt;/p&gt;</description>
     </item>
     
@@ -49,7 +49,7 @@ mano che trovo altro materiale.&lt;/p&gt;</description>
       <guid>http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</guid>
       <description>&lt;p&gt;Il firmware &lt;a href=&#34;http://ardupilot.org/copter/index.html&#34;&gt;APM:Copter&lt;/a&gt; è una delle
 principali soluzioni open-source per il pilotaggio remoto di droni. Vedremo
-come è possibile eseguire codice personalizzato all&#39;interno del sistema (che
+come è possibile eseguire codice personalizzato all&amp;rsquo;interno del sistema (che
 nel mio caso è installato su una board PixHawk v2), ed inviare dati a terra
 mediante il protocollo MAVLink.&lt;/p&gt;</description>
     </item>
@@ -73,7 +73,7 @@ spero possa far comodo anche ad altri programmatori/smanettoni.&lt;/p&gt;</descr
       
       <guid>http://lou1306.github.io/post/2016-03-04-real_programmer/</guid>
       <description>&lt;p&gt;&lt;em&gt;Questo gioiellino della cultura hacker circola in rete dal 1982.
-L&#39;ho tradotta tempo fa, basandomi sull&#39;edizione contenuta nel
+L&amp;rsquo;ho tradotta tempo fa, basandomi sull&amp;rsquo;edizione contenuta nel
 &lt;a href=&#34;http://www.catb.org/jargon/html/story-of-mel.html&#34;&gt;Jargon File&lt;/a&gt; e cencando
 di mantenerne la forma &amp;ldquo;poetica&amp;rdquo; e le particolarità nella punteggiatura.
 Per informazioni più approfondite rimando a

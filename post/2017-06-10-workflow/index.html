@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Appunti di informatica e altro">
 	
-	<meta name="generator" content="Hugo 0.62.2" />
+	<meta name="generator" content="Hugo 0.63.1" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -144,7 +144,7 @@
 </p>
 </header>
 	
-		<p>Quando scrivere documenti diventa un'attività quotidiana, un po&rsquo; di automazione
+		<p>Quando scrivere documenti diventa un&rsquo;attività quotidiana, un po&rsquo; di automazione
 può veramente salvarti la vita.</p>
 <h2 id="report-e-presentazioni">Report e presentazioni</h2>
 <p><a href="http://pandoc.org/">Pandoc</a> è un convertitore universale di documenti.
@@ -155,7 +155,7 @@ che converto in PDF.</p>
 necessario installare una distribuzione come TeXLive o MiKTeX.
 Il vantaggio è che posso scrivere i miei documenti in Markdown e usare i comandi
 LaTeX solo quando necessario: quindi ottengo file più leggeri e leggibili.</p>
-<p>Inoltre ho un unico workflow per documenti e presentazioni: Pandoc ha un'ottima
+<p>Inoltre ho un unico workflow per documenti e presentazioni: Pandoc ha un&rsquo;ottima
 interfaccia per realizzare slide mediante
 <a href="https://www.ctan.org/pkg/beamer"><code>beamer</code></a>.</p>
 <h3 id="citazioni-e-mendeley">Citazioni e Mendeley</h3>
@@ -165,15 +165,15 @@ pena imparare a usare <a href="https://www.mendeley.com/">Mendeley</a> o
 <a href="https://www.zotero.org/">Zotero</a>, che sono in grado di recuperare
 automaticamente i metadati di un PDF e generare file BibTeX.</p>
 <h3 id="panzer">Panzer</h3>
-<p>Pandoc supporta l'aggiunta di metadati sotto forma di un &ldquo;frontespizio&rdquo; in
-formato YAML all'inizio del file.
-Ciò permette anche di personalizzare, entro certi limiti, l'aspetto del PDF
+<p>Pandoc supporta l&rsquo;aggiunta di metadati sotto forma di un &ldquo;frontespizio&rdquo; in
+formato YAML all&rsquo;inizio del file.
+Ciò permette anche di personalizzare, entro certi limiti, l&rsquo;aspetto del PDF
 finale; molte altre preferenze, tuttavia, sono accessibili solo attraverso
 parametri dalla linea di comando.
 Purtroppo alcuni parametri sono necessari solo in alcune circostanze e vanno
 evitati in altre, quindi le prime soluzioni che ho provato (shell scripts e
 alias) non erano abbastanza flessibili.</p>
-<p>Fortunatamente qualcuno ha avuto il mio stesso problema e l'ha risolto creando
+<p>Fortunatamente qualcuno ha avuto il mio stesso problema e l&rsquo;ha risolto creando
 <a href="https://github.com/msprev/panzer">Panzer</a>, una specie di <em>wrapper</em> attorno a
 Pandoc che aggiunge il concetto di &ldquo;stili&rdquo;.</p>
 <p>Grazie a Panzer, è possibile impostare tra i metadati del documento uno o più
@@ -198,8 +198,8 @@ plugin <em>Markdown Extended</em>.</p>
 </figure>
 
 <p>Uno dei pregi di Sublime è la possibilità di definire un <em>build system</em>: un
-comando personalizzato che viene eseguito direttamente dall'editor quando
-l'utente schiaccia un tasto (F7, di default).</p>
+comando personalizzato che viene eseguito direttamente dall&rsquo;editor quando
+l&rsquo;utente schiaccia un tasto (F7, di default).</p>
 <p>Nel mio caso ho creato un build system che converte il mio file Markdown con
 Panzer per poi aprire il PDF appena generato.</p>
 <p>Uso <a href="http://skim-app.sourceforge.net/">Skim</a> su Mac e
@@ -212,7 +212,7 @@ visualizzato nella sua nuova versione).</p>
 dove pubblicare report e slide che sto producendo mentre studio per il mio
 dottorato.
 Al momento non ho caricato molti file, e temo di non poter garantire che
-saranno compilabili su qualsiasi PC, ma dovrebbero rendere più o meno l'idea!</p>
+saranno compilabili su qualsiasi PC, ma dovrebbero rendere più o meno l&rsquo;idea!</p>
 <h2 id="questo-sito">Questo sito</h2>
 <p>Il sito (che dovrei aggiornare più spesso 😅) esiste grazie a
 <a href="http://gohugo.io/">Hugo</a>, uno <em>static site generator</em> scritto in Go.</p>
@@ -225,7 +225,7 @@ Il procedimento è descritto <a href="https://gohugo.io/extras/datafiles/">qui</
 <p>Per i commenti mi appoggio a <a href="https://disqus.com/">Disqus</a>: molti temi di Hugo
 permettono di integrarlo inserendo solo il proprio <em>shortname</em> nel file di
 configurazione del sito.</p>
-<p>Uso <em>GitHub Pages</em> per l'hosting: ho creato un repsitory privato per l'intera
+<p>Uso <em>GitHub Pages</em> per l&rsquo;hosting: ho creato un repsitory privato per l&rsquo;intera
 cartella Hugo (quindi anche bozze, temi e altro materiale che non appare sul
 sito), mentre la cartella <code>public</code> è un <em>submodule</em> pubblico.
 In questo modo, se il risultato mi soddisfa, posso aggiornare tutto con un

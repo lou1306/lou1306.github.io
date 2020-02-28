@@ -3,8 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lou1306.github.io/about/</loc>
+    <lastmod>2020-02-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/about/"
+                />
+  </url>
+  
+  <url>
     <loc>http://lou1306.github.io/</loc>
-    <lastmod>2019-02-17T16:54:29+01:00</lastmod>
+    <lastmod>2020-02-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -190,21 +205,6 @@
   <url>
     <loc>http://lou1306.github.io/categories/writing/</loc>
     <lastmod>2017-06-10T14:59:09+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/about/</loc>
-    <lastmod>2017-03-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/about/"
-                />
   </url>
   
   <url>

@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lou1306.github.io/post/</loc>
+    <lastmod>2020-03-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://lou1306.github.io/post/2020-01-02-demos/</loc>
+    <lastmod>2020-03-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/post/2020-01-02-demos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/post/2020-01-02-demos/"
+                />
+  </url>
+  
+  <url>
     <loc>http://lou1306.github.io/about/</loc>
     <lastmod>2020-02-28T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -144,21 +174,6 @@
                 rel="alternate"
                 hreflang="it"
                 href="http://lou1306.github.io/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/post/</loc>
-    <lastmod>2018-01-11T11:56:11+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/post/"
                 />
   </url>
   

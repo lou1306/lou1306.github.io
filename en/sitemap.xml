@@ -1,7 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
+  <url>
+    <loc>http://lou1306.github.io/en/schools/</loc>
+    <lastmod>2020-03-02T15:16:40+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/schools/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/schools/"
+                />
+  </url>
   <url>
     <loc>http://lou1306.github.io/en/post/</loc>
     <lastmod>2020-03-02T00:00:00+00:00</lastmod>
@@ -16,7 +30,6 @@
                 href="http://lou1306.github.io/en/post/"
                 />
   </url>
-  
   <url>
     <loc>http://lou1306.github.io/en/post/2020-01-02-demos/</loc>
     <lastmod>2020-03-02T00:00:00+00:00</lastmod>
@@ -31,7 +44,6 @@
                 href="http://lou1306.github.io/en/post/2020-01-02-demos/"
                 />
   </url>
-  
   <url>
     <loc>http://lou1306.github.io/en/about/</loc>
     <lastmod>2020-02-28T00:00:00+00:00</lastmod>
@@ -46,7 +58,6 @@
                 href="http://lou1306.github.io/en/about/"
                 />
   </url>
-  
   <url>
     <loc>http://lou1306.github.io/en/</loc>
     <lastmod>2020-02-28T00:00:00+00:00</lastmod>
@@ -61,52 +72,6 @@
                 href="http://lou1306.github.io/en/"
                 />
   </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/en/tags/schools/</loc>
-    <lastmod>2019-02-17T16:54:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/tags/schools/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/tags/schools/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/en/schools/</loc>
-    <lastmod>2019-02-17T16:54:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/schools/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/schools/"
-                />
-  </url>
-  
-  <url>
-    <loc>http://lou1306.github.io/en/tags/</loc>
-    <lastmod>2019-02-17T16:54:29+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/tags/"
-                />
-  </url>
-  
   <url>
     <loc>http://lou1306.github.io/en/categories/</loc>
     <lastmod>2019-01-02T18:02:11+01:00</lastmod>
@@ -121,27 +86,36 @@
                 href="http://lou1306.github.io/en/categories/"
                 />
   </url>
-  
   <url>
     <loc>http://lou1306.github.io/en/categories/crittografia/</loc>
     <lastmod>2019-01-02T18:02:11+01:00</lastmod>
   </url>
-  
   <url>
     <loc>http://lou1306.github.io/en/post/2019-01-02-signing/</loc>
     <lastmod>2019-01-02T18:02:11+01:00</lastmod>
   </url>
-  
   <url>
     <loc>http://lou1306.github.io/en/tags/keybase/</loc>
     <lastmod>2019-01-02T18:02:11+01:00</lastmod>
   </url>
-  
   <url>
     <loc>http://lou1306.github.io/en/tags/pgp/</loc>
     <lastmod>2019-01-02T18:02:11+01:00</lastmod>
   </url>
-  
+  <url>
+    <loc>http://lou1306.github.io/en/tags/</loc>
+    <lastmod>2019-01-02T18:02:11+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/tags/"
+                />
+  </url>
   <url>
     <loc>http://lou1306.github.io/en/tags/c/</loc>
     <lastmod>2018-01-11T11:56:11+01:00</lastmod>
@@ -156,7 +130,6 @@
                 href="http://lou1306.github.io/en/tags/c/"
                 />
   </url>
-  
   <url>
     <loc>http://lou1306.github.io/en/post/2018-01-11-packing/</loc>
     <lastmod>2018-01-11T11:56:11+01:00</lastmod>
@@ -171,7 +144,6 @@
                 href="http://lou1306.github.io/en/post/2018-01-11-packing/"
                 />
   </url>
-  
   <url>
     <loc>http://lou1306.github.io/en/categories/programmazione/</loc>
     <lastmod>2018-01-11T11:56:11+01:00</lastmod>
@@ -186,7 +158,6 @@
                 href="http://lou1306.github.io/en/categories/programmazione/"
                 />
   </url>
-  
   <url>
     <loc>http://lou1306.github.io/en/cv/</loc>
     <lastmod>2017-03-02T11:40:29+01:00</lastmod>
@@ -201,7 +172,6 @@
                 href="http://lou1306.github.io/en/cv/"
                 />
   </url>
-  
   <url>
     <loc>http://lou1306.github.io/en/tags/cv/</loc>
     <lastmod>2017-03-02T11:40:29+01:00</lastmod>
@@ -216,5 +186,4 @@
                 href="http://lou1306.github.io/en/tags/cv/"
                 />
   </url>
-  
 </urlset>

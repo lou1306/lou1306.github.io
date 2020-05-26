@@ -6,10 +6,19 @@
     <description>Recent content in writing on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Sat, 10 Jun 2017 14:59:09 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2020 00:00:00 +0000</lastBuildDate>
     
     <atom:link href="http://lou1306.github.io/categories/writing/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Writing LaTeX in 2020: survival notes</title>
+      <link>http://lou1306.github.io/post/2020-05-26-latex/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/post/2020-05-26-latex/</guid>
+      <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;Writing LaTeX in 2020: survival notes&amp;rdquo;.</description>
+    </item>
     
     <item>
       <title>Il mio workflow di scrittura</title>

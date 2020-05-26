@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lou1306</title>
@@ -9,6 +10,22 @@
     <atom:link href="http://lou1306.github.io/en/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Writing LaTeX in 2020: survival notes</title>
+      <link>http://lou1306.github.io/en/post/2020-05-26-latex/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/en/post/2020-05-26-latex/</guid>
+      <description>&lt;p&gt;This post will be part of a collection of notes about the way I currently deal
+with LaTeX documents.
+It is not a &amp;ldquo;for dummies&amp;rdquo; guide: some tools and extensions need a bit of
+configuration, and the user should already be familiar with LaTeX and some of
+its inner workings.
+I do feel that this setup allows an experienced user to become more
+productive in the long term, especially when dealing with a large document or
+with multiple documents at the same time.&lt;/p&gt;<a href='http://lou1306.github.io/en/post/2020-05-26-latex/'><em>Continua su lou1306.github.io</em></a></description>
+    </item>
+    
+    <item>
       <title>Thoughts on tool demo videos</title>
       <link>http://lou1306.github.io/en/post/2020-01-02-demos/</link>
       <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
@@ -16,7 +33,7 @@
       <guid>http://lou1306.github.io/en/post/2020-01-02-demos/</guid>
       <description>&lt;p&gt;Recently I had to produce a demo video as part of a tool paper submission.
 Here are some notes I gathered in the process: they might be useful
-to my future self or to other wannabe videomakers.&lt;/p&gt; &lt;a href=&#39;http://lou1306.github.io/en/post/2020-01-02-demos/&#39; }}&gt;&lt;em&gt;Continua su lou1306.github.io&lt;/em&gt;&lt;/a&gt;</description>
+to my future self or to other wannabe videomakers.&lt;/p&gt;<a href='http://lou1306.github.io/en/post/2020-01-02-demos/'><em>Continua su lou1306.github.io</em></a></description>
     </item>
     
     <item>
@@ -25,7 +42,7 @@ to my future self or to other wannabe videomakers.&lt;/p&gt; &lt;a href=&#39;htt
       <pubDate>Wed, 02 Jan 2019 18:02:11 +0100</pubDate>
       
       <guid>http://lou1306.github.io/en/post/2019-01-02-signing/</guid>
-      <description>With the new year comes a new daily notebook! Since I always carry it around, I typically put a lot of personal data in the first pages of the notebook in the hope that, should I lose it somewhere, it will be found and returned. This time, as I was filling in the info page, I started thinking&amp;hellip; Wouldn&amp;rsquo;t it be nice if I had some other way to prove that this thing is mine, without having to provide so much information? &lt;a href=&#39;http://lou1306.github.io/en/post/2019-01-02-signing/&#39; }}&gt;&lt;em&gt;Continua su lou1306.github.io&lt;/em&gt;&lt;/a&gt;</description>
+      <description>With the new year comes a new daily notebook! Since I always carry it around, I typically put a lot of personal data in the first pages of the notebook in the hope that, should I lose it somewhere, it will be found and returned. This time, as I was filling in the info page, I started thinking&amp;hellip; Wouldn&amp;rsquo;t it be nice if I had some other way to prove that this thing is mine, without having to provide so much information?<a href='http://lou1306.github.io/en/post/2019-01-02-signing/'><em>Continua su lou1306.github.io</em></a></description>
     </item>
     
     <item>
@@ -35,7 +52,7 @@ to my future self or to other wannabe videomakers.&lt;/p&gt; &lt;a href=&#39;htt
       
       <guid>http://lou1306.github.io/en/post/2018-01-11-packing/</guid>
       <description>Lately we needed to put a pair of small integers into a single int variable. (Let us gloss over the intricacies of what an int actually is and just assume it is 32-bit, shall we?) Nothing crazy hard but still, it took some trial and error before we got it right. So, if anybody needs it or is just curious, here&amp;rsquo;s the code:
- The code will test all possible tuples and quit if some unpacking gives an unexpected result. &lt;a href=&#39;http://lou1306.github.io/en/post/2018-01-11-packing/&#39; }}&gt;&lt;em&gt;Continua su lou1306.github.io&lt;/em&gt;&lt;/a&gt;</description>
+ The code will test all possible tuples and quit if some unpacking gives an unexpected result.<a href='http://lou1306.github.io/en/post/2018-01-11-packing/'><em>Continua su lou1306.github.io</em></a></description>
     </item>
     
   </channel>

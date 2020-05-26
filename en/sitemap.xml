@@ -3,6 +3,104 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lou1306.github.io/en/categories/</loc>
+    <lastmod>2020-05-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/categories/"
+                />
+  </url>
+  <url>
+    <loc>http://lou1306.github.io/en/tags/latex/</loc>
+    <lastmod>2020-05-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/tags/latex/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/tags/latex/"
+                />
+  </url>
+  <url>
+    <loc>http://lou1306.github.io/en/post/</loc>
+    <lastmod>2020-05-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/post/"
+                />
+  </url>
+  <url>
+    <loc>http://lou1306.github.io/en/tags/</loc>
+    <lastmod>2020-05-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/tags/"
+                />
+  </url>
+  <url>
+    <loc>http://lou1306.github.io/en/tags/vscode/</loc>
+    <lastmod>2020-05-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/tags/vscode/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/tags/vscode/"
+                />
+  </url>
+  <url>
+    <loc>http://lou1306.github.io/en/categories/writing/</loc>
+    <lastmod>2020-05-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/categories/writing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/categories/writing/"
+                />
+  </url>
+  <url>
+    <loc>http://lou1306.github.io/en/post/2020-05-26-latex/</loc>
+    <lastmod>2020-05-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/post/2020-05-26-latex/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/post/2020-05-26-latex/"
+                />
+  </url>
+  <url>
     <loc>http://lou1306.github.io/en/schools/</loc>
     <lastmod>2020-03-02T15:16:40+01:00</lastmod>
     <xhtml:link
@@ -14,20 +112,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://lou1306.github.io/en/schools/"
-                />
-  </url>
-  <url>
-    <loc>http://lou1306.github.io/en/post/</loc>
-    <lastmod>2020-03-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/post/"
                 />
   </url>
   <url>
@@ -73,20 +157,6 @@
                 />
   </url>
   <url>
-    <loc>http://lou1306.github.io/en/categories/</loc>
-    <lastmod>2019-01-02T18:02:11+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/categories/"
-                />
-  </url>
-  <url>
     <loc>http://lou1306.github.io/en/categories/crittografia/</loc>
     <lastmod>2019-01-02T18:02:11+01:00</lastmod>
   </url>
@@ -101,20 +171,6 @@
   <url>
     <loc>http://lou1306.github.io/en/tags/pgp/</loc>
     <lastmod>2019-01-02T18:02:11+01:00</lastmod>
-  </url>
-  <url>
-    <loc>http://lou1306.github.io/en/tags/</loc>
-    <lastmod>2019-01-02T18:02:11+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/tags/"
-                />
   </url>
   <url>
     <loc>http://lou1306.github.io/en/tags/c/</loc>

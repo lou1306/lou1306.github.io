@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Writing LaTeX in 2020: survival notes &middot; lou1306</title>
+	<meta charset="utf-8">
+	<link href="https://micro.blog/lou1306" rel="me" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Luca Di Stefano">
+	<meta name="description" content="Notes on CompSci et cetera">
+	
+	<meta name="generator" content="Hugo 0.71.0" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
+	<link rel="stylesheet" href="http://lou1306.github.io/css/style.css">
+	
+
+	<!--Favicon-->
+	<link rel="apple-touch-icon" href="http://lou1306.github.io/apple-touch-icon.png">
+	<link rel="shortcut icon" href="http://lou1306.github.io/favicon.ico" type="image/x-icon">
+
+	<link rel="canonical" href="http://lou1306.github.io/en/post/2020-05-26-latex/">
+	
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/brands.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css">
+
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+	<header class="site-header">
+	<div class="branding">
+		<a href="http://lou1306.github.io/">
+		<img class="avatar" src="https://www.gravatar.com/avatar/b1549ac9d27e6458d79ec9d340887b0b?s=100&d=identicon" alt="avatar"/>
+		</a>
+		<h1 class="site-title">
+			<a href='/en/'>lou1306</a>
+			<small>
+		
+			
+			
+				
+				<a href="http://lou1306.github.io/"> (it)</a></small>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+	      	<li><a href="/en/about/"> About </a>•</li><li><a href="/en/cv/"> CV </a>•</li><li><a href="/en/schools/"> Schools </a>•</li>
+
+	      	
+
+<li class="icon">
+	<a href="/en/index.xml" title="Subscribe">
+		<i class="fas fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li class="icon">
+	<a href="https://keybase.io/lou1306" title="Keybase">
+		<i class="fab fa-keybase"></i>
+	</a>
+</li>
+
+
+
+<li class="icon">
+	<a href="https://github.com/lou1306" rel="me" title="Github">
+		<i class="fab fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+<li class="icon">
+	<a href="https://www.linkedin.com/in/lou1306" rel="me" title="Linkedin">
+		<i class="fab fa-fw fa-linkedin"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="icon">
+	<a href="https://twitter.com/1306lou" rel="me" title="Twitter">
+		<i class="fab fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	    </ul>
+	</nav>
+</header>
+
+
+	<div class="content">
+	<article class="feature-image">
+		<header style="background-image: url('http://lou1306.github.io/img/post/20200523-iammrcup.jpg')">
+			<h1 class="title">Writing LaTeX in 2020: survival notes</h1>
+		</header>
+
+	<section class="post-content">
+	<header>
+			<p class="meta">
+    May 26, 2020 &middot; 6 minutes
+
+    
+        &middot; Tags:
+            <a href=" /en/tags/latex">latex</a>, <a href=" /en/tags/vscode">vscode</a>
+</p>
+
+			
+<p class="langs">This page also available in:</p>
+<ul class="langs">
+    
+    <li>
+        <a href="http://lou1306.github.io/post/2020-05-26-latex/">Italian</a>
+    </li>
+    
+</ul>
+
+			
+				<p><a href="http://unsplash.com/@iammrcup?utm_campaign=photographer-credit">
+<img src="https://img.shields.io/badge/photo-%40iammrcup-blue.svg" alt="Unsplash credit: iammrcup"/></a>
+</p>
+			
+		</header>
+	
+	<p>This post will be part of a collection of notes about the way I currently deal
+with LaTeX documents.
+It is not a &ldquo;for dummies&rdquo; guide: some tools and extensions need a bit of
+configuration, and the user should already be familiar with LaTeX and some of
+its inner workings.
+I do feel that this setup allows an experienced user to become more
+productive in the long term, especially when dealing with a large document or
+with multiple documents at the same time.</p>
+<h1 id="rationale">Rationale</h1>
+<p>I started my LaTeX journey (more than ten years ago!) with TeXmaker, and
+I still think that IDEs are the way to go for novice users.
+However, the tailored environment provided by these editors becomes less useful
+as the user gets more confident with LaTeX.
+Moreover, IDE fatigue is a very real threat for people that use multiple
+editors on a daily basis.
+Shockingly, I found no actual definition of this phenomenon on the &lsquo;net, so
+I will provide my own: <em>IDE fatigue is the mental overhead associated with
+regularly switching between multiple, advanced text editors.</em>
+To avoid this, one should ideally use a single editor for most of their work,
+and switch to other IDEs only when it is absolutely necessary.
+In the past I tried to use Sublime Text to achieve this goal, but more recently
+I switched over to Visual Studio Code and I am pretty pleased with the change.</p>
+<h1 id="visual-studio-code--select-extensions">Visual Studio Code + select extensions</h1>
+<p>I am essentially writing this post because using the LaTeX-Workshop
+extension (LW, from now on) for VS Code left me thoroughly impressed.
+LW is very well-integrated with both the VS Code interface and LaTeX tooling.
+For instance, it supports <a href="https://www.ctan.org/pkg/latexmk/"><code>latexmk</code></a>
+out of the box, with sensible default settings.
+While the average (10-20-page-long) paper or the occasional Beamer slide
+deck builds just fine with the good old <code>pdflatex + bibtex + pdflatex x2</code>,
+building a hundred-page thesis will be noticeably faster with <code>latexmk</code>.
+Furthermore, LW integrates <code>chktex</code> messages in the VS Code &ldquo;Problems&rdquo; pane.
+For the uninitiated, <a href="https://www.ctan.org/pkg/chktex?lang=en"><code>chktex</code></a>
+is a program that &ldquo;reports typographic and other errors in LaTeX documents&rdquo;.</p>
+<p>Sure, sometimes its warnings may be overzealous or just plain wrong; however,
+after toying a bit with the settings, I found most warnings to be sensible and
+helpful.
+They may even teach you something new: for instance, did you know that you
+should use <a href="https://tex.stackexchange.com/questions/55105/when-should-i-use-intersentence-spacing">&ldquo;intersentence spacing&rdquo;</a>
+when a sentence ends with a capital letter? I did&rsquo;t!</p>
+<p>There are at least two other extensions that deserve to be mentioned here.</p>
+<ul>
+<li>
+<p><em>Todo Tree</em> searches your workspace for tagged comments (TODO, FIXME and
+the like) and displays these comments in a VS Code pane.
+It supports a limited set of comment tokens (<code>//</code>, <code>/*</code>, <code>#</code>,
+<code>&lt;!--</code>, <code>;</code>) out pf the box. No love for LaTeX! But one can simply change the
+default regular expression, i.e.</p>
+<p><code>&quot;((//|#|&lt;!--|;|/\\*)\\s*($TAGS)|^\\s*- \\[ \\])&quot;</code></p>
+<p>to the following:</p>
+<p><code>((//|\\|#|&lt;!--|;|/\*|^|%)\s*($TAGS)|^\s*- \[ \])</code></p>
+<p>This will support not only <code>% TODO</code> comments, but also semantic annotations
+such as those offered by the <a href="https://www.ctan.org/pkg/todonotes"><code>todonotes</code> package</a>,
+i.e., <code>\todo{...}</code>. By the way, I found <code>todonotes</code> to be absolutely vital
+when working on my thesis.</p>
+</li>
+<li>
+<p><em>Spell Right</em> is a spellcheck extension that ignores LaTeX commands and
+integrates with the &ldquo;Problems&rdquo; pane.
+Here, the ability of VS Code to customize settings on a per-workspace
+basis really makes it great. Let&rsquo;s say that your latest paper is written in
+American English, while your thesis is in British English.
+After configuring Spell Right with the right dictionary for each workspace,
+you will never have to worry about adjusting its behavior (behaviour?)
+again. You can also make it ignore specific terms on a per-workspace basis.</p>
+</li>
+</ul>
+<h2 id="some-perl-woes">Some Perl woes</h2>
+<p>LW uses another script, <code>latexindent</code>, to adjust the indentation of your
+LaTeX sources.
+Unfortunately, on my machine it failed with some errors about missing Perl
+libraries.
+In the end I solved the issue by following <a href="https://github.com/James-Yu/LaTeX-Workshop/issues/427#issuecomment-568293930">these steps</a>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#install perl and its package manager, cpan</span>
+brew install perl 
+<span style="color:#75715e"># install latexindent requirements</span>
+cpan Log::Log4perl
+cpan Log::Dispatch::File
+cpan YAML::Tiny
+cpan File::HomeDir
+</code></pre></div><h1 id="previewing-the-pdf">Previewing the PDF</h1>
+<p>When it comes to PDF previews, any decent LaTeX environment should support the
+following features:</p>
+<ul>
+<li>The PDF viewer should automatically update the view when the PDF changes;</li>
+<li>The user should be able to select a position from the <em>editor</em> and have the
+<em>viewer</em> jump to the corresponding position in the PDF, and vice versa.</li>
+</ul>
+<p>LW satisfies these requirements out-of-the-box, but by default it relies on
+PDF.js to display the PDF. I cannot say that I am a fan of this soluiton: the
+rendering is slow and a native PDF viewer is surely nicer to look at.</p>
+<p>Personally, I prefer to use <a href="https://skim-app.sourceforge.io/">Skim</a> on macOS.
+On Windows, I would recommend <a href="https://www.sumatrapdfreader.org">SumatraPDF</a>.
+Here are the relevant LW settings to integrate Skim:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+<span style="color:#f92672">&#34;latex-workshop.view.pdf.external.synctex.args&#34;</span>: [
+  <span style="color:#e6db74">&#34;-r&#34;</span>,
+  <span style="color:#e6db74">&#34;%LINE%&#34;</span>,
+  <span style="color:#e6db74">&#34;%PDF%&#34;</span>,
+  <span style="color:#e6db74">&#34;%TEX%&#34;</span>
+],
+<span style="color:#f92672">&#34;latex-workshop.view.pdf.external.synctex.command&#34;</span>: <span style="color:#e6db74">&#34;/Applications/Skim.app/Contents/SharedSupport/displayline&#34;</span>,
+<span style="color:#f92672">&#34;latex-workshop.view.pdf.external.viewer.args&#34;</span>: [
+  <span style="color:#e6db74">&#34;-a&#34;</span>,
+  <span style="color:#e6db74">&#34;Skim&#34;</span>,
+  <span style="color:#e6db74">&#34;\&#34;%PDF%\&#34;&#34;</span>
+],
+<span style="color:#f92672">&#34;latex-workshop.view.pdf.external.viewer.command&#34;</span>: <span style="color:#e6db74">&#34;open&#34;</span>,
+<span style="color:#f92672">&#34;latex-workshop.view.pdf.viewer&#34;</span>: <span style="color:#e6db74">&#34;external&#34;</span>
+}
+</code></pre></div><p>One also needs to configure Skim so that Shift-Cmd-clicking on a point of
+the PDF makes VS Code jump to the corresponding line in the LaTeX sources.
+This is done in the <em>Sync</em> pane of the Skim preferences dialog.
+Although Skim does feature a &ldquo;Visual Studio Code&rdquo; option, I found it to be a
+bit unreliable (e.g., it does not work well if the path contains any special
+characters).
+The following settings work best for me:</p>
+<ul>
+<li><strong>Preset</strong>: Custom</li>
+<li><strong>Command</strong>: <code>code</code></li>
+<li><strong>Arguments</strong>: <code>-g &quot;%file:%line&quot;</code></li>
+</ul>
+<h1 id="other-latex-tools">Other LaTeX tools</h1>
+<p><a href="https://github.com/sylvainhalle/textidote"><code>textidote</code></a> performs a host of
+additional checks, courtesy of the <a href="https://languagetool.org/">Language Tool</a>
+library. It performs grammar- and style checks in addition to simple spell
+check. (I actually disable the spell-checker altogether, since I already
+rely on Spell Right for that.)
+For instance,you will get a warning if you end a <code>\section{}</code> title with a
+period.
+And it also works on Markdown documents!
+For instance, I purposefully wrote &ldquo;work&rdquo; instead of &ldquo;works&rdquo; in the previous
+sentences, then ran <code>textidote</code> on this file.
+Look what I got:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">* L81C13-L81C17 Did you mean &#39;works&#39;?. Suggestions:
+  [works] (3395) [lt:en:IT_VBZ]
+  And it also work on Markdown documents!
+              ^^^^^
+</code></pre></div><p>It is still a bit rough around the edges, and you might want to ignore a lot
+of the warnings it reports, but overall is a pretty useful addition to the
+toolbox.</p>
+<p><a href="https://www.ctan.org/pkg/checkcites"><code>checkcites</code></a> finds unused
+citations, i.e., entries in your bibTeX file that you never use in your
+document. It supports both <code>bibtex</code> and <code>biber</code>, and can be useful when you want
+to trim down a huge <code>.bib</code> file without accidentally removing something you
+needed.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>This was just a couple of notes about my current LaTeX setup, including some
+non-obvious configurations and fixes.
+In short: I edit my source files with VS Code and the Latex-Workshop extension,
+I use Skim to preview the document, and I can jump back and forth between them
+with ease.
+<em>Todo Trees</em> keeps track of the next things I have to do; <em>Spell Right</em> finds misspelt words.
+Every once in a while I perform additional checks with <code>textidote</code> and
+<code>checkcites</code>.</p>
+<p>I believe this setup to be reasonably stable and effective. I hope you can find
+this post useful!</p>
+	</section>
+		
+			<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lou1306" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</div>
+
+	<footer class="site-footer">
+	<p class="text">&copy; 2020 - Luca Di Stefano <br/> <a href="http://creativecommons.org/licenses/by-nc/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="License: CC BY-NC 4.0"></a><br>
+<a href="//gohugo.io/">Hugo</a> • <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a> • <a href="//getskeleton.com/">Skeleton</a></p>
+</footer>
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-23262839-3', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>

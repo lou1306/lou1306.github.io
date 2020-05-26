@@ -6,10 +6,28 @@
     <description>Recent content in Tags on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Thu, 11 Jan 2018 11:56:11 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2020 00:00:00 +0000</lastBuildDate>
     
     <atom:link href="http://lou1306.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>latex</title>
+      <link>http://lou1306.github.io/tags/latex/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>http://lou1306.github.io/tags/vscode/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/vscode/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>C</title>
@@ -26,15 +44,6 @@
       <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
       
       <guid>http://lou1306.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>latex</title>
-      <link>http://lou1306.github.io/tags/latex/</link>
-      <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/latex/</guid>
       <description></description>
     </item>
     

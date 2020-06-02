@@ -6,15 +6,24 @@
     <description>Recent content in Categories on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 26 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 12:59:09 +0200</lastBuildDate>
     
     <atom:link href="http://lou1306.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>humour</title>
+      <link>http://lou1306.github.io/en/categories/humour/</link>
+      <pubDate>Tue, 02 Jun 2020 12:59:09 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/en/categories/humour/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>writing</title>
       <link>http://lou1306.github.io/en/categories/writing/</link>
-      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Jun 2020 12:59:09 +0200</pubDate>
       
       <guid>http://lou1306.github.io/en/categories/writing/</guid>
       <description></description>

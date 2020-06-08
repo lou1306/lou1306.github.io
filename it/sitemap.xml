@@ -45,6 +45,20 @@
                 />
   </url>
   <url>
+    <loc>http://lou1306.github.io/</loc>
+    <lastmod>2020-06-02T12:59:09+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://lou1306.github.io/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://lou1306.github.io/"
+                />
+  </url>
+  <url>
     <loc>http://lou1306.github.io/tags/parody/</loc>
     <lastmod>2020-06-02T12:59:09+02:00</lastmod>
     <xhtml:link
@@ -196,20 +210,6 @@
                 rel="alternate"
                 hreflang="it"
                 href="http://lou1306.github.io/about/"
-                />
-  </url>
-  <url>
-    <loc>http://lou1306.github.io/</loc>
-    <lastmod>2020-02-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://lou1306.github.io/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://lou1306.github.io/"
                 />
   </url>
   <url>

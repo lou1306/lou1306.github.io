@@ -6,7 +6,7 @@
     <description>Recent content on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
-    <lastBuildDate>Mon, 08 Jun 2020 18:46:24 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2020 22:09:31 +0200</lastBuildDate>
     <atom:link href="http://lou1306.github.io/en/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -18,7 +18,7 @@
       <description>&lt;p&gt;The Naming of Tools is a tough nail to hammer,&lt;br&gt;
 It isn’t just one of your parity games;&lt;br&gt;
 But I wonder why each and every programmer&lt;br&gt;
-always comes up with THE USUAL TWO NAMES.&lt;/p&gt;<a href='http://lou1306.github.io/en/post/2020-06-02-namingoftools/'><em>Continua su lou1306.github.io</em></a></description>
+always comes up with THE USUAL TWO NAMES.&lt;/p&gt;<a href='http://lou1306.github.io/en/post/2020-06-02-namingoftools/'><em>Continue</em></a></description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@ configuration, and the user should already be familiar with LaTeX and some of
 its inner workings.
 I do feel that this setup allows an experienced user to become more
 productive in the long term, especially when dealing with a large document or
-with multiple documents at the same time.&lt;/p&gt;<a href='http://lou1306.github.io/en/post/2020-05-26-latex/'><em>Continua su lou1306.github.io</em></a></description>
+with multiple documents at the same time.&lt;/p&gt;<a href='http://lou1306.github.io/en/post/2020-05-26-latex/'><em>Continue</em></a></description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@ with multiple documents at the same time.&lt;/p&gt;<a href='http://lou1306.githu
       <guid>http://lou1306.github.io/en/post/2020-01-02-demos/</guid>
       <description>&lt;p&gt;Recently I had to produce a demo video as part of a tool paper submission.
 Here are some notes I gathered in the process: they might be useful
-to my future self or to other wannabe videomakers.&lt;/p&gt;<a href='http://lou1306.github.io/en/post/2020-01-02-demos/'><em>Continua su lou1306.github.io</em></a></description>
+to my future self or to other wannabe videomakers.&lt;/p&gt;<a href='http://lou1306.github.io/en/post/2020-01-02-demos/'><em>Continue</em></a></description>
     </item>
     
     <item>
@@ -54,7 +54,7 @@ to my future self or to other wannabe videomakers.&lt;/p&gt;<a href='http://lou1
       <pubDate>Wed, 02 Jan 2019 18:02:11 +0100</pubDate>
       
       <guid>http://lou1306.github.io/en/post/2019-01-02-signing/</guid>
-      <description>With the new year comes a new daily notebook! Since I always carry it around, I typically put a lot of personal data in the first pages of the notebook in the hope that, should I lose it somewhere, it will be found and returned. This time, as I was filling in the info page, I started thinking&amp;hellip; Wouldn&amp;rsquo;t it be nice if I had some other way to prove that this thing is mine, without having to provide so much information?<a href='http://lou1306.github.io/en/post/2019-01-02-signing/'><em>Continua su lou1306.github.io</em></a></description>
+      <description>With the new year comes a new daily notebook! Since I always carry it around, I typically put a lot of personal data in the first pages of the notebook in the hope that, should I lose it somewhere, it will be found and returned. This time, as I was filling in the info page, I started thinking&amp;hellip; Wouldn&amp;rsquo;t it be nice if I had some other way to prove that this thing is mine, without having to provide so much information?<a href='http://lou1306.github.io/en/post/2019-01-02-signing/'><em>Continue</em></a></description>
     </item>
     
     <item>
@@ -64,7 +64,7 @@ to my future self or to other wannabe videomakers.&lt;/p&gt;<a href='http://lou1
       
       <guid>http://lou1306.github.io/en/post/2018-01-11-packing/</guid>
       <description>Lately we needed to put a pair of small integers into a single int variable. (Let us gloss over the intricacies of what an int actually is and just assume it is 32-bit, shall we?) Nothing crazy hard but still, it took some trial and error before we got it right. So, if anybody needs it or is just curious, here&amp;rsquo;s the code:
- The code will test all possible tuples and quit if some unpacking gives an unexpected result.<a href='http://lou1306.github.io/en/post/2018-01-11-packing/'><em>Continua su lou1306.github.io</em></a></description>
+ The code will test all possible tuples and quit if some unpacking gives an unexpected result.<a href='http://lou1306.github.io/en/post/2018-01-11-packing/'><em>Continue</em></a></description>
     </item>
     
   </channel>

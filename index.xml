@@ -6,7 +6,7 @@
     <description>Recent content on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
-    <lastBuildDate>Mon, 08 Jun 2020 18:46:24 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2020 22:09:31 +0200</lastBuildDate>
     <atom:link href="http://lou1306.github.io/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -15,7 +15,7 @@
       <pubDate>Tue, 02 Jun 2020 12:59:09 +0200</pubDate>
       
       <guid>http://lou1306.github.io/post/2020-06-02-namingoftools/</guid>
-      <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;The Naming of Tools&amp;rdquo;.<a href='http://lou1306.github.io/post/2020-06-02-namingoftools/'><em>Continua su lou1306.github.io</em></a></description>
+      <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;The Naming of Tools&amp;rdquo;.<a href='http://lou1306.github.io/post/2020-06-02-namingoftools/'><em>Continua</em></a></description>
     </item>
     
     <item>
@@ -24,7 +24,7 @@
       <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
       
       <guid>http://lou1306.github.io/post/2020-05-26-latex/</guid>
-      <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;Writing LaTeX in 2020: survival notes&amp;rdquo;.<a href='http://lou1306.github.io/post/2020-05-26-latex/'><em>Continua su lou1306.github.io</em></a></description>
+      <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;Writing LaTeX in 2020: survival notes&amp;rdquo;.<a href='http://lou1306.github.io/post/2020-05-26-latex/'><em>Continua</em></a></description>
     </item>
     
     <item>
@@ -33,7 +33,7 @@
       <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>http://lou1306.github.io/post/2020-01-02-demos/</guid>
-      <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;Thoughts on tool demo videos&amp;rdquo;.<a href='http://lou1306.github.io/post/2020-01-02-demos/'><em>Continua su lou1306.github.io</em></a></description>
+      <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;Thoughts on tool demo videos&amp;rdquo;.<a href='http://lou1306.github.io/post/2020-01-02-demos/'><em>Continua</em></a></description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@
       
       <guid>http://lou1306.github.io/post/2018-01-11-packing/</guid>
       <description>Di recente avevamo bisogno di usare un&amp;rsquo;unica variabile int per contenere due interi di piccole dimensioni. (Lasciamo perdere i dettagli e facciamo finta che int sia una variabile a 32 bit, ok?) Nulla di complicato, ma comunque ci sono voluti un paio di tentativi prima che tutto filasse liscio. Quindi, se a qualcuno servisse, ecco il codice:
- Il main() proverà tutte le possibili coppie, terminando con un errore se l&amp;rsquo;unpacking di una tupla porta a risultati inattesi.<a href='http://lou1306.github.io/post/2018-01-11-packing/'><em>Continua su lou1306.github.io</em></a></description>
+ Il main() proverà tutte le possibili coppie, terminando con un errore se l&amp;rsquo;unpacking di una tupla porta a risultati inattesi.<a href='http://lou1306.github.io/post/2018-01-11-packing/'><em>Continua</em></a></description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@
       
       <guid>http://lou1306.github.io/post/2017-06-10-workflow/</guid>
       <description>&lt;p&gt;Quando scrivere documenti diventa un&amp;rsquo;attività quotidiana, un po&amp;rsquo; di automazione
-può veramente salvarti la vita.&lt;/p&gt;<a href='http://lou1306.github.io/post/2017-06-10-workflow/'><em>Continua su lou1306.github.io</em></a></description>
+può veramente salvarti la vita.&lt;/p&gt;<a href='http://lou1306.github.io/post/2017-06-10-workflow/'><em>Continua</em></a></description>
     </item>
     
     <item>
@@ -63,7 +63,7 @@ può veramente salvarti la vita.&lt;/p&gt;<a href='http://lou1306.github.io/post
       
       <guid>http://lou1306.github.io/post/2016-11-01-risorseaquilani/</guid>
       <description>&lt;p&gt;Una piccola lista che spero possa tornare utile: cercherò di aggiornarla man
-mano che trovo altro materiale.&lt;/p&gt;<a href='http://lou1306.github.io/post/2016-11-01-risorseaquilani/'><em>Continua su lou1306.github.io</em></a></description>
+mano che trovo altro materiale.&lt;/p&gt;<a href='http://lou1306.github.io/post/2016-11-01-risorseaquilani/'><em>Continua</em></a></description>
     </item>
     
     <item>
@@ -76,7 +76,7 @@ mano che trovo altro materiale.&lt;/p&gt;<a href='http://lou1306.github.io/post/
 principali soluzioni open-source per il pilotaggio remoto di droni. Vedremo
 come è possibile eseguire codice personalizzato all&amp;rsquo;interno del sistema (che
 nel mio caso è installato su una board PixHawk v2), ed inviare dati a terra
-mediante il protocollo MAVLink.&lt;/p&gt;<a href='http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/'><em>Continua su lou1306.github.io</em></a></description>
+mediante il protocollo MAVLink.&lt;/p&gt;<a href='http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/'><em>Continua</em></a></description>
     </item>
     
     <item>
@@ -88,7 +88,7 @@ mediante il protocollo MAVLink.&lt;/p&gt;<a href='http://lou1306.github.io/post/
       <description>&lt;p&gt;Ecco una carrellata di materiale che mi è tornato utile negli ultimi tempi.
 Anche se è principalmente a mio uso e consumo (non voglio dimenticare i titoli e
 alcune informazioni a contorno, nel caso i link dovessero scomparire in futuro),
-spero possa far comodo anche ad altri programmatori/smanettoni.&lt;/p&gt;<a href='http://lou1306.github.io/post/2016-04-29-risorse_programmatori/'><em>Continua su lou1306.github.io</em></a></description>
+spero possa far comodo anche ad altri programmatori/smanettoni.&lt;/p&gt;<a href='http://lou1306.github.io/post/2016-04-29-risorse_programmatori/'><em>Continua</em></a></description>
     </item>
     
     <item>
@@ -102,7 +102,7 @@ L&amp;rsquo;ho tradotta tempo fa, basandomi sull&amp;rsquo;edizione contenuta ne
 &lt;a href=&#34;http://www.catb.org/jargon/html/story-of-mel.html&#34;&gt;Jargon File&lt;/a&gt; e cencando
 di mantenerne la forma &amp;ldquo;poetica&amp;rdquo; e le particolarità nella punteggiatura.
 Per informazioni più approfondite rimando a
-&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Story_of_Mel&#34;&gt;Wikipedia&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;<a href='http://lou1306.github.io/post/2016-03-04-real_programmer/'><em>Continua su lou1306.github.io</em></a></description>
+&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Story_of_Mel&#34;&gt;Wikipedia&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;<a href='http://lou1306.github.io/post/2016-03-04-real_programmer/'><em>Continua</em></a></description>
     </item>
     
     <item>
@@ -114,7 +114,7 @@ Per informazioni più approfondite rimando a
       <description>&lt;p&gt;Dai package managers Linux agli Store dei sistemi mobile, quella dei &lt;em&gt;software
 repositories&lt;/em&gt; è una storia di successo che però fatica a prendere piede su
 Windows.
-Ma qualcosa sta cambiando.&lt;/p&gt;<a href='http://lou1306.github.io/post/2016-03-01-chocolatey/'><em>Continua su lou1306.github.io</em></a></description>
+Ma qualcosa sta cambiando.&lt;/p&gt;<a href='http://lou1306.github.io/post/2016-03-01-chocolatey/'><em>Continua</em></a></description>
     </item>
     
   </channel>

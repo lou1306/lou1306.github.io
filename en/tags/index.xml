@@ -6,10 +6,28 @@
     <description>Recent content in Tags on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jun 2020 12:59:09 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2020 12:00:00 +0200</lastBuildDate>
     
     <atom:link href="http://lou1306.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>videomaking</title>
+      <link>http://lou1306.github.io/en/tags/videomaking/</link>
+      <pubDate>Mon, 19 Oct 2020 12:00:00 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/en/tags/videomaking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>writing</title>
+      <link>http://lou1306.github.io/en/tags/writing/</link>
+      <pubDate>Mon, 19 Oct 2020 12:00:00 +0200</pubDate>
+      
+      <guid>http://lou1306.github.io/en/tags/writing/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Eliot</title>
@@ -44,15 +62,6 @@
       <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
       
       <guid>http://lou1306.github.io/en/tags/vscode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>videomaking</title>
-      <link>http://lou1306.github.io/en/tags/videomaking/</link>
-      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://lou1306.github.io/en/tags/videomaking/</guid>
       <description></description>
     </item>
     

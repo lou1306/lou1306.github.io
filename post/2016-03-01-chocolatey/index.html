@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/brands.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">        
 
 	<!-- Google Fonts -->
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
@@ -56,11 +57,6 @@
 
 	      	
 
-<li class="icon">
-	<a href="/index.xml" title="Seguimi">
-		<i class="fas fa-fw fa-rss"></i>
-	</a>
-</li>
 
 
 
@@ -71,12 +67,6 @@
 
 
 
-
-<li class="icon">
-	<a href="https://keybase.io/lou1306" title="Keybase">
-		<i class="fab fa-keybase"></i>
-	</a>
-</li>
 
 
 
@@ -90,23 +80,62 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="icon">
+	<a href="https://orcid.org/0000-0003-1922-3151" rel="me" title="ORCID iD">
+		<i class="ai fa-fw ai-orcid"></i>
+	</a>
+</li>
+
+<li class="icon">
+	<a href="https://dblp.org/pid/215/9758" rel="me" title="DBLP">
+		<i class="ai fa-fw ai-dblp"></i>
+	</a>
+</li>
+
+<li class="icon">
+	<a href="https://www.researchgate.net/profile/Luca_Di_Stefano2" rel="me" title="ResearchGate">
+            <i class="fab fa-fw fa-researchgate"></i>
+	</a>
+</li>
+
 <li class="icon">
 	<a href="https://www.linkedin.com/in/lou1306" rel="me" title="Linkedin">
 		<i class="fab fa-fw fa-linkedin"></i>
 	</a>
 </li>
 
+<li>•</li>
 
 
-
-
-
-
-
-
-
-
-
+<li class="icon">
+	<a href="https://keybase.io/lou1306" title="Keybase">
+		<i class="fab fa-keybase"></i>
+	</a>
+</li>
 
 <li class="icon">
 	<a href="https://twitter.com/1306lou" rel="me" title="Twitter">
@@ -114,17 +143,11 @@
 	</a>
 </li>
 
-
-
-
-
-
-
-
-
-
-
-
+<li class="icon">
+	<a href="/index.xml" title="Seguimi">
+		<i class="fas fa-fw fa-rss"></i>
+	</a>
+</li>
 
 	    </ul>
 	</nav>
@@ -233,10 +256,9 @@ manager manager&rdquo;, cioè un&rsquo;infrastruttura unificata per l&rsquo;inst
 pacchetti da molteplici gestori di pacchetti.
 Ciò significa che un giorno l&rsquo;utente potrà accedere a PyPI, NuGet, RubyGems e
 così via attraverso un&rsquo;interfaccia unificata.</p>
-<p>PackageManager (un tempo noto come OneGet) è incluso in Windows 10: per i
-sistemi precedenti esiste un
-<a href="https://www.microsoft.com/en-us/download/details.aspx?id=49186">installer</a>
-che però non ho avuto modo di testare.
+<p>PackageManager (un tempo noto come OneGet) è incluso in Windows 10:
+<del>per i sistemi precedenti esiste un installer
+che però non ho avuto modo di testare</del> (<em>Edit 2020-11-09: l&rsquo;installer non è più reperibile</em>).
 L&rsquo;obiettivo principale di OneGet è quello di consentire il download di script e
 moduli da
 <a href="http://powershellgallery.com/">PowerShellGallery</a>,
@@ -244,15 +266,14 @@ quindi <strong>non</strong> è ancora il caso di utilizzarlo in altri ambiti.</p
 <p>Comunque, se avete il gusto dell&rsquo;avventura, vi riporto velocemente una sequenza
 di comandi che permetteranno di recuperare pacchetti dai server di Chocolatey:
 per eseguirli bisogna aprire una console PowerShell come amministratore.</p>
-<pre><code>Set-ExecutionPolicy RemoteSigned -Scope Process
-Get-Command -Module PackageManagement
-Find-Package chocolatey
-Get-PackageProvider -Name Chocolatey
-Find-Package -Name f.lux
-Install-Package -Name f.lux
-Set-PackageSource -Name chocolatey -Trusted
-</code></pre>
-<ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ps" data-lang="ps"><span style="color:#a6e22e">Set-ExecutionPolicy</span> <span style="color:#a6e22e">RemoteSigned</span> <span style="color:#a6e22e">-Scope</span> <span style="color:#a6e22e">Process</span>
+<span style="color:#a6e22e">Get-Command</span> <span style="color:#a6e22e">-Module</span> <span style="color:#a6e22e">PackageManagement</span>
+<span style="color:#a6e22e">Find-Package</span> <span style="color:#a6e22e">chocolatey</span>
+<span style="color:#a6e22e">Get-PackageProvider</span> <span style="color:#a6e22e">-Name</span> <span style="color:#a6e22e">Chocolatey</span>
+<span style="color:#a6e22e">Find-Package</span> <span style="color:#a6e22e">-Name</span> <span style="color:#a6e22e">f.lux</span>
+<span style="color:#a6e22e">Install-Package</span> <span style="color:#a6e22e">-Name</span> <span style="color:#a6e22e">f.lux</span>
+<span style="color:#a6e22e">Set-PackageSource</span> <span style="color:#a6e22e">-Name</span> <span style="color:#a6e22e">chocolatey</span> <span style="color:#a6e22e">-Trusted</span>
+</code></pre></div><ol>
 <li>Consente l&rsquo;esecuzione di script esterni ma dotati di firma digitale.
 Il parametro <code>-Scope Process</code> limita questa politica alla shell attuale.</li>
 <li>Elenca i comandi forniti dal modulo <code>PackageManagement</code>.</li>
@@ -297,7 +318,7 @@ l&rsquo;idea è davvero interessante!</p>
 
 	<footer class="site-footer">
 	<p class="text">&copy; 2020 - Luca Di Stefano <br/> <a href="http://creativecommons.org/licenses/by-nc/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="License: CC BY-NC 4.0"></a><br>
-<a href="//gohugo.io/">Hugo</a> • <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a> • <a href="//getskeleton.com/">Skeleton</a></p>
+<a href="//gohugo.io/">Hugo</a> • <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a> • <a href="//getskeleton.com/">Skeleton</a> • <a href="https://jpswalsh.github.io/academicons/">Academicons</a></p>
 </footer>
 
 

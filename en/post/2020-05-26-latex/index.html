@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Notes on CompSci et cetera">
 	
-	<meta name="generator" content="Hugo 0.77.0" />
+	<meta name="generator" content="Hugo 0.79.0" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -31,9 +31,8 @@
 	<!-- Google Fonts -->
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
 
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	<link rel="stylesheet" href="/syntax.css">
+	
 </head>
 
 <body>
@@ -256,9 +255,9 @@ LaTeX sources.
 Unfortunately, on my machine it failed with some errors about missing Perl
 libraries.
 In the end I solved the issue by following <a href="https://github.com/James-Yu/LaTeX-Workshop/issues/427#issuecomment-568293930">these steps</a>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#install perl and its package manager, cpan</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#install perl and its package manager, cpan</span>
 brew install perl 
-<span style="color:#75715e"># install latexindent requirements</span>
+<span class="c1"># install latexindent requirements</span>
 cpan Log::Log4perl
 cpan Log::Dispatch::File
 cpan YAML::Tiny
@@ -277,22 +276,22 @@ rendering is slow and a native PDF viewer is surely nicer to look at.</p>
 <p>Personally, I prefer to use <a href="https://skim-app.sourceforge.io/">Skim</a> on macOS.
 On Windows, I would recommend <a href="https://www.sumatrapdfreader.org">SumatraPDF</a>.
 Here are the relevant LW settings to integrate Skim:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-<span style="color:#f92672">&#34;latex-workshop.view.pdf.external.synctex.args&#34;</span>: [
-  <span style="color:#e6db74">&#34;-r&#34;</span>,
-  <span style="color:#e6db74">&#34;%LINE%&#34;</span>,
-  <span style="color:#e6db74">&#34;%PDF%&#34;</span>,
-  <span style="color:#e6db74">&#34;%TEX%&#34;</span>
-],
-<span style="color:#f92672">&#34;latex-workshop.view.pdf.external.synctex.command&#34;</span>: <span style="color:#e6db74">&#34;/Applications/Skim.app/Contents/SharedSupport/displayline&#34;</span>,
-<span style="color:#f92672">&#34;latex-workshop.view.pdf.external.viewer.args&#34;</span>: [
-  <span style="color:#e6db74">&#34;-a&#34;</span>,
-  <span style="color:#e6db74">&#34;Skim&#34;</span>,
-  <span style="color:#e6db74">&#34;\&#34;%PDF%\&#34;&#34;</span>
-],
-<span style="color:#f92672">&#34;latex-workshop.view.pdf.external.viewer.command&#34;</span>: <span style="color:#e6db74">&#34;open&#34;</span>,
-<span style="color:#f92672">&#34;latex-workshop.view.pdf.viewer&#34;</span>: <span style="color:#e6db74">&#34;external&#34;</span>
-}
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+<span class="nt">&#34;latex-workshop.view.pdf.external.synctex.args&#34;</span><span class="p">:</span> <span class="p">[</span>
+  <span class="s2">&#34;-r&#34;</span><span class="p">,</span>
+  <span class="s2">&#34;%LINE%&#34;</span><span class="p">,</span>
+  <span class="s2">&#34;%PDF%&#34;</span><span class="p">,</span>
+  <span class="s2">&#34;%TEX%&#34;</span>
+<span class="p">],</span>
+<span class="nt">&#34;latex-workshop.view.pdf.external.synctex.command&#34;</span><span class="p">:</span> <span class="s2">&#34;/Applications/Skim.app/Contents/SharedSupport/displayline&#34;</span><span class="p">,</span>
+<span class="nt">&#34;latex-workshop.view.pdf.external.viewer.args&#34;</span><span class="p">:</span> <span class="p">[</span>
+  <span class="s2">&#34;-a&#34;</span><span class="p">,</span>
+  <span class="s2">&#34;Skim&#34;</span><span class="p">,</span>
+  <span class="s2">&#34;\&#34;%PDF%\&#34;&#34;</span>
+<span class="p">],</span>
+<span class="nt">&#34;latex-workshop.view.pdf.external.viewer.command&#34;</span><span class="p">:</span> <span class="s2">&#34;open&#34;</span><span class="p">,</span>
+<span class="nt">&#34;latex-workshop.view.pdf.viewer&#34;</span><span class="p">:</span> <span class="s2">&#34;external&#34;</span>
+<span class="p">}</span>
 </code></pre></div><p>One also needs to configure Skim so that Shift-Cmd-clicking on a point of
 the PDF makes VS Code jump to the corresponding line in the LaTeX sources.
 This is done in the <em>Sync</em> pane of the Skim preferences dialog.
@@ -317,7 +316,7 @@ And it also works on Markdown documents!
 For instance, I purposefully wrote &ldquo;work&rdquo; instead of &ldquo;works&rdquo; in the previous
 sentences, then ran <code>textidote</code> on this file.
 Look what I got:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">* L81C13-L81C17 Did you mean &#39;works&#39;?. Suggestions:
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">* L81C13-L81C17 Did you mean &#39;works&#39;?. Suggestions:
   [works] (3395) [lt:en:IT_VBZ]
   And it also work on Markdown documents!
               ^^^^^

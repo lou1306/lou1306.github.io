@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Notes on CompSci et cetera">
 	
-	<meta name="generator" content="Hugo 0.77.0" />
+	<meta name="generator" content="Hugo 0.79.0" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -31,9 +31,8 @@
 	<!-- Google Fonts -->
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
 
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	<link rel="stylesheet" href="/syntax.css">
+	
 </head>
 
 <body>
@@ -242,7 +241,7 @@ On the other hand, I would now be able to easily adjust the timing of my slides
 to match my voiceover without having to edit a video asset.
 Of course, the PDF-to-PNG conversion was gracefully handled by
 <a href="https://imagemagick.org/index.php">ImageMagick</a>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">convert -density <span style="color:#ae81ff">300</span> path/to/slides.pdf slide.png
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">convert -density <span class="m">300</span> path/to/slides.pdf slide.png
 </code></pre></div><p>generates a collection of files named <code>slide-0.png</code>, <code>slide-1.png</code>, and so on.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>At that point, I was finally able to export a flawless video!

@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Notes on CompSci et cetera">
 	
-	<meta name="generator" content="Hugo 0.77.0" />
+	<meta name="generator" content="Hugo 0.79.0" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -32,9 +32,8 @@
 	<!-- Google Fonts -->
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
 
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	<link rel="stylesheet" href="/syntax.css">
+	
 </head>
 
 	<body>
@@ -168,6 +167,27 @@
 				<div class="posts">
 	
 	<div class="post-teaser">
+		<header>
+			<h1>
+			<a class="post-link" href="http://lou1306.github.io/en/post/2020-12-10-cbmc-and-glucose/">
+				Bounded model checking with CBMC and Glucose
+			</a>
+			</h1>
+			<p class="meta">
+    December 10, 2020 &middot; 5 minutes&middot; Tags:<a href='/en/tags/bmc'>Bmc</a>, <a href='/en/tags/c'>C</a>, <a href='/en/tags/cbmc'>Cbmc</a>, <a href='/en/tags/glucose'>Glucose</a>, <a href='/en/tags/sat'>Sat</a></p>
+
+		</header>
+
+		<div class="excerpt">
+			Formal verification allows to find bugs in a program by systematically exploring all its feasible executions. I have used several formal verification tools during my PhD; since I feel there is a lack of technical blog posts about this topic on the Web, I&rsquo;ll try and write some :)
+This post deals with bounded model checking, specifically the CBMC tool and how to combine it with the Glucose solver. I believe this leads to a measurable increase in performance, at least when checking unsafe programs.
+
+			<br>
+			<a class="button" href="http://lou1306.github.io/en/post/2020-12-10-cbmc-and-glucose/">
+				Continue »
+			</a>
+		</div>
+	</div><div class="post-teaser">
 		<header>
 			<h1>
 			<a class="post-link" href="http://lou1306.github.io/en/post/2020-10-19-talks/">

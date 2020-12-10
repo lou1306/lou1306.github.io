@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bounded model checking with CBMC and Glucose &middot; lou1306</title>
+	<meta charset="utf-8">
+	<link href="https://micro.blog/lou1306" rel="me" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Luca Di Stefano">
+	<meta name="description" content="Notes on CompSci et cetera">
+	
+	<meta name="generator" content="Hugo 0.79.0" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
+	<link rel="stylesheet" href="http://lou1306.github.io/css/style.css">
+	
+
+	<!--Favicon-->
+	<link rel="apple-touch-icon" href="http://lou1306.github.io/apple-touch-icon.png">
+	<link rel="shortcut icon" href="http://lou1306.github.io/favicon.ico" type="image/x-icon">
+
+	<link rel="canonical" href="http://lou1306.github.io/en/post/2020-12-10-cbmc-and-glucose/">
+	
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/solid.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/brands.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">        
+
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="/syntax.css">
+	
+</head>
+
+<body>
+	<header class="site-header">
+	<div class="branding">
+		<a href="http://lou1306.github.io/">
+		<img class="avatar" src="https://www.gravatar.com/avatar/b1549ac9d27e6458d79ec9d340887b0b?s=100&d=identicon" alt="avatar"/>
+		</a>
+		<h1 class="site-title">
+			<a href='/en/'>lou1306</a>
+			<small>
+		
+			
+			
+				
+				<a href="http://lou1306.github.io/"> (it)</a></small>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+	      	<li><a href="/en/about/"> About </a>•</li><li><a href="/en/cv/"> CV </a>•</li><li><a href="/en/schools/"> Schools </a>•</li>
+
+	      	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="icon">
+	<a href="https://github.com/lou1306" rel="me" title="Github">
+		<i class="fab fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="icon">
+	<a href="https://orcid.org/0000-0003-1922-3151" rel="me" title="ORCID iD">
+		<i class="ai fa-fw ai-orcid"></i>
+	</a>
+</li>
+
+<li class="icon">
+	<a href="https://dblp.org/pid/215/9758" rel="me" title="DBLP">
+		<i class="ai fa-fw ai-dblp"></i>
+	</a>
+</li>
+
+<li class="icon">
+	<a href="https://www.researchgate.net/profile/Luca_Di_Stefano2" rel="me" title="ResearchGate">
+            <i class="fab fa-fw fa-researchgate"></i>
+	</a>
+</li>
+
+<li class="icon">
+	<a href="https://www.linkedin.com/in/lou1306" rel="me" title="Linkedin">
+		<i class="fab fa-fw fa-linkedin"></i>
+	</a>
+</li>
+
+<li>•</li>
+
+
+<li class="icon">
+	<a href="https://keybase.io/lou1306" title="Keybase">
+		<i class="fab fa-keybase"></i>
+	</a>
+</li>
+
+<li class="icon">
+	<a href="https://twitter.com/1306lou" rel="me" title="Twitter">
+		<i class="fab fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+<li class="icon">
+	<a href="/en/index.xml" title="Subscribe">
+		<i class="fas fa-fw fa-rss"></i>
+	</a>
+</li>
+
+	    </ul>
+	</nav>
+</header>
+
+
+	<div class="content">
+	<article>
+		<header>
+			<h1 class="title">Bounded model checking with CBMC and Glucose</h1>
+			<p class="meta">
+    December 10, 2020 &middot; 5 minutes&middot; Tags:<a href='/en/tags/bmc'>Bmc</a>, <a href='/en/tags/c'>C</a>, <a href='/en/tags/cbmc'>Cbmc</a>, <a href='/en/tags/glucose'>Glucose</a>, <a href='/en/tags/sat'>Sat</a></p>
+
+			
+<p class="langs">This page also available in:</p>
+<ul class="langs">
+    
+    <li>
+        <a href="http://lou1306.github.io/post/2020-12-10-cbmc-and-glucose/">Italian</a>
+    </li>
+    
+</ul>
+
+		</header>
+
+	<section class="post-content">
+	
+	<p>Formal verification allows to find bugs in a program by systematically
+exploring all its feasible executions.
+I have used several formal verification tools during my PhD; since I feel there
+is a lack of technical blog posts about this topic on the Web, I&rsquo;ll try and
+write some :)</p>
+<p>This post deals with bounded model checking, specifically the CBMC tool and how
+to combine it with the Glucose solver.
+I believe this leads to a measurable increase in performance, at least when
+checking unsafe programs.</p>
+<h2 id="background">Background</h2>
+<h3 id="safe-and-unsafe-programs">Safe and unsafe programs</h3>
+<p>Assume you have a C program <code>src.c</code>, which contains an <code>assert(expr)</code> statement
+somewhere.
+We want to ensure that the assertion is never <em>violated</em>, i.e., that whenever
+the execution of the program reaches that statement, <code>expr</code> evaluates to a
+non-zero value.
+If this is the case, we say that the program is <em>safe</em>, otherwise it is <em>unsafe</em>.</p>
+<h3 id="bounded-model-checking">Bounded Model Checking</h3>
+<p>Ok, but how do we <em>do</em> that?
+A popular technique is Bounded Model Checking (BMC), i.e., the exploration of
+<em>all</em> possible executions of the program, up to a certain &ldquo;bound&rdquo; <em>k</em>.</p>
+<p>In practice, such bound is used to <em>unwind</em> all loops within the program,
+yielding a &ldquo;bounded&rdquo; program that perfectly reproduces all execution of <code>src.c</code>
+up to <em>k</em> iterations of its loops.</p>
+<p>So, a program like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* BODY */</span> <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div><p>Becomes something like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* BODY */</span> <span class="p">}</span>   <span class="c1">// --+
+</span><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* BODY */</span> <span class="p">}</span>   <span class="c1">//   |
+</span><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* BODY */</span> <span class="p">}</span>   <span class="c1">//   +-- &#34;k&#34; times
+</span><span class="c1"></span>    <span class="c1">// ...                       //   |
+</span><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* BODY */</span> <span class="p">}</span>   <span class="c1">// --+
+</span><span class="c1"></span>
+<span class="p">}</span>
+</code></pre></div><p>A BMC tool will then analyse the bounded program, looking for an assertion
+violation.
+Variables that are not given a specific value (e.g., those containing an input
+from the user) are treated as <em>nondeterministic</em>: this means that the tool will
+explore the behaviour of the program for any possible value of those variables.</p>
+<p>Notice that these tools can only certify that a program is unsafe; if they
+don&rsquo;t find any assertion violation for a given bound <em>k</em>, it may either mean that
+the program is safe, or that <em>k</em> was too shallow a bound.
+In contrast, other verification techniques, can actually prove the safety of a
+program. (Some of them are even based on BMC!)</p>
+<p>But wait, doesn&rsquo;t this mean that BMC is obsolete?</p>
+<p>Not really.
+Despite its limitations, BMC has become popular because it is an intuitive and
+efficient approach to bug-finding, which can be (and has been) readily adopted
+outside the academia.</p>
+<h2 id="cbmc-minisat-and-glucose">CBMC, Minisat, and Glucose</h2>
+<p>CBMC is a popular BMC tool for C programs.
+It performs <em>symbolic</em> model checking by transforming the program under
+verification (actually, its bounded version) into a Boolean formula.
+Then, it feeds the formula to a SAT solver.
+If the formula is <em>satisfiable</em>, then the program is unsafe.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">           <span class="o">+-----------+</span>  <span class="n">bounded</span>  <span class="o">+---------+</span>         <span class="o">+--------+</span>
+   <span class="n">C</span>       <span class="o">|</span>   <span class="n">Loop</span>    <span class="o">|</span>  <span class="n">program</span>  <span class="o">|</span>   <span class="n">SAT</span>   <span class="o">|</span> <span class="n">formula</span> <span class="o">|</span>  <span class="n">SAT</span>   <span class="o">|</span>
+<span class="n">program</span> <span class="o">---&gt;</span> <span class="n">unwinding</span> <span class="o">+-----------&gt;</span> <span class="n">encoder</span> <span class="o">+---------&gt;</span> <span class="n">solver</span> <span class="o">|</span>
+           <span class="o">|</span>  <span class="p">(</span><span class="n">etc</span><span class="o">.</span><span class="p">)</span>   <span class="o">|</span>           <span class="o">|</span>         <span class="o">|</span>         <span class="o">|</span>        <span class="o">|</span>
+           <span class="o">+-----------+</span>           <span class="o">+---------+</span>         <span class="o">+--------+</span>
+</code></pre></div><p>(Go to <a href="http://asciiflow.com/">AsciiFlow</a> to generate awesome ASCII diagrams!)</p>
+<p>CBMC ships with Minisat as its default SAT solver.
+Minisat is a well-respected tool, but in recent years more efficient alternatives
+have been put forward.
+In this post we will focus on
+<a href="https://www.labri.fr/perso/lsimon/glucose/">Glucose</a>,
+which has won several competitions.
+However, I am pretty sure that other tools can be integrated with CBMC in a
+similar way (as long as they expose the same I/O interface as Minisat and
+Glucose).</p>
+<h2 id="using-glucose-as-a-cbmc-backend">Using Glucose as a CBMC backend</h2>
+<p>I performed this procedure
+on a WSL2 Ubuntu, i.e., a VM running on a Windows 10 host;
+of course, it should work also on s bare-metal Ubuntu install :)</p>
+<h3 id="requirement">Requirement</h3>
+<p>I&rsquo;m pretty sure that you will only need the <code>build-essential</code> package,
+which you can install with the command</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">sudo apt install build-essential
+</code></pre></div><p>This package will install <code>gcc</code>, <code>g++</code>, <code>make</code>, and the GNU C library (<code>libc</code>).
+You will need these to compile Glucose.</p>
+<h3 id="install-cbmc">Install CBMC</h3>
+<p>Go to <a href="https://github.com/diffblue/cbmc/">CBMC&rsquo;s GitHub repository</a>
+and get the latest <code>.deb</code> release.
+(The latest release was <code>cbmc-5.20</code> at the time of writing.)</p>
+<h3 id="download-and-build-glucose">Download and build glucose</h3>
+<p>I am not aware of any binary distribution of Glucose. Luckily, it&rsquo;s pretty easy
+to build from sources.</p>
+<p>Just get the <a href="https://www.labri.fr/perso/lsimon/downloads/softwares/glucose-syrup-4.1.tgz">latest source tarball (v4.1)</a>,
+decompress it, and compile:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">tar -zxvf glucose-syrup-4.1.tgz
+<span class="nb">cd</span> glucose-syrup-4.1/simp
+make rs
+</code></pre></div><p>You should end up with a <code>glucose_static</code> executable in the
+<code>glucose-syrup-4.1/simp</code> directory.</p>
+<h3 id="make-glucose-output-the-model">Make Glucose output the model</h3>
+<p>By default, Glucose will only tell you whether a formula is satisfiable or not.
+In the former case, we want it to also output a <em>model</em>, i.e., an assignment
+that satisfies the formula.
+Why we want that? Because then CBMC can use this model to produce a
+<em>violation witness</em>, i.e., a trace of the program that leads to an assertion
+violation.
+These witnesses, or counterexamples, are essential to debug the program!</p>
+<p>Let us then create a tiny wrapper script, which we&rsquo;ll call <code>glucose_model.sh</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/sh
+</span><span class="cp"></span>
+/path/to/glucose-syrup-4.1/simp/glucose_static -model <span class="nv">$1</span>
+</code></pre></div><p>After saving it, let&rsquo;s give ourselves permission to execute it with the command:</p>
+<pre><code>chmod +x glucose_model.sh
+</code></pre><h3 id="putting-it-all-together">Putting it all together</h3>
+<p>We&rsquo;re almost there We can now invoke CBMC as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">cbmc --external-sat-solver<span class="o">=</span><span class="s2">&#34;/path/to/glucose_model.sh&#34;</span> src.c --trace
+</code></pre></div><p>CBMC will use Glucose to verify <code>src.c</code>.
+The <code>--trace</code> flag tells CBMC to use the
+model from Glucose (if any) to build a violation witness.</p>
+<p>Thanks to Glucose, I have experienced a relevant speed-up in the verification of
+some (unsafe) programs.
+I will keep testing this setup in the future, but it does look promising!</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>I hope I gave a clear, if concise, overview of bounded model checking of C
+programs.
+This post just brushes the surface of the topic: CBMC is a complex piece of
+software which supports a <em>very</em> large subset of C, and thus has to deal with a
+lot of corner cases.
+Also, there is a plethora of verification methods other than BMC out there!
+I hope this post made you just a little bit curious about that :)</p>
+
+	</section>
+		
+			<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lou1306" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		
+	</div>
+
+	<footer class="site-footer">
+	<p class="text">&copy; 2020 - Luca Di Stefano <br/> <a href="http://creativecommons.org/licenses/by-nc/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg" alt="License: CC BY-NC 4.0"></a><br>
+<a href="//gohugo.io/">Hugo</a> • <a href="//github.com/digitalcraftsman/hugo-type-theme">Type Theme</a> • <a href="//getskeleton.com/">Skeleton</a> • <a href="https://jpswalsh.github.io/academicons/">Academicons</a></p>
+</footer>
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-23262839-3', 'auto');
+ga('set', 'anonymizeIp', true);
+ga('send', 'pageview');
+</script>
+
+</body>
+</html>

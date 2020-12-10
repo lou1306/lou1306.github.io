@@ -6,10 +6,55 @@
     <description>Recent content in Tags on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Oct 2020 12:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 10 Dec 2020 22:09:07 +0100</lastBuildDate>
     
     <atom:link href="http://lou1306.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bmc</title>
+      <link>http://lou1306.github.io/en/tags/bmc/</link>
+      <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/en/tags/bmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C</title>
+      <link>http://lou1306.github.io/en/tags/c/</link>
+      <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/en/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cbmc</title>
+      <link>http://lou1306.github.io/en/tags/cbmc/</link>
+      <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/en/tags/cbmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>glucose</title>
+      <link>http://lou1306.github.io/en/tags/glucose/</link>
+      <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/en/tags/glucose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sat</title>
+      <link>http://lou1306.github.io/en/tags/sat/</link>
+      <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/en/tags/sat/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>videomaking</title>
@@ -80,15 +125,6 @@
       <pubDate>Wed, 02 Jan 2019 18:02:11 +0100</pubDate>
       
       <guid>http://lou1306.github.io/en/tags/pgp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C</title>
-      <link>http://lou1306.github.io/en/tags/c/</link>
-      <pubDate>Thu, 11 Jan 2018 11:56:11 +0100</pubDate>
-      
-      <guid>http://lou1306.github.io/en/tags/c/</guid>
       <description></description>
     </item>
     

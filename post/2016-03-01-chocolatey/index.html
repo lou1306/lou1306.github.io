@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Appunti di informatica e altro">
 	
-	<meta name="generator" content="Hugo 0.77.0" />
+	<meta name="generator" content="Hugo 0.79.0" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -31,9 +31,8 @@
 	<!-- Google Fonts -->
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
 
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	<link rel="stylesheet" href="/syntax.css">
+	
 </head>
 
 <body>
@@ -266,13 +265,13 @@ quindi <strong>non</strong> è ancora il caso di utilizzarlo in altri ambiti.</p
 <p>Comunque, se avete il gusto dell&rsquo;avventura, vi riporto velocemente una sequenza
 di comandi che permetteranno di recuperare pacchetti dai server di Chocolatey:
 per eseguirli bisogna aprire una console PowerShell come amministratore.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ps" data-lang="ps"><span style="color:#a6e22e">Set-ExecutionPolicy</span> <span style="color:#a6e22e">RemoteSigned</span> <span style="color:#a6e22e">-Scope</span> <span style="color:#a6e22e">Process</span>
-<span style="color:#a6e22e">Get-Command</span> <span style="color:#a6e22e">-Module</span> <span style="color:#a6e22e">PackageManagement</span>
-<span style="color:#a6e22e">Find-Package</span> <span style="color:#a6e22e">chocolatey</span>
-<span style="color:#a6e22e">Get-PackageProvider</span> <span style="color:#a6e22e">-Name</span> <span style="color:#a6e22e">Chocolatey</span>
-<span style="color:#a6e22e">Find-Package</span> <span style="color:#a6e22e">-Name</span> <span style="color:#a6e22e">f.lux</span>
-<span style="color:#a6e22e">Install-Package</span> <span style="color:#a6e22e">-Name</span> <span style="color:#a6e22e">f.lux</span>
-<span style="color:#a6e22e">Set-PackageSource</span> <span style="color:#a6e22e">-Name</span> <span style="color:#a6e22e">chocolatey</span> <span style="color:#a6e22e">-Trusted</span>
+<div class="highlight"><pre class="chroma"><code class="language-ps" data-lang="ps"><span class="nf">Set-ExecutionPolicy</span> <span class="nf">RemoteSigned</span> <span class="nf">-Scope</span> <span class="nf">Process</span>
+<span class="nf">Get-Command</span> <span class="nf">-Module</span> <span class="nf">PackageManagement</span>
+<span class="nf">Find-Package</span> <span class="nf">chocolatey</span>
+<span class="nf">Get-PackageProvider</span> <span class="nf">-Name</span> <span class="nf">Chocolatey</span>
+<span class="nf">Find-Package</span> <span class="nf">-Name</span> <span class="nf">f.lux</span>
+<span class="nf">Install-Package</span> <span class="nf">-Name</span> <span class="nf">f.lux</span>
+<span class="nf">Set-PackageSource</span> <span class="nf">-Name</span> <span class="nf">chocolatey</span> <span class="nf">-Trusted</span>
 </code></pre></div><ol>
 <li>Consente l&rsquo;esecuzione di script esterni ma dotati di firma digitale.
 Il parametro <code>-Scope Process</code> limita questa politica alla shell attuale.</li>

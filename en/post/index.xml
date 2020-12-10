@@ -6,10 +6,20 @@
     <description>Recent content in Post on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Oct 2020 12:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 10 Dec 2020 22:09:07 +0100</lastBuildDate>
     
     <atom:link href="http://lou1306.github.io/en/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bounded model checking with CBMC and Glucose</title>
+      <link>http://lou1306.github.io/en/post/2020-12-10-cbmc-and-glucose/</link>
+      <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/en/post/2020-12-10-cbmc-and-glucose/</guid>
+      <description>Formal verification allows to find bugs in a program by systematically exploring all its feasible executions. I have used several formal verification tools during my PhD; since I feel there is a lack of technical blog posts about this topic on the Web, I&amp;rsquo;ll try and write some :)
+This post deals with bounded model checking, specifically the CBMC tool and how to combine it with the Glucose solver. I believe this leads to a measurable increase in performance, at least when checking unsafe programs.</description>
+    </item>
     
     <item>
       <title>Thoughts on recording talks</title>

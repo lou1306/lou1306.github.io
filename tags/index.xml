@@ -6,10 +6,55 @@
     <description>Recent content in Tags on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
-    <lastBuildDate>Tue, 02 Jun 2020 12:59:09 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 10 Dec 2020 22:09:07 +0100</lastBuildDate>
     
     <atom:link href="http://lou1306.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bmc</title>
+      <link>http://lou1306.github.io/tags/bmc/</link>
+      <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/bmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C</title>
+      <link>http://lou1306.github.io/tags/c/</link>
+      <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cbmc</title>
+      <link>http://lou1306.github.io/tags/cbmc/</link>
+      <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/cbmc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>glucose</title>
+      <link>http://lou1306.github.io/tags/glucose/</link>
+      <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/glucose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sat</title>
+      <link>http://lou1306.github.io/tags/sat/</link>
+      <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
+      
+      <guid>http://lou1306.github.io/tags/sat/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Eliot</title>
@@ -44,15 +89,6 @@
       <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
       
       <guid>http://lou1306.github.io/tags/vscode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C</title>
-      <link>http://lou1306.github.io/tags/c/</link>
-      <pubDate>Thu, 11 Jan 2018 11:56:11 +0100</pubDate>
-      
-      <guid>http://lou1306.github.io/tags/c/</guid>
       <description></description>
     </item>
     

@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Appunti di informatica e altro">
 	
-	<meta name="generator" content="Hugo 0.77.0" />
+	<meta name="generator" content="Hugo 0.79.0" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -31,9 +31,8 @@
 	<!-- Google Fonts -->
 	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
 
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	<link rel="stylesheet" href="/syntax.css">
+	
 </head>
 
 <body>
@@ -212,25 +211,25 @@ una frequenza nominale di 10 Hz.</p>
 chiaro e ci permette di capire un sacco di cose sul sistema. Quindi in marcia.</p>
 <h3 id="uservariablesh"><code>UserVariables.h</code></h3>
 <p>Inseriamo la dichiarazione<br>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">int</span> count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 </code></pre></div>
 all&rsquo;inizio del file.</p>
 <h3 id="usercodecpp"><code>UserCode.cpp</code></h3>
 <p>Modifichiamo <code>userhook_MediumLoop()</code> come segue:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#ifdef USERHOOK_MEDIUMLOOP
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> Copter<span style="color:#f92672">::</span>userhook_MediumLoop()
-{
-    <span style="color:#66d9ef">if</span> (ap.initialised)
-    {
-        count <span style="color:#f92672">=</span> ( count <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> ) <span style="color:#f92672">%</span> <span style="color:#ae81ff">32000</span>; <span style="color:#75715e">// Un valore a caso per riazzerare count
-</span><span style="color:#75715e"></span>    }
-}
-<span style="color:#75715e">#endif
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#ifdef USERHOOK_MEDIUMLOOP
+</span><span class="cp"></span><span class="kt">void</span> <span class="n">Copter</span><span class="o">::</span><span class="n">userhook_MediumLoop</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ap</span><span class="p">.</span><span class="n">initialised</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="p">(</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">)</span> <span class="o">%</span> <span class="mi">32000</span><span class="p">;</span> <span class="c1">// Un valore a caso per riazzerare count
+</span><span class="c1"></span>    <span class="p">}</span>
+<span class="p">}</span>
+<span class="cp">#endif
 </span></code></pre></div>
 <h3 id="apm_configh"><code>APM_Config.h</code></h3>
 <p>Cerchiamo e decommentiamo queste direttive:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#define USERHOOK_VARIABLES &#34;UserVariables.h&#34;
-</span><span style="color:#75715e">#define USERHOOK_MEDIUMLOOP userhook_MediumLoop();
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#define USERHOOK_VARIABLES &#34;UserVariables.h&#34;
+</span><span class="cp">#define USERHOOK_MEDIUMLOOP userhook_MediumLoop();
 </span></code></pre></div>
 <h2 id="invio-dei-dati-alla-stazione-di-terra">Invio dei dati alla stazione di terra</h2>
 <p>Se siete impazienti come me potreste anche ricompilare e reinstallare il
@@ -296,53 +295,53 @@ payload.</p>
 <h3 id="librariesgcs_mavlinkgcsh"><code>\libraries\GCS_MAVLink\GCS.h</code></h3>
 <p>aggiungiamo un valore <code>MSG_CUSTOM_COUNT</code> al penultimo posto dell&rsquo;enum
 <code>ap_message</code>:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">enum</span> <span style="color:#a6e22e">ap_message</span> {
-    MSG_HEARTBEAT,
-    <span style="color:#960050;background-color:#1e0010">…</span>
-    MSG_POSITION_TARGET_GLOBAL_INT,
-    MSG_CUSTOM_COUNT,
-    MSG_RETRY_DEFERRED <span style="color:#75715e">// this must be last
-</span><span style="color:#75715e"></span>};
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">enum</span> <span class="nc">ap_message</span> <span class="p">{</span>
+    <span class="n">MSG_HEARTBEAT</span><span class="p">,</span>
+    <span class="err">…</span>
+    <span class="n">MSG_POSITION_TARGET_GLOBAL_INT</span><span class="p">,</span>
+    <span class="n">MSG_CUSTOM_COUNT</span><span class="p">,</span>
+    <span class="n">MSG_RETRY_DEFERRED</span> <span class="c1">// this must be last
+</span><span class="c1"></span><span class="p">};</span>
 </code></pre></div></p>
 <h3 id="copterh"><code>Copter.h</code></h3>
 <p>Aggiungiamo la definizione di questo metodo alla classe omonima:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">send_count</span>(mavlink_channel_t chan);
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">send_count</span><span class="p">(</span><span class="n">mavlink_channel_t</span> <span class="n">chan</span><span class="p">);</span>
 </code></pre></div></p>
 <h3 id="gcs_mavlinkcpp"><code>GCS_Mavlink.cpp</code></h3>
 <p>Questo file si occupa di gestire la comunicazione con la GCS e quindi qui si
 concentrerà la maggior parte del lavoro.</p>
 <p>Implementiamo la funzione appena definita:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> NOINLINE Copter<span style="color:#f92672">::</span>send_count(mavlink_channel_t chan)
-{
-    mavlink_msg_named_value_int_send(
-        chan,
-        AP_HAL<span style="color:#f92672">::</span>millis(),    <span style="color:#75715e">// uptime del sistema in ms (usato come timestamp)
-</span><span style="color:#75715e"></span>        <span style="color:#e6db74">&#34;count&#34;</span>,
-        count
-    );
-}
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="n">NOINLINE</span> <span class="n">Copter</span><span class="o">::</span><span class="n">send_count</span><span class="p">(</span><span class="n">mavlink_channel_t</span> <span class="n">chan</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">mavlink_msg_named_value_int_send</span><span class="p">(</span>
+        <span class="n">chan</span><span class="p">,</span>
+        <span class="n">AP_HAL</span><span class="o">::</span><span class="n">millis</span><span class="p">(),</span>    <span class="c1">// uptime del sistema in ms (usato come timestamp)
+</span><span class="c1"></span>        <span class="s">&#34;count&#34;</span><span class="p">,</span>
+        <span class="n">count</span>
+    <span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div></p>
 <p>Modifichiamo la funzione <code>GCS_MAVLINK::try_send_message()</code>
 aggiungendo una nuova opzione allo <code>switch(id)</code>:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">switch</span>(id) {
-    <span style="color:#960050;background-color:#1e0010">…</span>
-    <span style="color:#66d9ef">case</span> MSG_CUSTOM_COUNT:
-        copter.send_count(chan);
-        <span style="color:#66d9ef">break</span>;
-    <span style="color:#960050;background-color:#1e0010">…</span>
-}
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">switch</span><span class="p">(</span><span class="n">id</span><span class="p">)</span> <span class="p">{</span>
+    <span class="err">…</span>
+    <span class="k">case</span> <span class="nl">MSG_CUSTOM_COUNT</span><span class="p">:</span>
+        <span class="n">copter</span><span class="p">.</span><span class="n">send_count</span><span class="p">(</span><span class="n">chan</span><span class="p">);</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="err">…</span>
+<span class="p">}</span>
 </code></pre></div></p>
 <p>Infine facciamo sì che <code>data_stream_send()</code> invii il messaggio:
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">void</span> GCS_MAVLINK<span style="color:#f92672">::</span>data_stream_send(<span style="color:#66d9ef">void</span>)
-{
-    <span style="color:#960050;background-color:#1e0010">…</span>
-    send_message(MSG_CUSTOM_COUNT);
-    <span style="color:#960050;background-color:#1e0010">…</span>
-}
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="n">GCS_MAVLINK</span><span class="o">::</span><span class="n">data_stream_send</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="err">…</span>
+    <span class="n">send_message</span><span class="p">(</span><span class="n">MSG_CUSTOM_COUNT</span><span class="p">);</span>
+    <span class="err">…</span>
+<span class="p">}</span>
 </code></pre></div></p>
 <p>È opportuno posizionare questa istruzione <em>dopo</em> l&rsquo;ultima occorrenza del
 controllo
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">if</span> (copter.gcs_out_of_time) <span style="color:#66d9ef">return</span>;
+<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">if</span> <span class="p">(</span><span class="n">copter</span><span class="p">.</span><span class="n">gcs_out_of_time</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
 </code></pre></div></p>
 <p>In questo modo il messaggio sarà tra quelli a minor priorità possibile.</p>
 <h2 id="verifica-su-mission-planner">Verifica su Mission Planner</h2>

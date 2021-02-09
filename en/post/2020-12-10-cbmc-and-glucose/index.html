@@ -256,12 +256,11 @@ Glucose).</p>
 on a WSL2 Ubuntu, i.e., a VM running on a Windows 10 host;
 of course, it should work also on s bare-metal Ubuntu install :)</p>
 <h3 id="requirement">Requirement</h3>
-<p>I&rsquo;m pretty sure that you will only need the <code>build-essential</code> package,
-which you can install with the command</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">sudo apt install build-essential
-</code></pre></div><p>This package will install <code>gcc</code>, <code>g++</code>, <code>make</code>, and the GNU C library (<code>libc</code>).
-You will need these to compile Glucose.</p>
-<h3 id="install-cbmc">Install CBMC</h3>
+<p>To compile Glucose, you will need a C/C++ compiler, <code>make</code>, and <code>zlib</code>
+(a compression library).
+On Ubuntu, you can install all this stuff with the command</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">sudo apt install build-essential zlib1g-dev
+</code></pre></div><h3 id="install-cbmc">Install CBMC</h3>
 <p>Go to <a href="https://github.com/diffblue/cbmc/">CBMC&rsquo;s GitHub repository</a>
 and get the latest <code>.deb</code> release.
 (The latest release was <code>cbmc-5.20</code> at the time of writing.)</p>
@@ -290,7 +289,7 @@ These witnesses, or counterexamples, are essential to debug the program!</p>
 </code></pre></div><p>After saving it, let&rsquo;s give ourselves permission to execute it with the command:</p>
 <pre><code>chmod +x glucose_model.sh
 </code></pre><h3 id="putting-it-all-together">Putting it all together</h3>
-<p>We&rsquo;re almost there We can now invoke CBMC as follows:</p>
+<p>We&rsquo;re almost there! We can now invoke CBMC as follows:</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">cbmc --external-sat-solver<span class="o">=</span><span class="s2">&#34;/path/to/glucose_model.sh&#34;</span> src.c --trace
 </code></pre></div><p>CBMC will use Glucose to verify <code>src.c</code>.
 The <code>--trace</code> flag tells CBMC to use the

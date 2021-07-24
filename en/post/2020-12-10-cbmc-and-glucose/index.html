@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Notes on CompSci et cetera">
 	
-	<meta name="generator" content="Hugo 0.85.0" />
+	<meta name="generator" content="Hugo 0.86.0" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -200,13 +200,13 @@ A popular technique is Bounded Model Checking (BMC), i.e., the exploration of
 yielding a &ldquo;bounded&rdquo; program that perfectly reproduces all execution of <code>src.c</code>
 up to <em>k</em> iterations of its loops.</p>
 <p>So, a program like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="k">while</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* BODY */</span> <span class="p">}</span>
 
 <span class="p">}</span>
 </code></pre></div><p>Becomes something like:</p>
-<div class="highlight"><pre class="chroma"><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* BODY */</span> <span class="p">}</span>   <span class="c1">// --+
 </span><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="cm">/* BODY */</span> <span class="p">}</span>   <span class="c1">//   |
@@ -236,7 +236,7 @@ It performs <em>symbolic</em> model checking by transforming the program under
 verification (actually, its bounded version) into a Boolean formula.
 Then, it feeds the formula to a SAT solver.
 If the formula is <em>satisfiable</em>, then the program is unsafe.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">           <span class="o">+-----------+</span>  <span class="n">bounded</span>  <span class="o">+---------+</span>         <span class="o">+--------+</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python">           <span class="o">+-----------+</span>  <span class="n">bounded</span>  <span class="o">+---------+</span>         <span class="o">+--------+</span>
    <span class="n">C</span>       <span class="o">|</span>   <span class="n">Loop</span>    <span class="o">|</span>  <span class="n">program</span>  <span class="o">|</span>   <span class="n">SAT</span>   <span class="o">|</span> <span class="n">formula</span> <span class="o">|</span>  <span class="n">SAT</span>   <span class="o">|</span>
 <span class="n">program</span> <span class="o">---&gt;</span> <span class="n">unwinding</span> <span class="o">+-----------&gt;</span> <span class="n">encoder</span> <span class="o">+---------&gt;</span> <span class="n">solver</span> <span class="o">|</span>
            <span class="o">|</span>  <span class="p">(</span><span class="n">etc</span><span class="o">.</span><span class="p">)</span>   <span class="o">|</span>           <span class="o">|</span>         <span class="o">|</span>         <span class="o">|</span>        <span class="o">|</span>
@@ -259,7 +259,7 @@ of course, it should work also on s bare-metal Ubuntu install :)</p>
 <p>To compile Glucose, you will need a C/C++ compiler, <code>make</code>, and <code>zlib</code>
 (a compression library).
 On Ubuntu, you can install all this stuff with the command</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">sudo apt install build-essential zlib1g-dev
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">sudo apt install build-essential zlib1g-dev
 </code></pre></div><h3 id="install-cbmc">Install CBMC</h3>
 <p>Go to <a href="https://github.com/diffblue/cbmc/">CBMC&rsquo;s GitHub repository</a>
 and get the latest <code>.deb</code> release.
@@ -269,7 +269,7 @@ and get the latest <code>.deb</code> release.
 to build from sources.</p>
 <p>Just get the <a href="https://www.labri.fr/perso/lsimon/downloads/softwares/glucose-syrup-4.1.tgz">latest source tarball (v4.1)</a>,
 decompress it, and compile:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">tar -zxvf glucose-syrup-4.1.tgz
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">tar -zxvf glucose-syrup-4.1.tgz
 <span class="nb">cd</span> glucose-syrup-4.1/simp
 make rs
 </code></pre></div><p>You should end up with a <code>glucose_static</code> executable in the
@@ -283,14 +283,14 @@ Why we want that? Because then CBMC can use this model to produce a
 violation.
 These witnesses, or counterexamples, are essential to debug the program!</p>
 <p>Let us then create a tiny wrapper script, which we&rsquo;ll call <code>glucose_model.sh</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/sh
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/sh
 </span><span class="cp"></span>
 /path/to/glucose-syrup-4.1/simp/glucose_static -model <span class="nv">$1</span>
 </code></pre></div><p>After saving it, let&rsquo;s give ourselves permission to execute it with the command:</p>
 <pre><code>chmod +x glucose_model.sh
 </code></pre><h3 id="putting-it-all-together">Putting it all together</h3>
 <p>We&rsquo;re almost there! We can now invoke CBMC as follows:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">cbmc --external-sat-solver<span class="o">=</span><span class="s2">&#34;/path/to/glucose_model.sh&#34;</span> src.c --trace
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">cbmc --external-sat-solver<span class="o">=</span><span class="s2">&#34;/path/to/glucose_model.sh&#34;</span> src.c --trace
 </code></pre></div><p>CBMC will use Glucose to verify <code>src.c</code>.
 The <code>--trace</code> flag tells CBMC to use the
 model from Glucose (if any) to build a violation witness.</p>

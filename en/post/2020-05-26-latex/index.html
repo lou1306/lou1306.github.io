@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Notes on CompSci et cetera">
 	
-	<meta name="generator" content="Hugo 0.85.0" />
+	<meta name="generator" content="Hugo 0.86.0" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -255,7 +255,7 @@ LaTeX sources.
 Unfortunately, on my machine it failed with some errors about missing Perl
 libraries.
 In the end I solved the issue by following <a href="https://github.com/James-Yu/LaTeX-Workshop/issues/427#issuecomment-568293930">these steps</a>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#install perl and its package manager, cpan</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#install perl and its package manager, cpan</span>
 brew install perl 
 <span class="c1"># install latexindent requirements</span>
 cpan Log::Log4perl
@@ -276,7 +276,7 @@ rendering is slow and a native PDF viewer is surely nicer to look at.</p>
 <p>Personally, I prefer to use <a href="https://skim-app.sourceforge.io/">Skim</a> on macOS.
 On Windows, I would recommend <a href="https://www.sumatrapdfreader.org">SumatraPDF</a>.
 Here are the relevant LW settings to integrate Skim:</p>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
 <span class="nt">&#34;latex-workshop.view.pdf.external.synctex.args&#34;</span><span class="p">:</span> <span class="p">[</span>
   <span class="s2">&#34;-r&#34;</span><span class="p">,</span>
   <span class="s2">&#34;%LINE%&#34;</span><span class="p">,</span>
@@ -316,7 +316,7 @@ And it also works on Markdown documents!
 For instance, I purposefully wrote &ldquo;work&rdquo; instead of &ldquo;works&rdquo; in the previous
 sentences, then ran <code>textidote</code> on this file.
 Look what I got:</p>
-<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">* L81C13-L81C17 Did you mean &#39;works&#39;?. Suggestions:
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">* L81C13-L81C17 Did you mean &#39;works&#39;?. Suggestions:
   [works] (3395) [lt:en:IT_VBZ]
   And it also work on Markdown documents!
               ^^^^^

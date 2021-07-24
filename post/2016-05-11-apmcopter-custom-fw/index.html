@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Appunti di informatica e altro">
 	
-	<meta name="generator" content="Hugo 0.85.0" />
+	<meta name="generator" content="Hugo 0.86.0" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -211,11 +211,11 @@ una frequenza nominale di 10 Hz.</p>
 chiaro e ci permette di capire un sacco di cose sul sistema. Quindi in marcia.</p>
 <h3 id="uservariablesh"><code>UserVariables.h</code></h3>
 <p>Inseriamo la dichiarazione<br>
-<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span></code></pre></div>
 all&rsquo;inizio del file.</p>
 <h3 id="usercodecpp"><code>UserCode.cpp</code></h3>
 <p>Modifichiamo <code>userhook_MediumLoop()</code> come segue:</p>
-<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#ifdef USERHOOK_MEDIUMLOOP
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#ifdef USERHOOK_MEDIUMLOOP
 </span><span class="cp"></span><span class="kt">void</span> <span class="n">Copter</span><span class="o">::</span><span class="n">userhook_MediumLoop</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">ap</span><span class="p">.</span><span class="n">initialised</span><span class="p">)</span>
@@ -226,7 +226,7 @@ all&rsquo;inizio del file.</p>
 <span class="cp">#endif</span></code></pre></div>
 <h3 id="apm_configh"><code>APM_Config.h</code></h3>
 <p>Cerchiamo e decommentiamo queste direttive:</p>
-<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#define USERHOOK_VARIABLES &#34;UserVariables.h&#34;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#define USERHOOK_VARIABLES &#34;UserVariables.h&#34;
 </span><span class="cp">#define USERHOOK_MEDIUMLOOP userhook_MediumLoop();</span></code></pre></div>
 <h2 id="invio-dei-dati-alla-stazione-di-terra">Invio dei dati alla stazione di terra</h2>
 <p>Se siete impazienti come me potreste anche ricompilare e reinstallare il
@@ -292,7 +292,7 @@ payload.</p>
 <h3 id="librariesgcs_mavlinkgcsh"><code>\libraries\GCS_MAVLink\GCS.h</code></h3>
 <p>aggiungiamo un valore <code>MSG_CUSTOM_COUNT</code> al penultimo posto dell&rsquo;enum
 <code>ap_message</code>:
-<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">enum</span> <span class="nc">ap_message</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">enum</span> <span class="nc">ap_message</span> <span class="p">{</span>
     <span class="n">MSG_HEARTBEAT</span><span class="p">,</span>
     <span class="err">…</span>
     <span class="n">MSG_POSITION_TARGET_GLOBAL_INT</span><span class="p">,</span>
@@ -301,12 +301,12 @@ payload.</p>
 </span><span class="c1"></span><span class="p">};</span></code></pre></div></p>
 <h3 id="copterh"><code>Copter.h</code></h3>
 <p>Aggiungiamo la definizione di questo metodo alla classe omonima:
-<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">send_count</span><span class="p">(</span><span class="n">mavlink_channel_t</span> <span class="n">chan</span><span class="p">);</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">send_count</span><span class="p">(</span><span class="n">mavlink_channel_t</span> <span class="n">chan</span><span class="p">);</span></code></pre></div></p>
 <h3 id="gcs_mavlinkcpp"><code>GCS_Mavlink.cpp</code></h3>
 <p>Questo file si occupa di gestire la comunicazione con la GCS e quindi qui si
 concentrerà la maggior parte del lavoro.</p>
 <p>Implementiamo la funzione appena definita:
-<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="n">NOINLINE</span> <span class="n">Copter</span><span class="o">::</span><span class="n">send_count</span><span class="p">(</span><span class="n">mavlink_channel_t</span> <span class="n">chan</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="n">NOINLINE</span> <span class="n">Copter</span><span class="o">::</span><span class="n">send_count</span><span class="p">(</span><span class="n">mavlink_channel_t</span> <span class="n">chan</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="n">mavlink_msg_named_value_int_send</span><span class="p">(</span>
         <span class="n">chan</span><span class="p">,</span>
@@ -317,7 +317,7 @@ concentrerà la maggior parte del lavoro.</p>
 <span class="p">}</span></code></pre></div></p>
 <p>Modifichiamo la funzione <code>GCS_MAVLINK::try_send_message()</code>
 aggiungendo una nuova opzione allo <code>switch(id)</code>:
-<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">switch</span><span class="p">(</span><span class="n">id</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">switch</span><span class="p">(</span><span class="n">id</span><span class="p">)</span> <span class="p">{</span>
     <span class="err">…</span>
     <span class="k">case</span> <span class="nl">MSG_CUSTOM_COUNT</span><span class="p">:</span>
         <span class="n">copter</span><span class="p">.</span><span class="n">send_count</span><span class="p">(</span><span class="n">chan</span><span class="p">);</span>
@@ -325,7 +325,7 @@ aggiungendo una nuova opzione allo <code>switch(id)</code>:
     <span class="err">…</span>
 <span class="p">}</span></code></pre></div></p>
 <p>Infine facciamo sì che <code>data_stream_send()</code> invii il messaggio:
-<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="n">GCS_MAVLINK</span><span class="o">::</span><span class="n">data_stream_send</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="n">GCS_MAVLINK</span><span class="o">::</span><span class="n">data_stream_send</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="err">…</span>
     <span class="n">send_message</span><span class="p">(</span><span class="n">MSG_CUSTOM_COUNT</span><span class="p">);</span>
@@ -333,7 +333,7 @@ aggiungendo una nuova opzione allo <code>switch(id)</code>:
 <span class="p">}</span></code></pre></div></p>
 <p>È opportuno posizionare questa istruzione <em>dopo</em> l&rsquo;ultima occorrenza del
 controllo
-<div class="highlight"><pre class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">if</span> <span class="p">(</span><span class="n">copter</span><span class="p">.</span><span class="n">gcs_out_of_time</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span></code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">if</span> <span class="p">(</span><span class="n">copter</span><span class="p">.</span><span class="n">gcs_out_of_time</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span></code></pre></div></p>
 <p>In questo modo il messaggio sarà tra quelli a minor priorità possibile.</p>
 <h2 id="verifica-su-mission-planner">Verifica su Mission Planner</h2>
 <p>Ora possiamo compilare il firmware e installarlo sulla nostra board.

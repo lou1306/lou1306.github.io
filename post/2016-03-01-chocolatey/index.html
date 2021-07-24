@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Appunti di informatica e altro">
 	
-	<meta name="generator" content="Hugo 0.85.0" />
+	<meta name="generator" content="Hugo 0.86.0" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -265,7 +265,7 @@ quindi <strong>non</strong> è ancora il caso di utilizzarlo in altri ambiti.</p
 <p>Comunque, se avete il gusto dell&rsquo;avventura, vi riporto velocemente una sequenza
 di comandi che permetteranno di recuperare pacchetti dai server di Chocolatey:
 per eseguirli bisogna aprire una console PowerShell come amministratore.</p>
-<div class="highlight"><pre class="chroma"><code class="language-ps" data-lang="ps"><span class="nf">Set-ExecutionPolicy</span> <span class="nf">RemoteSigned</span> <span class="nf">-Scope</span> <span class="nf">Process</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ps" data-lang="ps"><span class="nf">Set-ExecutionPolicy</span> <span class="nf">RemoteSigned</span> <span class="nf">-Scope</span> <span class="nf">Process</span>
 <span class="nf">Get-Command</span> <span class="nf">-Module</span> <span class="nf">PackageManagement</span>
 <span class="nf">Find-Package</span> <span class="nf">chocolatey</span>
 <span class="nf">Get-PackageProvider</span> <span class="nf">-Name</span> <span class="nf">Chocolatey</span>

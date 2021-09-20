@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Notes on CompSci et cetera">
 	
-	<meta name="generator" content="Hugo 0.87.0" />
+	<meta name="generator" content="Hugo 0.88.1" />
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://lou1306.github.io/css/main.css">
@@ -287,7 +287,7 @@ These witnesses, or counterexamples, are essential to debug the program!</p>
 </span><span class="cp"></span>
 /path/to/glucose-syrup-4.1/simp/glucose_static -model <span class="nv">$1</span>
 </code></pre></div><p>After saving it, let&rsquo;s give ourselves permission to execute it with the command:</p>
-<pre><code>chmod +x glucose_model.sh
+<pre tabindex="0"><code>chmod +x glucose_model.sh
 </code></pre><h3 id="putting-it-all-together">Putting it all together</h3>
 <p>We&rsquo;re almost there! We can now invoke CBMC as follows:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">cbmc --external-sat-solver<span class="o">=</span><span class="s2">&#34;/path/to/glucose_model.sh&#34;</span> src.c --trace

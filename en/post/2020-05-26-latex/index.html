@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Notes on CompSci et cetera">
 	
-	<meta name="generator" content="Hugo 0.92.1" />
+	<meta name="generator" content="Hugo 0.96.0" />
 
         
         
@@ -209,7 +209,7 @@ However, the tailored environment provided by these editors becomes less useful
 as the user gets more confident with LaTeX.
 Moreover, IDE fatigue is a very real threat for people that use multiple
 editors on a daily basis.
-Shockingly, I found no actual definition of this phenomenon on the &lsquo;net, so
+Shockingly, I found no actual definition of this phenomenon on the &rsquo;net, so
 I will provide my own: <em>IDE fatigue is the mental overhead associated with
 regularly switching between multiple, advanced text editors.</em>
 To avoid this, one should ideally use a single editor for most of their work,
@@ -267,14 +267,14 @@ LaTeX sources.
 Unfortunately, on my machine it failed with some errors about missing Perl
 libraries.
 In the end I solved the issue by following <a href="https://github.com/James-Yu/LaTeX-Workshop/issues/427#issuecomment-568293930">these steps</a>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#install perl and its package manager, cpan</span>
-brew install perl 
-<span class="c1"># install latexindent requirements</span>
-cpan Log::Log4perl
-cpan Log::Dispatch::File
-cpan YAML::Tiny
-cpan File::HomeDir
-</code></pre></div><h2 id="previewing-the-pdf">Previewing the PDF</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1">#install perl and its package manager, cpan</span>
+</span></span><span class="line"><span class="cl">brew install perl 
+</span></span><span class="line"><span class="cl"><span class="c1"># install latexindent requirements</span>
+</span></span><span class="line"><span class="cl">cpan Log::Log4perl
+</span></span><span class="line"><span class="cl">cpan Log::Dispatch::File
+</span></span><span class="line"><span class="cl">cpan YAML::Tiny
+</span></span><span class="line"><span class="cl">cpan File::HomeDir
+</span></span></code></pre></div><h2 id="previewing-the-pdf">Previewing the PDF</h2>
 <p>When it comes to PDF previews, any decent LaTeX environment should support the
 following features:</p>
 <ul>
@@ -288,23 +288,23 @@ rendering is slow and a native PDF viewer is surely nicer to look at.</p>
 <p>Personally, I prefer to use <a href="https://skim-app.sourceforge.io/">Skim</a> on macOS.
 On Windows, I would recommend <a href="https://www.sumatrapdfreader.org">SumatraPDF</a>.
 Here are the relevant LW settings to integrate Skim:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-<span class="nt">&#34;latex-workshop.view.pdf.external.synctex.args&#34;</span><span class="p">:</span> <span class="p">[</span>
-  <span class="s2">&#34;-r&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;%LINE%&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;%PDF%&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;%TEX%&#34;</span>
-<span class="p">],</span>
-<span class="nt">&#34;latex-workshop.view.pdf.external.synctex.command&#34;</span><span class="p">:</span> <span class="s2">&#34;/Applications/Skim.app/Contents/SharedSupport/displayline&#34;</span><span class="p">,</span>
-<span class="nt">&#34;latex-workshop.view.pdf.external.viewer.args&#34;</span><span class="p">:</span> <span class="p">[</span>
-  <span class="s2">&#34;-a&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;Skim&#34;</span><span class="p">,</span>
-  <span class="s2">&#34;\&#34;%PDF%\&#34;&#34;</span>
-<span class="p">],</span>
-<span class="nt">&#34;latex-workshop.view.pdf.external.viewer.command&#34;</span><span class="p">:</span> <span class="s2">&#34;open&#34;</span><span class="p">,</span>
-<span class="nt">&#34;latex-workshop.view.pdf.viewer&#34;</span><span class="p">:</span> <span class="s2">&#34;external&#34;</span>
-<span class="p">}</span>
-</code></pre></div><p>One also needs to configure Skim so that Shift-Cmd-clicking on a point of
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;latex-workshop.view.pdf.external.synctex.args&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;-r&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;%LINE%&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;%PDF%&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;%TEX%&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;latex-workshop.view.pdf.external.synctex.command&#34;</span><span class="p">:</span> <span class="s2">&#34;/Applications/Skim.app/Contents/SharedSupport/displayline&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;latex-workshop.view.pdf.external.viewer.args&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;-a&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;Skim&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;\&#34;%PDF%\&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;latex-workshop.view.pdf.external.viewer.command&#34;</span><span class="p">:</span> <span class="s2">&#34;open&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;latex-workshop.view.pdf.viewer&#34;</span><span class="p">:</span> <span class="s2">&#34;external&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>One also needs to configure Skim so that Shift-Cmd-clicking on a point of
 the PDF makes VS Code jump to the corresponding line in the LaTeX sources.
 This is done in the <em>Sync</em> pane of the Skim preferences dialog.
 Although Skim does feature a &ldquo;Visual Studio Code&rdquo; option, I found it to be a
@@ -328,11 +328,11 @@ And it also works on Markdown documents!
 For instance, I purposefully wrote &ldquo;work&rdquo; instead of &ldquo;works&rdquo; in the previous
 sentences, then ran <code>textidote</code> on this file.
 Look what I got:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text">* L81C13-L81C17 Did you mean &#39;works&#39;?. Suggestions:
-  [works] (3395) [lt:en:IT_VBZ]
-  And it also work on Markdown documents!
-              ^^^^^
-</code></pre></div><p>It is still a bit rough around the edges, and you might want to ignore a lot
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">* L81C13-L81C17 Did you mean &#39;works&#39;?. Suggestions:
+</span></span><span class="line"><span class="cl">  [works] (3395) [lt:en:IT_VBZ]
+</span></span><span class="line"><span class="cl">  And it also work on Markdown documents!
+</span></span><span class="line"><span class="cl">              ^^^^^
+</span></span></code></pre></div><p>It is still a bit rough around the edges, and you might want to ignore a lot
 of the warnings it reports, but overall is a pretty useful addition to the
 toolbox.</p>
 <p><a href="https://www.ctan.org/pkg/checkcites"><code>checkcites</code></a> finds unused
@@ -356,7 +356,7 @@ this post useful!</p>
 		
 			<div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Appunti di informatica e altro">
 	
-	<meta name="generator" content="Hugo 0.92.1" />
+	<meta name="generator" content="Hugo 0.96.0" />
 
         
         
@@ -181,7 +181,7 @@
 repositories</em> è una storia di successo che però fatica a prendere piede su
 Windows.
 Ma qualcosa sta cambiando.</p>
-<h2 id="un-po-di-storia">Un po' di storia</h2>
+<h2 id="un-po-di-storia">Un po&rsquo; di storia</h2>
 <p>L&rsquo;installazione di software certificato da uno o più <em>repository</em> è da anni un
 caposaldo del mondo Linux.
 I vantaggi sono evidenti: la stabilità del sistema e la correttezza dei
@@ -277,14 +277,14 @@ quindi <strong>non</strong> è ancora il caso di utilizzarlo in altri ambiti.</p
 <p>Comunque, se avete il gusto dell&rsquo;avventura, vi riporto velocemente una sequenza
 di comandi che permetteranno di recuperare pacchetti dai server di Chocolatey:
 per eseguirli bisogna aprire una console PowerShell come amministratore.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ps" data-lang="ps"><span class="nf">Set-ExecutionPolicy</span> <span class="nf">RemoteSigned</span> <span class="nf">-Scope</span> <span class="nf">Process</span>
-<span class="nf">Get-Command</span> <span class="nf">-Module</span> <span class="nf">PackageManagement</span>
-<span class="nf">Find-Package</span> <span class="nf">chocolatey</span>
-<span class="nf">Get-PackageProvider</span> <span class="nf">-Name</span> <span class="nf">Chocolatey</span>
-<span class="nf">Find-Package</span> <span class="nf">-Name</span> <span class="nf">f.lux</span>
-<span class="nf">Install-Package</span> <span class="nf">-Name</span> <span class="nf">f.lux</span>
-<span class="nf">Set-PackageSource</span> <span class="nf">-Name</span> <span class="nf">chocolatey</span> <span class="nf">-Trusted</span>
-</code></pre></div><ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ps" data-lang="ps"><span class="line"><span class="cl"><span class="nf">Set-ExecutionPolicy</span> <span class="nf">RemoteSigned</span> <span class="nf">-Scope</span> <span class="nf">Process</span>
+</span></span><span class="line"><span class="cl"><span class="nf">Get-Command</span> <span class="nf">-Module</span> <span class="nf">PackageManagement</span>
+</span></span><span class="line"><span class="cl"><span class="nf">Find-Package</span> <span class="nf">chocolatey</span>
+</span></span><span class="line"><span class="cl"><span class="nf">Get-PackageProvider</span> <span class="nf">-Name</span> <span class="nf">Chocolatey</span>
+</span></span><span class="line"><span class="cl"><span class="nf">Find-Package</span> <span class="nf">-Name</span> <span class="nf">f.lux</span>
+</span></span><span class="line"><span class="cl"><span class="nf">Install-Package</span> <span class="nf">-Name</span> <span class="nf">f.lux</span>
+</span></span><span class="line"><span class="cl"><span class="nf">Set-PackageSource</span> <span class="nf">-Name</span> <span class="nf">chocolatey</span> <span class="nf">-Trusted</span>
+</span></span></code></pre></div><ol>
 <li>Consente l&rsquo;esecuzione di script esterni ma dotati di firma digitale.
 Il parametro <code>-Scope Process</code> limita questa politica alla shell attuale.</li>
 <li>Elenca i comandi forniti dal modulo <code>PackageManagement</code>.</li>
@@ -306,7 +306,7 @@ l&rsquo;idea è davvero interessante!</p>
 		
 			<div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

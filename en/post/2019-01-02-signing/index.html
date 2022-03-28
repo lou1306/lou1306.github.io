@@ -8,7 +8,7 @@
 	<meta name="author" content="Luca Di Stefano">
 	<meta name="description" content="Notes on CompSci et cetera">
 	
-	<meta name="generator" content="Hugo 0.92.1" />
+	<meta name="generator" content="Hugo 0.96.0" />
 
         
         
@@ -209,9 +209,9 @@ will probably be fine.</p>
 <p>This tutorial makes use of the <code>keybase</code> app and command-line utility.
 We will also use <code>qrencode</code> to generate a QR code of our message.</p>
 <p>If you&rsquo;re on a Mac with Homebrew, you can get it all with:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">brew install qrencode
-brew cask install keybase
-</code></pre></div><p>Then, carefully follow the instructions in the Keybase app to create your PGP
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">brew install qrencode
+</span></span><span class="line"><span class="cl">brew cask install keybase
+</span></span></code></pre></div><p>Then, carefully follow the instructions in the Keybase app to create your PGP
 key pair.
 Setting up a Keybase account is still a bit of a tedious process, but at least
 I found it to be  quite well-explained.</p>
@@ -222,8 +222,8 @@ Then, use the following command to:</p>
 <li>Strip away some unnecessary lines (the two <code>sed</code> commands);</li>
 <li>Generate a QR code with your signed message and save it to <code>out.png</code>.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">keybase pgp sign -m <span class="s2">&#34;&lt;YOUR MESSAGE&gt;&#34;</span> <span class="p">|</span> sed <span class="s1">&#39;/^Version.*/d&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;/^Comment.*/d&#39;</span> <span class="p">|</span>  qrencode -o out.png
-</code></pre></div><p>Step 2 is not really needed, but it makes the resulting QR code a bit less
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">keybase pgp sign -m <span class="s2">&#34;&lt;YOUR MESSAGE&gt;&#34;</span> <span class="p">|</span> sed <span class="s1">&#39;/^Version.*/d&#39;</span> <span class="p">|</span> sed <span class="s1">&#39;/^Comment.*/d&#39;</span> <span class="p">|</span>  qrencode -o out.png
+</span></span></code></pre></div><p>Step 2 is not really needed, but it makes the resulting QR code a bit less
 &ldquo;dense&rdquo; and thus easier to decode.</p>
 <h2 id="in-the-real-world">In the real world</h2>
 <p>Now, you should print the QR code, along with some instruction for the reader.
@@ -243,7 +243,7 @@ it on somebody else&rsquo;s possession).</p>
 		
 			<div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

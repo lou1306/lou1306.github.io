@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Microsoft on lou1306</title>
-    <link>http://lou1306.github.io/tags/microsoft/</link>
+    <link>https://lou1306.github.io/tags/microsoft/</link>
     <description>Recent content in Microsoft on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
     <lastBuildDate>Tue, 01 Mar 2016 00:00:00 +0000</lastBuildDate>
     
-    <atom:link href="http://lou1306.github.io/tags/microsoft/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lou1306.github.io/tags/microsoft/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Chocolatey: software management per Windows</title>
-      <link>http://lou1306.github.io/post/2016-03-01-chocolatey/</link>
+      <link>https://lou1306.github.io/post/2016-03-01-chocolatey/</link>
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/post/2016-03-01-chocolatey/</guid>
+      <guid>https://lou1306.github.io/post/2016-03-01-chocolatey/</guid>
       <description>&lt;p&gt;Dai package managers Linux agli Store dei sistemi mobile, quella dei &lt;em&gt;software
 repositories&lt;/em&gt; è una storia di successo che però fatica a prendere piede su
 Windows.

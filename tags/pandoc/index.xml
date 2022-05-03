@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pandoc on lou1306</title>
-    <link>http://lou1306.github.io/tags/pandoc/</link>
+    <link>https://lou1306.github.io/tags/pandoc/</link>
     <description>Recent content in pandoc on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
     <lastBuildDate>Sat, 10 Jun 2017 14:59:09 +0200</lastBuildDate>
     
-    <atom:link href="http://lou1306.github.io/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lou1306.github.io/tags/pandoc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Il mio workflow di scrittura</title>
-      <link>http://lou1306.github.io/post/2017-06-10-workflow/</link>
+      <link>https://lou1306.github.io/post/2017-06-10-workflow/</link>
       <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/post/2017-06-10-workflow/</guid>
+      <guid>https://lou1306.github.io/post/2017-06-10-workflow/</guid>
       <description>&lt;p&gt;Quando scrivere documenti diventa un&amp;rsquo;attività quotidiana, un po&amp;rsquo; di automazione
 può veramente salvarti la vita.&lt;/p&gt;</description>
     </item>

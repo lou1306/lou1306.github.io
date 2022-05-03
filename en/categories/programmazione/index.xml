@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programmazione on lou1306</title>
-    <link>http://lou1306.github.io/en/categories/programmazione/</link>
+    <link>https://lou1306.github.io/en/categories/programmazione/</link>
     <description>Recent content in Programmazione on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 11 Jan 2018 11:56:11 +0100</lastBuildDate>
     
-    <atom:link href="http://lou1306.github.io/en/categories/programmazione/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lou1306.github.io/en/categories/programmazione/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>C: Packing two integers in a single variable</title>
-      <link>http://lou1306.github.io/en/post/2018-01-11-packing/</link>
+      <link>https://lou1306.github.io/en/post/2018-01-11-packing/</link>
       <pubDate>Thu, 11 Jan 2018 11:56:11 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/en/post/2018-01-11-packing/</guid>
+      <guid>https://lou1306.github.io/en/post/2018-01-11-packing/</guid>
       <description>Lately we needed to put a pair of small integers into a single int variable. (Let us gloss over the intricacies of what an int actually is and just assume it is 32-bit, shall we?) Nothing crazy hard but still, it took some trial and error before we got it right. So, if anybody needs it or is just curious, here&amp;rsquo;s the code:
  The code will test all possible tuples and quit if some unpacking gives an unexpected result.</description>
     </item>

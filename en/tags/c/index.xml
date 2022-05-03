@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C on lou1306</title>
-    <link>http://lou1306.github.io/en/tags/c/</link>
+    <link>https://lou1306.github.io/en/tags/c/</link>
     <description>Recent content in C on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 10 Dec 2020 22:09:07 +0100</lastBuildDate>
     
-    <atom:link href="http://lou1306.github.io/en/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lou1306.github.io/en/tags/c/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bounded model checking with CBMC and Glucose</title>
-      <link>http://lou1306.github.io/en/post/2020-12-10-cbmc-and-glucose/</link>
+      <link>https://lou1306.github.io/en/post/2020-12-10-cbmc-and-glucose/</link>
       <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/en/post/2020-12-10-cbmc-and-glucose/</guid>
+      <guid>https://lou1306.github.io/en/post/2020-12-10-cbmc-and-glucose/</guid>
       <description>Formal verification allows to find bugs in a program by systematically exploring all its feasible executions. I have used several formal verification tools during my PhD; since I feel there is a lack of technical blog posts about this topic on the Web, I&amp;rsquo;ll try and write some :)
 This post deals with bounded model checking, specifically the CBMC tool and how to combine it with the Glucose solver. I believe this leads to a measurable increase in performance, at least when checking unsafe programs.</description>
     </item>
     
     <item>
       <title>C: Packing two integers in a single variable</title>
-      <link>http://lou1306.github.io/en/post/2018-01-11-packing/</link>
+      <link>https://lou1306.github.io/en/post/2018-01-11-packing/</link>
       <pubDate>Thu, 11 Jan 2018 11:56:11 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/en/post/2018-01-11-packing/</guid>
+      <guid>https://lou1306.github.io/en/post/2018-01-11-packing/</guid>
       <description>Lately we needed to put a pair of small integers into a single int variable. (Let us gloss over the intricacies of what an int actually is and just assume it is 32-bit, shall we?) Nothing crazy hard but still, it took some trial and error before we got it right. So, if anybody needs it or is just curious, here&amp;rsquo;s the code:
  The code will test all possible tuples and quit if some unpacking gives an unexpected result.</description>
     </item>

@@ -2,96 +2,96 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Post on lou1306</title>
-    <link>http://lou1306.github.io/post/</link>
+    <link>https://lou1306.github.io/post/</link>
     <description>Recent content in Post on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
     <lastBuildDate>Thu, 10 Dec 2020 22:09:07 +0100</lastBuildDate>
     
-    <atom:link href="http://lou1306.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lou1306.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bounded model checking with CBMC and Glucose</title>
-      <link>http://lou1306.github.io/post/2020-12-10-cbmc-and-glucose/</link>
+      <link>https://lou1306.github.io/post/2020-12-10-cbmc-and-glucose/</link>
       <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/post/2020-12-10-cbmc-and-glucose/</guid>
+      <guid>https://lou1306.github.io/post/2020-12-10-cbmc-and-glucose/</guid>
       <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;Bounded model checking with CBMC and Glucose&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Thoughts on recording talks</title>
-      <link>http://lou1306.github.io/post/2020-10-19-talks/</link>
+      <link>https://lou1306.github.io/post/2020-10-19-talks/</link>
       <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/post/2020-10-19-talks/</guid>
+      <guid>https://lou1306.github.io/post/2020-10-19-talks/</guid>
       <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;Thoughts on recording talks&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>The Naming of Tools</title>
-      <link>http://lou1306.github.io/post/2020-06-02-namingoftools/</link>
+      <link>https://lou1306.github.io/post/2020-06-02-namingoftools/</link>
       <pubDate>Tue, 02 Jun 2020 12:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/post/2020-06-02-namingoftools/</guid>
+      <guid>https://lou1306.github.io/post/2020-06-02-namingoftools/</guid>
       <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;The Naming of Tools&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Writing LaTeX in 2020: survival notes</title>
-      <link>http://lou1306.github.io/post/2020-05-26-latex/</link>
+      <link>https://lou1306.github.io/post/2020-05-26-latex/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/post/2020-05-26-latex/</guid>
+      <guid>https://lou1306.github.io/post/2020-05-26-latex/</guid>
       <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;Writing LaTeX in 2020: survival notes&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Thoughts on tool demo videos</title>
-      <link>http://lou1306.github.io/post/2020-01-02-demos/</link>
+      <link>https://lou1306.github.io/post/2020-01-02-demos/</link>
       <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/post/2020-01-02-demos/</guid>
+      <guid>https://lou1306.github.io/post/2020-01-02-demos/</guid>
       <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;Thoughts on tool demo videos&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>C: Packing di due interi in un&#39;unica variabile</title>
-      <link>http://lou1306.github.io/post/2018-01-11-packing/</link>
+      <link>https://lou1306.github.io/post/2018-01-11-packing/</link>
       <pubDate>Thu, 11 Jan 2018 11:56:11 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/post/2018-01-11-packing/</guid>
+      <guid>https://lou1306.github.io/post/2018-01-11-packing/</guid>
       <description>Di recente avevamo bisogno di usare un&amp;rsquo;unica variabile int per contenere due interi di piccole dimensioni. (Lasciamo perdere i dettagli e facciamo finta che int sia una variabile a 32 bit, ok?) Nulla di complicato, ma comunque ci sono voluti un paio di tentativi prima che tutto filasse liscio. Quindi, se a qualcuno servisse, ecco il codice:
  Il main() proverà tutte le possibili coppie, terminando con un errore se l&amp;rsquo;unpacking di una tupla porta a risultati inattesi.</description>
     </item>
     
     <item>
       <title>Il mio workflow di scrittura</title>
-      <link>http://lou1306.github.io/post/2017-06-10-workflow/</link>
+      <link>https://lou1306.github.io/post/2017-06-10-workflow/</link>
       <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/post/2017-06-10-workflow/</guid>
+      <guid>https://lou1306.github.io/post/2017-06-10-workflow/</guid>
       <description>&lt;p&gt;Quando scrivere documenti diventa un&amp;rsquo;attività quotidiana, un po&amp;rsquo; di automazione
 può veramente salvarti la vita.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Risorse online per gli aquilani (di nascita o di adozione)</title>
-      <link>http://lou1306.github.io/post/2016-11-01-risorseaquilani/</link>
+      <link>https://lou1306.github.io/post/2016-11-01-risorseaquilani/</link>
       <pubDate>Tue, 01 Nov 2016 12:29:46 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/post/2016-11-01-risorseaquilani/</guid>
+      <guid>https://lou1306.github.io/post/2016-11-01-risorseaquilani/</guid>
       <description>&lt;p&gt;Una piccola lista che spero possa tornare utile: cercherò di aggiornarla man
 mano che trovo altro materiale.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Personalizzare APM:Copter e inviare messaggi MAVLink</title>
-      <link>http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</link>
+      <link>https://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</link>
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</guid>
+      <guid>https://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</guid>
       <description>&lt;p&gt;Il firmware &lt;a href=&#34;http://ardupilot.org/copter/index.html&#34;&gt;APM:Copter&lt;/a&gt; è una delle
 principali soluzioni open-source per il pilotaggio remoto di droni. Vedremo
 come è possibile eseguire codice personalizzato all&amp;rsquo;interno del sistema (che
@@ -101,10 +101,10 @@ mediante il protocollo MAVLink.&lt;/p&gt;</description>
     
     <item>
       <title>Risorse utili per programmatori</title>
-      <link>http://lou1306.github.io/post/2016-04-29-risorse_programmatori/</link>
+      <link>https://lou1306.github.io/post/2016-04-29-risorse_programmatori/</link>
       <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/post/2016-04-29-risorse_programmatori/</guid>
+      <guid>https://lou1306.github.io/post/2016-04-29-risorse_programmatori/</guid>
       <description>&lt;p&gt;Ecco una carrellata di materiale che mi è tornato utile negli ultimi tempi.
 Anche se è principalmente a mio uso e consumo (non voglio dimenticare i titoli e
 alcune informazioni a contorno, nel caso i link dovessero scomparire in futuro),
@@ -113,10 +113,10 @@ spero possa far comodo anche ad altri programmatori/smanettoni.&lt;/p&gt;</descr
     
     <item>
       <title>La storia di Mel, un Vero Programmatore</title>
-      <link>http://lou1306.github.io/post/2016-03-04-real_programmer/</link>
+      <link>https://lou1306.github.io/post/2016-03-04-real_programmer/</link>
       <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/post/2016-03-04-real_programmer/</guid>
+      <guid>https://lou1306.github.io/post/2016-03-04-real_programmer/</guid>
       <description>&lt;p&gt;&lt;em&gt;Questo gioiellino della cultura hacker circola in rete dal 1982.
 L&amp;rsquo;ho tradotta tempo fa, basandomi sull&amp;rsquo;edizione contenuta nel
 &lt;a href=&#34;http://www.catb.org/jargon/html/story-of-mel.html&#34;&gt;Jargon File&lt;/a&gt; e cencando
@@ -127,10 +127,10 @@ Per informazioni più approfondite rimando a
     
     <item>
       <title>Chocolatey: software management per Windows</title>
-      <link>http://lou1306.github.io/post/2016-03-01-chocolatey/</link>
+      <link>https://lou1306.github.io/post/2016-03-01-chocolatey/</link>
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/post/2016-03-01-chocolatey/</guid>
+      <guid>https://lou1306.github.io/post/2016-03-01-chocolatey/</guid>
       <description>&lt;p&gt;Dai package managers Linux agli Store dei sistemi mobile, quella dei &lt;em&gt;software
 repositories&lt;/em&gt; è una storia di successo che però fatica a prendere piede su
 Windows.

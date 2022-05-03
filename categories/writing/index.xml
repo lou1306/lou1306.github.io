@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>writing on lou1306</title>
-    <link>http://lou1306.github.io/categories/writing/</link>
+    <link>https://lou1306.github.io/categories/writing/</link>
     <description>Recent content in writing on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
     <lastBuildDate>Tue, 02 Jun 2020 12:59:09 +0200</lastBuildDate>
     
-    <atom:link href="http://lou1306.github.io/categories/writing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lou1306.github.io/categories/writing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Naming of Tools</title>
-      <link>http://lou1306.github.io/post/2020-06-02-namingoftools/</link>
+      <link>https://lou1306.github.io/post/2020-06-02-namingoftools/</link>
       <pubDate>Tue, 02 Jun 2020 12:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/post/2020-06-02-namingoftools/</guid>
+      <guid>https://lou1306.github.io/post/2020-06-02-namingoftools/</guid>
       <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;The Naming of Tools&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Writing LaTeX in 2020: survival notes</title>
-      <link>http://lou1306.github.io/post/2020-05-26-latex/</link>
+      <link>https://lou1306.github.io/post/2020-05-26-latex/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/post/2020-05-26-latex/</guid>
+      <guid>https://lou1306.github.io/post/2020-05-26-latex/</guid>
       <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;Writing LaTeX in 2020: survival notes&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Il mio workflow di scrittura</title>
-      <link>http://lou1306.github.io/post/2017-06-10-workflow/</link>
+      <link>https://lou1306.github.io/post/2017-06-10-workflow/</link>
       <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/post/2017-06-10-workflow/</guid>
+      <guid>https://lou1306.github.io/post/2017-06-10-workflow/</guid>
       <description>&lt;p&gt;Quando scrivere documenti diventa un&amp;rsquo;attività quotidiana, un po&amp;rsquo; di automazione
 può veramente salvarti la vita.&lt;/p&gt;</description>
     </item>

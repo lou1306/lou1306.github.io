@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C on lou1306</title>
-    <link>http://lou1306.github.io/tags/c/</link>
+    <link>https://lou1306.github.io/tags/c/</link>
     <description>Recent content in C on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
     <lastBuildDate>Thu, 10 Dec 2020 22:09:07 +0100</lastBuildDate>
     
-    <atom:link href="http://lou1306.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lou1306.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bounded model checking with CBMC and Glucose</title>
-      <link>http://lou1306.github.io/post/2020-12-10-cbmc-and-glucose/</link>
+      <link>https://lou1306.github.io/post/2020-12-10-cbmc-and-glucose/</link>
       <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/post/2020-12-10-cbmc-and-glucose/</guid>
+      <guid>https://lou1306.github.io/post/2020-12-10-cbmc-and-glucose/</guid>
       <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;Bounded model checking with CBMC and Glucose&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>C: Packing di due interi in un&#39;unica variabile</title>
-      <link>http://lou1306.github.io/post/2018-01-11-packing/</link>
+      <link>https://lou1306.github.io/post/2018-01-11-packing/</link>
       <pubDate>Thu, 11 Jan 2018 11:56:11 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/post/2018-01-11-packing/</guid>
+      <guid>https://lou1306.github.io/post/2018-01-11-packing/</guid>
       <description>Di recente avevamo bisogno di usare un&amp;rsquo;unica variabile int per contenere due interi di piccole dimensioni. (Lasciamo perdere i dettagli e facciamo finta che int sia una variabile a 32 bit, ok?) Nulla di complicato, ma comunque ci sono voluti un paio di tentativi prima che tutto filasse liscio. Quindi, se a qualcuno servisse, ecco il codice:
  Il main() proverà tutte le possibili coppie, terminando con un errore se l&amp;rsquo;unpacking di una tupla porta a risultati inattesi.</description>
     </item>

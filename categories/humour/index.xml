@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Humour on lou1306</title>
-    <link>http://lou1306.github.io/categories/humour/</link>
+    <link>https://lou1306.github.io/categories/humour/</link>
     <description>Recent content in Humour on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
     <lastBuildDate>Tue, 02 Jun 2020 12:59:09 +0200</lastBuildDate>
     
-    <atom:link href="http://lou1306.github.io/categories/humour/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lou1306.github.io/categories/humour/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Naming of Tools</title>
-      <link>http://lou1306.github.io/post/2020-06-02-namingoftools/</link>
+      <link>https://lou1306.github.io/post/2020-06-02-namingoftools/</link>
       <pubDate>Tue, 02 Jun 2020 12:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/post/2020-06-02-namingoftools/</guid>
+      <guid>https://lou1306.github.io/post/2020-06-02-namingoftools/</guid>
       <description>Ho pubblicato un nuovo post (in inglese) dal titolo &amp;ldquo;The Naming of Tools&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>La storia di Mel, un Vero Programmatore</title>
-      <link>http://lou1306.github.io/post/2016-03-04-real_programmer/</link>
+      <link>https://lou1306.github.io/post/2016-03-04-real_programmer/</link>
       <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/post/2016-03-04-real_programmer/</guid>
+      <guid>https://lou1306.github.io/post/2016-03-04-real_programmer/</guid>
       <description>&lt;p&gt;&lt;em&gt;Questo gioiellino della cultura hacker circola in rete dal 1982.
 L&amp;rsquo;ho tradotta tempo fa, basandomi sull&amp;rsquo;edizione contenuta nel
 &lt;a href=&#34;http://www.catb.org/jargon/html/story-of-mel.html&#34;&gt;Jargon File&lt;/a&gt; e cencando

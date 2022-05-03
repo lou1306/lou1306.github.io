@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Droni on lou1306</title>
-    <link>http://lou1306.github.io/tags/droni/</link>
+    <link>https://lou1306.github.io/tags/droni/</link>
     <description>Recent content in Droni on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
     <lastBuildDate>Wed, 11 May 2016 12:30:34 +0200</lastBuildDate>
     
-    <atom:link href="http://lou1306.github.io/tags/droni/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lou1306.github.io/tags/droni/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Personalizzare APM:Copter e inviare messaggi MAVLink</title>
-      <link>http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</link>
+      <link>https://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</link>
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</guid>
+      <guid>https://lou1306.github.io/post/2016-05-11-apmcopter-custom-fw/</guid>
       <description>&lt;p&gt;Il firmware &lt;a href=&#34;http://ardupilot.org/copter/index.html&#34;&gt;APM:Copter&lt;/a&gt; è una delle
 principali soluzioni open-source per il pilotaggio remoto di droni. Vedremo
 come è possibile eseguire codice personalizzato all&amp;rsquo;interno del sistema (che

@@ -2,84 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on lou1306</title>
-    <link>http://lou1306.github.io/categories/</link>
+    <link>https://lou1306.github.io/categories/</link>
     <description>Recent content in Categories on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
     <lastBuildDate>Thu, 10 Dec 2020 22:09:07 +0100</lastBuildDate>
     
-    <atom:link href="http://lou1306.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lou1306.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Guide</title>
-      <link>http://lou1306.github.io/categories/guide/</link>
+      <link>https://lou1306.github.io/categories/guide/</link>
       <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/categories/guide/</guid>
+      <guid>https://lou1306.github.io/categories/guide/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Humour</title>
-      <link>http://lou1306.github.io/categories/humour/</link>
+      <link>https://lou1306.github.io/categories/humour/</link>
       <pubDate>Tue, 02 Jun 2020 12:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/categories/humour/</guid>
+      <guid>https://lou1306.github.io/categories/humour/</guid>
       <description></description>
     </item>
     
     <item>
       <title>writing</title>
-      <link>http://lou1306.github.io/categories/writing/</link>
+      <link>https://lou1306.github.io/categories/writing/</link>
       <pubDate>Tue, 02 Jun 2020 12:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/categories/writing/</guid>
+      <guid>https://lou1306.github.io/categories/writing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programmazione</title>
-      <link>http://lou1306.github.io/categories/programmazione/</link>
+      <link>https://lou1306.github.io/categories/programmazione/</link>
       <pubDate>Thu, 11 Jan 2018 11:56:11 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/categories/programmazione/</guid>
+      <guid>https://lou1306.github.io/categories/programmazione/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Risorse</title>
-      <link>http://lou1306.github.io/categories/risorse/</link>
+      <link>https://lou1306.github.io/categories/risorse/</link>
       <pubDate>Tue, 01 Nov 2016 12:29:46 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/categories/risorse/</guid>
+      <guid>https://lou1306.github.io/categories/risorse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Liste</title>
-      <link>http://lou1306.github.io/categories/liste/</link>
+      <link>https://lou1306.github.io/categories/liste/</link>
       <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/categories/liste/</guid>
+      <guid>https://lou1306.github.io/categories/liste/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hackerdom</title>
-      <link>http://lou1306.github.io/categories/hackerdom/</link>
+      <link>https://lou1306.github.io/categories/hackerdom/</link>
       <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/categories/hackerdom/</guid>
+      <guid>https://lou1306.github.io/categories/hackerdom/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sistemi operativi</title>
-      <link>http://lou1306.github.io/categories/sistemi-operativi/</link>
+      <link>https://lou1306.github.io/categories/sistemi-operativi/</link>
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/categories/sistemi-operativi/</guid>
+      <guid>https://lou1306.github.io/categories/sistemi-operativi/</guid>
       <description></description>
     </item>
     

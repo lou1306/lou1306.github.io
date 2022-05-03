@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Post on lou1306</title>
-    <link>http://lou1306.github.io/en/post/</link>
+    <link>https://lou1306.github.io/en/post/</link>
     <description>Recent content in Post on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 10 Dec 2020 22:09:07 +0100</lastBuildDate>
     
-    <atom:link href="http://lou1306.github.io/en/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lou1306.github.io/en/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bounded model checking with CBMC and Glucose</title>
-      <link>http://lou1306.github.io/en/post/2020-12-10-cbmc-and-glucose/</link>
+      <link>https://lou1306.github.io/en/post/2020-12-10-cbmc-and-glucose/</link>
       <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/en/post/2020-12-10-cbmc-and-glucose/</guid>
+      <guid>https://lou1306.github.io/en/post/2020-12-10-cbmc-and-glucose/</guid>
       <description>Formal verification allows to find bugs in a program by systematically exploring all its feasible executions. I have used several formal verification tools during my PhD; since I feel there is a lack of technical blog posts about this topic on the Web, I&amp;rsquo;ll try and write some :)
 This post deals with bounded model checking, specifically the CBMC tool and how to combine it with the Glucose solver. I believe this leads to a measurable increase in performance, at least when checking unsafe programs.</description>
     </item>
     
     <item>
       <title>Thoughts on recording talks</title>
-      <link>http://lou1306.github.io/en/post/2020-10-19-talks/</link>
+      <link>https://lou1306.github.io/en/post/2020-10-19-talks/</link>
       <pubDate>Mon, 19 Oct 2020 12:00:00 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/en/post/2020-10-19-talks/</guid>
+      <guid>https://lou1306.github.io/en/post/2020-10-19-talks/</guid>
       <description>&lt;p&gt;The tool paper that originated my previous post on &lt;a href=&#34;../../post/2020-01-02-demos/&#34;&gt;demo videos&lt;/a&gt;
 got accepted. Hooray!
 Given the ongoing global pandemic, I was asked to submit a 15-minute video of my
@@ -36,10 +36,10 @@ This post is a collection of notes I gathered along the way.&lt;/p&gt;</descript
     
     <item>
       <title>The Naming of Tools</title>
-      <link>http://lou1306.github.io/en/post/2020-06-02-namingoftools/</link>
+      <link>https://lou1306.github.io/en/post/2020-06-02-namingoftools/</link>
       <pubDate>Tue, 02 Jun 2020 12:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/en/post/2020-06-02-namingoftools/</guid>
+      <guid>https://lou1306.github.io/en/post/2020-06-02-namingoftools/</guid>
       <description>&lt;p&gt;The Naming of Tools is a tough nail to hammer,&lt;br&gt;
 It isn’t just one of your parity games;&lt;br&gt;
 But I wonder why each and every programmer&lt;br&gt;
@@ -48,10 +48,10 @@ always comes up with THE USUAL TWO NAMES.&lt;/p&gt;</description>
     
     <item>
       <title>Writing LaTeX in 2020: survival notes</title>
-      <link>http://lou1306.github.io/en/post/2020-05-26-latex/</link>
+      <link>https://lou1306.github.io/en/post/2020-05-26-latex/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/en/post/2020-05-26-latex/</guid>
+      <guid>https://lou1306.github.io/en/post/2020-05-26-latex/</guid>
       <description>&lt;p&gt;This post will be part of a collection of notes about the way I currently deal
 with LaTeX documents.
 It is not a &amp;ldquo;for dummies&amp;rdquo; guide: some tools and extensions need a bit of
@@ -64,10 +64,10 @@ with multiple documents at the same time.&lt;/p&gt;</description>
     
     <item>
       <title>Thoughts on tool demo videos</title>
-      <link>http://lou1306.github.io/en/post/2020-01-02-demos/</link>
+      <link>https://lou1306.github.io/en/post/2020-01-02-demos/</link>
       <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/en/post/2020-01-02-demos/</guid>
+      <guid>https://lou1306.github.io/en/post/2020-01-02-demos/</guid>
       <description>&lt;p&gt;Recently I had to produce a demo video as part of a tool paper submission.
 Here are some notes I gathered in the process: they might be useful
 to my future self or to other wannabe videomakers.&lt;/p&gt;</description>
@@ -75,19 +75,19 @@ to my future self or to other wannabe videomakers.&lt;/p&gt;</description>
     
     <item>
       <title>Digital signing your physical stuff</title>
-      <link>http://lou1306.github.io/en/post/2019-01-02-signing/</link>
+      <link>https://lou1306.github.io/en/post/2019-01-02-signing/</link>
       <pubDate>Wed, 02 Jan 2019 18:02:11 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/en/post/2019-01-02-signing/</guid>
+      <guid>https://lou1306.github.io/en/post/2019-01-02-signing/</guid>
       <description>With the new year comes a new daily notebook! Since I always carry it around, I typically put a lot of personal data in the first pages of the notebook in the hope that, should I lose it somewhere, it will be found and returned. This time, as I was filling in the info page, I started thinking&amp;hellip; Wouldn&amp;rsquo;t it be nice if I had some other way to prove that this thing is mine, without having to provide so much information?</description>
     </item>
     
     <item>
       <title>C: Packing two integers in a single variable</title>
-      <link>http://lou1306.github.io/en/post/2018-01-11-packing/</link>
+      <link>https://lou1306.github.io/en/post/2018-01-11-packing/</link>
       <pubDate>Thu, 11 Jan 2018 11:56:11 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/en/post/2018-01-11-packing/</guid>
+      <guid>https://lou1306.github.io/en/post/2018-01-11-packing/</guid>
       <description>Lately we needed to put a pair of small integers into a single int variable. (Let us gloss over the intricacies of what an int actually is and just assume it is 32-bit, shall we?) Nothing crazy hard but still, it took some trial and error before we got it right. So, if anybody needs it or is just curious, here&amp;rsquo;s the code:
  The code will test all possible tuples and quit if some unpacking gives an unexpected result.</description>
     </item>

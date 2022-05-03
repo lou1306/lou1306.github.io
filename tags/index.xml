@@ -2,318 +2,318 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on lou1306</title>
-    <link>http://lou1306.github.io/tags/</link>
+    <link>https://lou1306.github.io/tags/</link>
     <description>Recent content in Tags on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it</language>
     <lastBuildDate>Thu, 10 Dec 2020 22:09:07 +0100</lastBuildDate>
     
-    <atom:link href="http://lou1306.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://lou1306.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>bmc</title>
-      <link>http://lou1306.github.io/tags/bmc/</link>
+      <link>https://lou1306.github.io/tags/bmc/</link>
       <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/tags/bmc/</guid>
+      <guid>https://lou1306.github.io/tags/bmc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C</title>
-      <link>http://lou1306.github.io/tags/c/</link>
+      <link>https://lou1306.github.io/tags/c/</link>
       <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/tags/c/</guid>
+      <guid>https://lou1306.github.io/tags/c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cbmc</title>
-      <link>http://lou1306.github.io/tags/cbmc/</link>
+      <link>https://lou1306.github.io/tags/cbmc/</link>
       <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/tags/cbmc/</guid>
+      <guid>https://lou1306.github.io/tags/cbmc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>glucose</title>
-      <link>http://lou1306.github.io/tags/glucose/</link>
+      <link>https://lou1306.github.io/tags/glucose/</link>
       <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/tags/glucose/</guid>
+      <guid>https://lou1306.github.io/tags/glucose/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sat</title>
-      <link>http://lou1306.github.io/tags/sat/</link>
+      <link>https://lou1306.github.io/tags/sat/</link>
       <pubDate>Thu, 10 Dec 2020 22:09:07 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/tags/sat/</guid>
+      <guid>https://lou1306.github.io/tags/sat/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Eliot</title>
-      <link>http://lou1306.github.io/tags/eliot/</link>
+      <link>https://lou1306.github.io/tags/eliot/</link>
       <pubDate>Tue, 02 Jun 2020 12:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/eliot/</guid>
+      <guid>https://lou1306.github.io/tags/eliot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>parody</title>
-      <link>http://lou1306.github.io/tags/parody/</link>
+      <link>https://lou1306.github.io/tags/parody/</link>
       <pubDate>Tue, 02 Jun 2020 12:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/parody/</guid>
+      <guid>https://lou1306.github.io/tags/parody/</guid>
       <description></description>
     </item>
     
     <item>
       <title>latex</title>
-      <link>http://lou1306.github.io/tags/latex/</link>
+      <link>https://lou1306.github.io/tags/latex/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/tags/latex/</guid>
+      <guid>https://lou1306.github.io/tags/latex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vscode</title>
-      <link>http://lou1306.github.io/tags/vscode/</link>
+      <link>https://lou1306.github.io/tags/vscode/</link>
       <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/tags/vscode/</guid>
+      <guid>https://lou1306.github.io/tags/vscode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>http://lou1306.github.io/tags/hugo/</link>
+      <link>https://lou1306.github.io/tags/hugo/</link>
       <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/hugo/</guid>
+      <guid>https://lou1306.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>http://lou1306.github.io/tags/markdown/</link>
+      <link>https://lou1306.github.io/tags/markdown/</link>
       <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/markdown/</guid>
+      <guid>https://lou1306.github.io/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pandoc</title>
-      <link>http://lou1306.github.io/tags/pandoc/</link>
+      <link>https://lou1306.github.io/tags/pandoc/</link>
       <pubDate>Sat, 10 Jun 2017 14:59:09 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/pandoc/</guid>
+      <guid>https://lou1306.github.io/tags/pandoc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GIS</title>
-      <link>http://lou1306.github.io/tags/gis/</link>
+      <link>https://lou1306.github.io/tags/gis/</link>
       <pubDate>Tue, 01 Nov 2016 12:29:46 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/tags/gis/</guid>
+      <guid>https://lou1306.github.io/tags/gis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>L&#39;Aquila</title>
-      <link>http://lou1306.github.io/tags/laquila/</link>
+      <link>https://lou1306.github.io/tags/laquila/</link>
       <pubDate>Tue, 01 Nov 2016 12:29:46 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/tags/laquila/</guid>
+      <guid>https://lou1306.github.io/tags/laquila/</guid>
       <description></description>
     </item>
     
     <item>
       <title>APM:Copter</title>
-      <link>http://lou1306.github.io/tags/apmcopter/</link>
+      <link>https://lou1306.github.io/tags/apmcopter/</link>
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/apmcopter/</guid>
+      <guid>https://lou1306.github.io/tags/apmcopter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ArduPilot</title>
-      <link>http://lou1306.github.io/tags/ardupilot/</link>
+      <link>https://lou1306.github.io/tags/ardupilot/</link>
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/ardupilot/</guid>
+      <guid>https://lou1306.github.io/tags/ardupilot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C&#43;&#43;</title>
-      <link>http://lou1306.github.io/tags/c&#43;&#43;/</link>
+      <link>https://lou1306.github.io/tags/c&#43;&#43;/</link>
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/c&#43;&#43;/</guid>
+      <guid>https://lou1306.github.io/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Droni</title>
-      <link>http://lou1306.github.io/tags/droni/</link>
+      <link>https://lou1306.github.io/tags/droni/</link>
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/droni/</guid>
+      <guid>https://lou1306.github.io/tags/droni/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MAVLink</title>
-      <link>http://lou1306.github.io/tags/mavlink/</link>
+      <link>https://lou1306.github.io/tags/mavlink/</link>
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/mavlink/</guid>
+      <guid>https://lou1306.github.io/tags/mavlink/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PixHawk</title>
-      <link>http://lou1306.github.io/tags/pixhawk/</link>
+      <link>https://lou1306.github.io/tags/pixhawk/</link>
       <pubDate>Wed, 11 May 2016 12:30:34 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/pixhawk/</guid>
+      <guid>https://lou1306.github.io/tags/pixhawk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CSS3</title>
-      <link>http://lou1306.github.io/tags/css3/</link>
+      <link>https://lou1306.github.io/tags/css3/</link>
       <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/css3/</guid>
+      <guid>https://lou1306.github.io/tags/css3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dev</title>
-      <link>http://lou1306.github.io/tags/dev/</link>
+      <link>https://lou1306.github.io/tags/dev/</link>
       <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/dev/</guid>
+      <guid>https://lou1306.github.io/tags/dev/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HTML5</title>
-      <link>http://lou1306.github.io/tags/html5/</link>
+      <link>https://lou1306.github.io/tags/html5/</link>
       <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/html5/</guid>
+      <guid>https://lou1306.github.io/tags/html5/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>http://lou1306.github.io/tags/python/</link>
+      <link>https://lou1306.github.io/tags/python/</link>
       <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/python/</guid>
+      <guid>https://lou1306.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Web</title>
-      <link>http://lou1306.github.io/tags/web/</link>
+      <link>https://lou1306.github.io/tags/web/</link>
       <pubDate>Fri, 29 Apr 2016 12:00:36 +0200</pubDate>
       
-      <guid>http://lou1306.github.io/tags/web/</guid>
+      <guid>https://lou1306.github.io/tags/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cv</title>
-      <link>http://lou1306.github.io/tags/cv/</link>
+      <link>https://lou1306.github.io/tags/cv/</link>
       <pubDate>Fri, 04 Mar 2016 11:40:29 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/tags/cv/</guid>
+      <guid>https://lou1306.github.io/tags/cv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>libri</title>
-      <link>http://lou1306.github.io/tags/libri/</link>
+      <link>https://lou1306.github.io/tags/libri/</link>
       <pubDate>Fri, 04 Mar 2016 11:40:29 +0100</pubDate>
       
-      <guid>http://lou1306.github.io/tags/libri/</guid>
+      <guid>https://lou1306.github.io/tags/libri/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hacker</title>
-      <link>http://lou1306.github.io/tags/hacker/</link>
+      <link>https://lou1306.github.io/tags/hacker/</link>
       <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/tags/hacker/</guid>
+      <guid>https://lou1306.github.io/tags/hacker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jargon File</title>
-      <link>http://lou1306.github.io/tags/jargon-file/</link>
+      <link>https://lou1306.github.io/tags/jargon-file/</link>
       <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/tags/jargon-file/</guid>
+      <guid>https://lou1306.github.io/tags/jargon-file/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mel</title>
-      <link>http://lou1306.github.io/tags/mel/</link>
+      <link>https://lou1306.github.io/tags/mel/</link>
       <pubDate>Fri, 04 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/tags/mel/</guid>
+      <guid>https://lou1306.github.io/tags/mel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chocolatey</title>
-      <link>http://lou1306.github.io/tags/chocolatey/</link>
+      <link>https://lou1306.github.io/tags/chocolatey/</link>
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/tags/chocolatey/</guid>
+      <guid>https://lou1306.github.io/tags/chocolatey/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Microsoft</title>
-      <link>http://lou1306.github.io/tags/microsoft/</link>
+      <link>https://lou1306.github.io/tags/microsoft/</link>
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/tags/microsoft/</guid>
+      <guid>https://lou1306.github.io/tags/microsoft/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NuGet</title>
-      <link>http://lou1306.github.io/tags/nuget/</link>
+      <link>https://lou1306.github.io/tags/nuget/</link>
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/tags/nuget/</guid>
+      <guid>https://lou1306.github.io/tags/nuget/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows</title>
-      <link>http://lou1306.github.io/tags/windows/</link>
+      <link>https://lou1306.github.io/tags/windows/</link>
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://lou1306.github.io/tags/windows/</guid>
+      <guid>https://lou1306.github.io/tags/windows/</guid>
       <description></description>
     </item>
     

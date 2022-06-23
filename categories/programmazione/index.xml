@@ -18,7 +18,7 @@
       
       <guid>https://lou1306.github.io/post/2018-01-11-packing/</guid>
       <description>Di recente avevamo bisogno di usare un&amp;rsquo;unica variabile int per contenere due interi di piccole dimensioni. (Lasciamo perdere i dettagli e facciamo finta che int sia una variabile a 32 bit, ok?) Nulla di complicato, ma comunque ci sono voluti un paio di tentativi prima che tutto filasse liscio. Quindi, se a qualcuno servisse, ecco il codice:
- Il main() proverà tutte le possibili coppie, terminando con un errore se l&amp;rsquo;unpacking di una tupla porta a risultati inattesi.</description>
+Il main() proverà tutte le possibili coppie, terminando con un errore se l&amp;rsquo;unpacking di una tupla porta a risultati inattesi.</description>
     </item>
     
     <item>

@@ -6,7 +6,7 @@
     <description>Recent content on lou1306</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>it-it</language>
-    <lastBuildDate>Fri, 27 May 2022 14:38:44 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jun 2022 16:47:04 +0200</lastBuildDate>
     <atom:link href="https://lou1306.github.io/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -61,7 +61,7 @@
       
       <guid>https://lou1306.github.io/post/2018-01-11-packing/</guid>
       <description>Di recente avevamo bisogno di usare un&amp;rsquo;unica variabile int per contenere due interi di piccole dimensioni. (Lasciamo perdere i dettagli e facciamo finta che int sia una variabile a 32 bit, ok?) Nulla di complicato, ma comunque ci sono voluti un paio di tentativi prima che tutto filasse liscio. Quindi, se a qualcuno servisse, ecco il codice:
- Il main() proverà tutte le possibili coppie, terminando con un errore se l&amp;rsquo;unpacking di una tupla porta a risultati inattesi.<a href='https://lou1306.github.io/post/2018-01-11-packing/'><em>Continua</em></a></description>
+Il main() proverà tutte le possibili coppie, terminando con un errore se l&amp;rsquo;unpacking di una tupla porta a risultati inattesi.<a href='https://lou1306.github.io/post/2018-01-11-packing/'><em>Continua</em></a></description>
     </item>
     
     <item>
